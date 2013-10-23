@@ -1,0 +1,19 @@
+.title {
+  background-color: black;
+  -webkit-transform: rotate(-4deg);
+  text-align: center;
+
+  a {
+    color: white;
+  }
+
+  h1 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0;
+    -webkit-transform: rotate(4deg);
+  }
+}

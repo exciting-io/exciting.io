@@ -1,12 +1,14 @@
 $font-size-base: 20px;
 
 @import 'bootstrap';
+@import 'title';
 @import 'header';
 @import 'footer';
 @import 'syntax';
 @import 'posts';
 @import 'banner';
 @import 'projects';
+@import 'home';
 
 .content {
   clear: both;

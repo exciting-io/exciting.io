@@ -17,23 +17,9 @@ header {
     padding: ($grid-gutter-width / 2);
     width: 6.5em;
     margin: 1em auto 0 auto;
-    text-align: center;
-
-    background-color: black;
-    -webkit-transform: rotate(-4deg);
-
-    a {
-      color: white;
-    }
 
     h1 {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 800;
-      text-transform: uppercase;
-      font-style: normal;
-      margin: 0;
       font-size: 1em;
-      -webkit-transform: rotate(4deg);
     }
   }
 

@@ -1,0 +1,43 @@
+#home {
+
+  .site-banner {
+    width: 24em;
+    margin: 3em auto;
+
+    .preamble {
+      font-family: 'Gentium Basic';
+      font-style: italic;
+      font-size: 1.4em;
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    .title {
+      h1 {
+        font-size: 4em;
+        padding: 0.3em;
+      }
+    }
+  }
+
+  .product {
+    .img {
+      text-align: center;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      margin-bottom: 0.2em;
+    }
+
+    .strapline {
+      font-size: 1em;
+      font-style: italic;
+    }
+  }
+}
