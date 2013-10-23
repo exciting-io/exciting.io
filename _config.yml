@@ -1,0 +1,19 @@
+name: Exciting
+domain_name: Exciting.io
+markdown: maruku
+pygments: true
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+assets:
+  cache: true
+  js_compressor:  uglifier
+  css_compressor: sass
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/vendors/bootstrap-sass/stylesheets
+    - _assets/vendors/bootstrap-sass/javascripts
+    - _assets/vendors/bootstrap-sass/fonts

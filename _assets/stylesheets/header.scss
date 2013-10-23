@@ -1,0 +1,80 @@
+header {
+  font-size: 0.8em;
+  margin-bottom: 6em;
+
+  @media (min-width: $grid-float-breakpoint) {
+    margin-bottom: 7em;
+    position: relative;
+  }
+
+  .title {
+    @media (min-width: $grid-float-breakpoint) {
+      position: absolute;
+      left: -5px;
+    }
+
+    font-size: 1.6em;
+    padding: ($grid-gutter-width / 2);
+    width: 6.5em;
+    margin: 1em auto 0 auto;
+    text-align: center;
+
+    background-color: black;
+    -webkit-transform: rotate(-4deg);
+
+    a {
+      color: white;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-style: normal;
+      margin: 0;
+      font-size: 1em;
+      -webkit-transform: rotate(4deg);
+    }
+  }
+
+  .navigation {
+    @media (min-width: $grid-float-breakpoint) {
+      margin-top: 1.55em;
+      float: right;
+    }
+
+    margin: 0;
+    font-family: 'Gentium Basic', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.4em;
+    line-height: 0.8em;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      width: 14.4em;
+      margin: 1em auto 0 auto;
+
+      @media (min-width: $grid-float-breakpoint) {
+        display: block;
+        margin: 0;
+      }
+
+      li {
+        float: left;
+        padding: ($grid-gutter-width / 2);
+
+        text-align: center;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

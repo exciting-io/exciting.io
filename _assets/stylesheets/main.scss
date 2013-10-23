@@ -1,0 +1,50 @@
+$font-size-base: 20px;
+
+@import 'bootstrap';
+@import 'header';
+@import 'footer';
+@import 'syntax';
+@import 'posts';
+@import 'banner';
+@import 'projects';
+
+.content {
+  clear: both;
+  overflow: auto;
+}
+
+body {
+  font-family: 'Gentium Basic';
+}
+
+article, .post-container, .banner, aside {
+  @media (max-width: $grid-float-breakpoint - 1) {
+    h1:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: normal;
+
+    strong {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-style: normal;
+    }
+  }
+
+  h3, h4, h5, h6 {
+    font-family: 'Gentium Basic', serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
+
+img {
+  width: 100%;
+}

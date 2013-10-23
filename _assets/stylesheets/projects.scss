@@ -1,0 +1,27 @@
+ul.projects {
+  list-style: none;
+  padding-left: 0;
+
+  .banner {
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: $grid-float-breakpoint) {
+  .project {
+    aside {
+      margin-top: 2em;
+
+      h3 {
+        margin-top: 0;
+      }
+
+      &.links {
+        ul {
+          list-style: none;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}

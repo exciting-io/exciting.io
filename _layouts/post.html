@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="post-container">
+  {% if page.banner_image_url %}
+    <div style="background-image: url('{{ page.banner_image_url }}');" class="banner">
+      <div class="container">
+        <h2>{{ page.title }}</h2>
+      </div>
+    </div>
+  {% endif %}
+  <div class="container">
+    <article class="col-md-10 col-lg-8">
+      {% if page.banner_image_url == null %}
+        <h2>{{ page.title }}</h2>
+      {% endif %}
+      <p class="meta">{{ page.date | date_to_long_string }}</p>
+      <div class="post">
+      {{ content }}
+      </div>
+    </article>
+  </div>
+</div>
