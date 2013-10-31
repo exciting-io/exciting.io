@@ -79,6 +79,7 @@
 
       @media (min-width: $screen-sm) {
         img {
+          margin-top: $line-height-computed / 4;
           @include square(200px);
         }
       }
