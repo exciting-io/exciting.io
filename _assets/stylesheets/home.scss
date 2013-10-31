@@ -1,4 +1,13 @@
 #home {
+  .strapline-row {
+    @include make-row();
+
+    .strapline {
+      @include make-md-column(10);
+      @include make-lg-column(8);
+    }
+  }
+
   .hero, .content {
     @include make-row();
   }
@@ -60,17 +69,11 @@
     @include font-body-italic;
   }
 
-  section {
-    margin-top: $line-height-computed;
-    margin-bottom: $line-height-computed * 2;
-
-    &:last-child {
-      margin-bottom: $line-height-computed;
-    }
-
-    @media (min-width: $screen-xs) {
-      margin-bottom: 0;
-    }
+  .strapline {
+    @include font-body-italic;
+    color: $gray;
+    opacity: 0.7;
+    margin-bottom: 0;
   }
 
   .hero {

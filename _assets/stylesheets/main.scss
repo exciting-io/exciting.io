@@ -35,31 +35,15 @@ a {
   }
 }
 
-article, .post-container, .banner, aside {
-  // @media (max-width: $grid-float-breakpoint - 1) {
-  //   h1:first-child {
-  //     margin-top: 0;
-  //   }
-  // }
+section, article {
+  margin-top: $line-height-computed;
+  margin-bottom: $line-height-computed * 2;
 
-  // h1, h2 {
-  //   @include font-gentium;
+  &:last-child {
+    margin-bottom: $line-height-computed;
+  }
 
-  //   strong {
-  //     font-family: 'Open Sans', sans-serif;
-  //     font-weight: 800;
-  //     text-transform: uppercase;
-  //     font-style: normal;
-  //   }
-  // }
-
-  // h3, h4, h5, h6 {
-  //   font-family: 'Gentium Basic', serif;
-  //   font-weight: 400;
-  //   font-style: italic;
-  // }
-}
-
-img {
-  // width: 100%;
+  @media (min-width: $screen-xs) {
+    margin-bottom: 0;
+  }
 }

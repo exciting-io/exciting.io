@@ -17,15 +17,6 @@ header {
     }
   }
 
-  .strapline-row {
-    @include make-row();
-
-    .strapline {
-      @include make-md-column(10);
-      @include make-lg-column(8);
-    }
-  }
-
   nav {
     padding-top: $line-height-computed;
     padding-bottom: $line-height-computed;
@@ -78,12 +69,5 @@ header {
         padding-right: $grid-gutter-width;
       }
     }
-  }
-
-  .strapline {
-    @include font-body-italic;
-    color: $gray;
-    opacity: 0.7;
-    margin-bottom: 0;
   }
 }
