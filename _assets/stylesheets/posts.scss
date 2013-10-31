@@ -3,11 +3,21 @@
     font-style: italic;
     margin-bottom: 2em;
   }
+
+  article {
+    @include make-md-column(9);
+    @include make-lg-column(7);
+  }
 }
 
 .post {
   h2 {
     border-top: 2px solid #eee;
     padding: 0.5em 0;
+  }
+
+  img {
+    margin-top: ($line-height-computed / 2);
+    margin-bottom: ($line-height-computed / 2);
   }
 }

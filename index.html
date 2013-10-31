@@ -3,31 +3,78 @@ layout: basic
 title: Home
 ---
 
-<div id="home" class="container">
-  <article class="site-banner col-md-12 col-lg-12">
-    <div class="title"><h1>Exciting</h1></div>
-    <p class="preamble">Whatever happens next, it better be.</p>
-  </article>
+<header class="container">
+  <nav>
+    <div class="title"><a href="/"><h1>Exciting</h1></a></div>
+    <ul class="navigation">
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </nav>
 
-  <article class="product col-md-4 col-lg-4">
-    <p class="img"><a href="https://harmonia.io"><img src="/images/harmonia/logo.png" /></a></p>
-    <h1><a href="https://harmonia.io">Harmonia</a></h1>
-    <p class="strapline">Stronger teams through shared responsibilities</p>
-    <p><a href="https://harmonia.io">harmonia.io</a>
-  </article>
-
-  <article class="product col-md-4 col-lg-4">
-    <p class="img"><a href="http://heyli.st"><img src="/images/heylist/logo.png" /></a></p>
-    <h1><a href="http://heyli.st">Heyli.st</a></h1>
-    <p class="strapline">Tracking the pulse of conferences and events</p>
-    <p><a href="http://heyli.st">heyli.st</a>
-  </article>
-
-  <article class="product col-md-4 col-lg-4">
-    <p class="img"><a href="http://printer.gofreerange.com"><img src="/images/printer/logo.png" /></a></p>
-    <h1><a href="http://printer.gofreerange.com">Printer</a></h1>
-    <p class="strapline">Open source toolkit for small connected printers</p>
-    <p><a href="http://printer.gofreerange.com">printer.gofreerange.com</a>
-  </article>
-
+  <div class="strapline-row">
+    <p class="strapline">A digital product prototyping and development studio. We build software and tinker in hardware. We explore the potential of simple systems. Such as&hellip;</p>
+  </div>
+</header>
 </div>
+
+<main id="home" class="container">
+  <section class="hero">
+    <div class="product-image">
+      <a href="https://harmonia.io"><img src="/images/harmonia/logo.png" /></a>
+      <h1><a href="https://harmonia.io">Harmonia</a></h1>
+      <p class="strapline"><a href="https://harmonia.io">Stronger teams through shared responsibility</a></p>
+    </div>
+    <div class="product-body">
+      <p>Non-heirarchical team structures produce teams with more motivation and higher morale. But without a traditional manager, how can you ensure that tasks are really getting done?</p>
+      <p>Harmonia is our answer. It captures the tasks and chores that a team needs to handle, and intelligently assigns responsibilities for those tasks as required, promoting engagement across the team whilst giving visibility of progress across the whole team.</p>
+      <p><a href="https://harmonia.io" class="more">Find out more&hellip;</a></p>
+    </div>
+  </section>
+
+  <div class="content">
+    <section class="work">
+      <h2><span>More work</span></h2>
+      <ul class="media-list">
+        <li class="product media">
+          <a href="http://heyli.st" class="pull-left"><img src="/images/heylist/logo.png" /></a>
+          <div class="media-body">
+            <h3 class="media-heading"><a href="http://heyli.st">Heyli.st</a></h3>
+            <p class="strapline">
+              <a href="http://heyli.st">Tracking the pulse of conferences and events</a>
+            </p>
+          </div>
+        </li>
+        <li class="product media">
+          <a href="http://printer.gofreerange.com" class="pull-left"><img src="/images/printer/logo.png" /></a>
+          <div class="media-body">
+            <h3 class="media-heading"><a href="http://printer.gofreerange.com">Printer</a></h3>
+            <p class="strapline">
+              <a href="http://printer.gofreerange.com">Open source toolkit for small connected printers.</a>
+            </p>
+          </div>
+        </li>
+        <li class="product media">
+          <a href="/magritte" class="pull-left"><img src="/images/magritte/logo.png" /></a>
+          <div class="media-body">
+            <h3 class="media-heading"><a href="/magritte">Codename: Magritte</a></h3>
+            <p class="strapline">
+              <a href="https://harmonia.io">A better foundation for team communication. Coming soon.</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <p><a href="/projects" class="more">More projects and prototypes&hellip;</a></p>
+    </section>
+
+    <section class="recently">
+      <h2><span>Recently</span></h2>
+      <article class="post">
+        <span class="date pull-right">30th Oct 2013</span>
+        <h1><a href="/blog-post">The title of this blog post is enticing</a></h1>
+        <p class="excerpt"><a href="/blog-post">For over a year, I have been playing around with printing things out on a receipt printer. Recently, a few accidents of my implementation gave more life to my tinkerings than I had originally intended.</a></p>
+        <a href="/blog-post" class="more">Read more&hellip;</a>
+      </article>
+    </section>
+  </div>
+</main>

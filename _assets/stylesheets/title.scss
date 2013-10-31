@@ -1,6 +1,6 @@
 .title {
-  background-color: black;
-  -webkit-transform: rotate(-4deg);
+  background-color: $black;
+  @include rotate(-4deg);
   text-align: center;
 
   a {
@@ -8,12 +8,18 @@
   }
 
   h1 {
+    @include font-heading;
     color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-style: normal;
     margin: 0;
-    -webkit-transform: rotate(4deg);
+    @include rotate(4deg);
+
+    // kerning fix with lettering.js
+    .char2 {
+      opacity: 1;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: -0.1em;
+    }
   }
 }

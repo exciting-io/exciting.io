@@ -1,6 +1,8 @@
 $font-size-base: 20px;
 
 @import 'bootstrap';
+@import 'colours';
+@import 'typography';
 @import 'title';
 @import 'header';
 @import 'footer';
@@ -16,37 +18,48 @@ $font-size-base: 20px;
 }
 
 body {
-  font-family: 'Gentium Basic';
+  @include font-body;
+  color: $text-colour;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $link-active-colour;
+
+  &:hover {
+    color: $link-hover-colour;
+  }
+
+  &:visited {
+    color: $link-active-colour;
+  }
 }
 
 article, .post-container, .banner, aside {
-  @media (max-width: $grid-float-breakpoint - 1) {
-    h1:first-child {
-      margin-top: 0;
-    }
-  }
+  // @media (max-width: $grid-float-breakpoint - 1) {
+  //   h1:first-child {
+  //     margin-top: 0;
+  //   }
+  // }
 
-  h1, h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-style: normal;
+  // h1, h2 {
+  //   @include font-gentium;
 
-    strong {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 800;
-      text-transform: uppercase;
-      font-style: normal;
-    }
-  }
+  //   strong {
+  //     font-family: 'Open Sans', sans-serif;
+  //     font-weight: 800;
+  //     text-transform: uppercase;
+  //     font-style: normal;
+  //   }
+  // }
 
-  h3, h4, h5, h6 {
-    font-family: 'Gentium Basic', serif;
-    font-weight: 400;
-    font-style: italic;
-  }
+  // h3, h4, h5, h6 {
+  //   font-family: 'Gentium Basic', serif;
+  //   font-weight: 400;
+  //   font-style: italic;
+  // }
 }
 
 img {
-  width: 100%;
+  // width: 100%;
 }

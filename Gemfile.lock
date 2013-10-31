@@ -32,6 +32,7 @@ GEM
     jekyll-assets (0.7.3)
       jekyll (~> 1.0)
       sprockets (~> 2.10)
+    kramdown (1.2.0)
     liquid (2.5.3)
     maruku (0.7.0)
     multi_json (1.8.2)
@@ -61,5 +62,5 @@ DEPENDENCIES
   bootstrap-sass!
   jekyll
   jekyll-assets
-  maruku
+  kramdown
   uglifier

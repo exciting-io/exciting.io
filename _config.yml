@@ -1,6 +1,6 @@
 name: Exciting
 domain_name: Exciting.io
-markdown: maruku
+markdown: kramdown
 pygments: true
 permalink: pretty
 exclude:
