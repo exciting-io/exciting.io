@@ -70,10 +70,10 @@ title: Home
     <section class="recently">
       <h2><span>Recently</span></h2>
       <article class="post">
-        <span class="date pull-right">30th Oct 2013</span>
-        <h1><a href="/blog-post">The title of this blog post is enticing</a></h1>
-        <p class="excerpt"><a href="/blog-post">For over a year, I have been playing around with printing things out on a receipt printer. Recently, a few accidents of my implementation gave more life to my tinkerings than I had originally intended.</a></p>
-        <a href="/blog-post" class="more">Read more&hellip;</a>
+        <span class="date pull-right">{{ site.posts.first.date | date_to_string }}</span>
+        <h1><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h1>
+        <div class="excerpt">{{ site.posts.first.excerpt }}</div>
+        <a href="{{ site.posts.first.url }}" class="more">Read more&hellip;</a>
       </article>
     </section>
   </div>
