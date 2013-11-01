@@ -2,12 +2,28 @@
   background-color: $black;
   @include rotate(-4deg);
   text-align: center;
+  color: white;
+  // undo bootstrap column padding
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 
   a {
+    // re-add bootstrap column padding.
+    padding-left: $grid-gutter-width / 2;
+    padding-right: $grid-gutter-width / 2;
+    background-color: $black;
+    transition: background-color 1s;
+    display: inline-block;
+    width: 100%;
     color: white;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $light-blue;
+    }
   }
 
-  h1 {
+  h1, span.text {
     @include font-heading;
     color: white;
     margin: 0;
@@ -22,4 +38,13 @@
       margin-right: -0.05em;
     }
   }
+}
+
+span.title,
+span.title span.text {
+  display: inline-block;
+}
+
+span.title {
+  padding: ($font-size-base / 4) ($font-size-base / 2);
 }
