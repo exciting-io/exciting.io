@@ -124,6 +124,8 @@
 
     .recently {
       .post {
+        margin-top: 0;
+
         h1 {
           @include font-heading;
           margin-top: 0;
