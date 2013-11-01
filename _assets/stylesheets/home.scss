@@ -58,8 +58,11 @@
   .hero {
     .product-image {
       text-align: center;
+      margin-bottom: $font-size-base;
 
       @media (min-width: $screen-sm) {
+        margin-bottom: 0;
+
         img {
           margin-top: $line-height-computed / 4;
           @include square(200px);
