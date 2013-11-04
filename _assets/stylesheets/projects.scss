@@ -8,6 +8,18 @@ ul.projects {
 }
 
 .project {
+  article {
+    @include make-md-column(8);
+    @include make-lg-column(7);
+  }
+
+  aside {
+    @include make-md-column(3);
+    @include make-md-column-offset(1);
+    @include make-lg-column(3);
+    @include make-lg-column-offset(2);
+  }
+
   h2 {
     border-top: none;
     margin-bottom: $line-height-computed;

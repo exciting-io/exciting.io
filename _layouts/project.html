@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="container project">
   <div class="row">
-    <article class="col-md-8 col-lg-7">
+    <article>
       <h1>{{ page.title }}</h1>
 
       <div class="project">
@@ -12,13 +12,13 @@ layout: default
     </article>
 
     {% if page.links %}
-      <aside class="links col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-2">
+      <aside class="links">
         <h3>Related</h3>
         {{ page.links | markdownify }}
       </aside>
     {% endif %}
 
-    <aside class="subscribe col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-2">
+    <aside class="subscribe">
       <h3>Updates</h3>
 
       <!-- Begin MailChimp Signup Form -->
