@@ -3,17 +3,18 @@ layout: default
 title: Projects
 ---
 <div class="container">
-  <article id="projects"class="col-sm-9 col-md-7 col-lg-6">
-    <h1>Projects</h1>
-  </article>
+  <div class="row">
+    <article id="projects"class="col-sm-9 col-md-7 col-lg-6">
+      <h1>Projects</h1>
+    </article>
+    <ul class="projects">
+      {% for page in site.pages %}
+        {% if page.categories contains 'project' %}
+          <li class="banner" style="background-image: url('{{ page.banner_image_url }}');" >
+            <div class="container"><h2><a href="{{ page.url }}">{{ page.title }}</a></h2></div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 </div>
-<ul class="projects">
-  {% for page in site.pages %}
-    {% if page.categories contains 'project' %}
-      <li class="banner" style="background-image: url('{{ page.banner_image_url }}');" >
-        <div class="container"><h2><a href="{{ page.url }}">{{ page.title }}</a></h2></div>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
-

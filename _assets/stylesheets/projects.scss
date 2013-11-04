@@ -3,7 +3,26 @@ ul.projects {
   padding-left: 0;
 
   .banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
     margin-top: 1em;
+
+    min-height: 7em;
+
+    @media (min-width: $grid-float-breakpoint) {
+      min-height: 15em;
+    }
+
+    h2 {
+      @include font-heading;
+      background: white;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 0;
+      padding: ($line-height-computed / 2);
+    }
   }
 }
 
