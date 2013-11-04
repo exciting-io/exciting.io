@@ -10,7 +10,7 @@ links: |
   * [Follow @heylist](https://twitter.com/heylist)
 ---
 
-### Tracking the pulse of conferences and events
+## Tracking the pulse of conferences and events
 
 Or: because hashtags _suck_.
 

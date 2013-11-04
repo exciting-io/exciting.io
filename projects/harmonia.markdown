@@ -5,14 +5,13 @@ banner_image_url: /images/harmonia/screenshot.jpg
 categories:
   - project
   - harmonia
-email_updates: true
 links: |
   * [Visit harmonia.io](https://harmonia.io)
   * [Read blog](https://harmonia.io/blog)
   * [Follow @harmonia](https://twitter.com/harmonia)
 ---
 
-### Stronger teams through shared responsibilities.
+## Stronger teams through shared responsibilities.
 
 You're a manager, charged with delegating chores and tasks within your team, but your team is demotivated.
 

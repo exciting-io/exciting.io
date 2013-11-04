@@ -5,7 +5,6 @@ banner_image_url: /images/printer/printer-and-board.jpg
 categories:
   - project
   - printer
-email_updates: true
 links: |
   * [@gfrprinter](https://twitter.com/gfrprinter)
   * [Mailing list](https://groups.google.com/group)
