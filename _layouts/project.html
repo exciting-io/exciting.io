@@ -22,21 +22,18 @@ layout: default
       <aside class="subscribe col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-2">
         <h3>Updates</h3>
 
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-  <form action="http://exciting.us3.list-manage2.com/subscribe/post?u=6bb4c7c29d4cee15704e2a1a1&amp;id=fb5276ed61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp" target="_blank" novalidate>
-    <div class="mc-field-group">
-    <label for="mce-EMAIL">Get updates on Exciting projects</label>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address">
-      <input type="hidden" value="{{ page.url }}" name="SOURCE" id="mce-SOURCE">
-    </div>
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-  </form>
-</div>
-<!--End mc_embed_signup-->
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="http://exciting.us3.list-manage2.com/subscribe/post?u=6bb4c7c29d4cee15704e2a1a1&id=fb5276ed61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp" target="_blank" role="form" novalidate>
+          <div class="form-group">
+            <label for="mce-EMAIL">Get updates about this and other Exciting projects&hellip;</label>
+            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your email address">
+          </div>
+          <input type="hidden" value="{{ page.url }}" name="SOURCE" id="mce-SOURCE">
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
 
       </aside>
     {% endif %}

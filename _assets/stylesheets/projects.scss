@@ -16,6 +16,23 @@ ul.projects {
   img {
     @include img-responsive;
   }
+
+  aside {
+    &.links {
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+    }
+
+    &.subscribe {
+      .form-group label {
+        font-size: $font-size-small;
+        font-weight: normal;
+        margin-bottom: $line-height-computed / 2;
+      }
+    }
+  }
 }
 
 @media (min-width: $grid-float-breakpoint) {
@@ -25,13 +42,6 @@ ul.projects {
 
       h3 {
         margin-top: 0;
-      }
-
-      &.links {
-        ul {
-          list-style: none;
-          padding-left: 0;
-        }
       }
     }
   }
