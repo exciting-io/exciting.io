@@ -7,6 +7,17 @@ ul.projects {
   }
 }
 
+.project {
+  h2 {
+    border-top: none;
+    margin-bottom: $line-height-computed;
+  }
+
+  img {
+    @include img-responsive;
+  }
+}
+
 @media (min-width: $grid-float-breakpoint) {
   .project {
     aside {

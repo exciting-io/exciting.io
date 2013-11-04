@@ -36,7 +36,7 @@ a {
   }
 }
 
-section, article {
+section, article, aside {
   h1 {
     @include font-heading;
     font-size: 2em;

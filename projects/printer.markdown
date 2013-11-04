@@ -10,11 +10,11 @@ links: |
   * [@gfrprinter](https://twitter.com/gfrprinter)
   * [Mailing list](https://groups.google.com/group)
   * [Backend server](http://printer.gofreerange.com)
-  * [Soruce code](https://github.com/freerange/printer)
+  * [Source code](https://github.com/freerange/printer)
   * [Documentation](https://github.com/freerange/printer/wiki)
 ---
 
-### An [open source kit][printer-github] for exploring the possibilities of internet-of-things printing.
+## An [open source kit][printer-github] for exploring the possibilities of internet-of-things printing.
 
 ![](/images/printer/printer.jpg)
 
