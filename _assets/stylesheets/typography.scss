@@ -1,22 +1,5 @@
 @mixin font-body() {
-  // 1
-  // font-family: 'Gentium Book Basic', serif;
-  // font-weight: 400;
-
-  // 2
   font-family: ff-tisa-web-pro;
-
-  // 3
-  // font-family: jubilat, serif;
-
-  // 4
-  // font-family: adelle, serif;
-
-  // 5
-  // font-family: ff-tisa-web-pro;
-
-  // 6
-  // font-family: ff-meta-serif-web-pro, serif;
 }
 
 @mixin font-body-italic() {
@@ -25,28 +8,7 @@
 }
 
 @mixin font-heading() {
-  // 1
-  // font-family: 'Open Sans', sans-serif;
-  // font-weight: 800;
-
-  // 2
-  // font-family: freight-sans-pro, sans-serif;
-  // font-weight: 900;
-  // font-style: normal;
-
-  // 3
   font-family: brandon-grotesque, sans-serif;
   font-weight: normal;
-
-  // 4
-  // font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
-
-  // 5
-  // font-family: futura-pt, Futura, sans-serif;
-
-  // 6
-  // font-family: brandon-grotesque, sans-serif;
-  // font-weight: 900;
-
   text-transform: uppercase;
 }

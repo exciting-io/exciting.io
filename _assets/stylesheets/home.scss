@@ -1,13 +1,4 @@
 #home {
-  .strapline-row {
-    @include make-row();
-
-    .strapline {
-      @include make-md-column(10);
-      @include make-lg-column(8);
-    }
-  }
-
   .hero, .content {
     @include make-row();
   }
@@ -44,18 +35,13 @@
     @include font-body-italic;
   }
 
-  .strapline {
-    @include font-body-italic;
-  }
-
-  .strapline {
-    @include font-body-italic;
-    color: $gray;
-    opacity: 0.7;
-    margin-bottom: 0;
-  }
-
   .hero {
+    margin-bottom: $line-height-computed;
+
+    @media (min-width: $screen-sm) {
+      margin-bottom: 0;
+    }
+
     .product-image {
       text-align: center;
       margin-bottom: $font-size-base;
@@ -80,6 +66,21 @@
   }
 
   .content {
+    h2 {
+      color: $gray-light;
+      opacity: 0.7;
+      border-top: 1px solid $gray-lighter;
+      margin-top: $line-height-computed / 1.3;
+      margin-bottom: 0;
+
+      span {
+        background-color: white;
+        position: relative;
+        top: -($line-height-computed / 1.3);
+        padding-right: $line-height-computed / 2;
+      }
+    }
+
     .work {
       ul {
         li {

@@ -323,6 +323,6 @@ I am _sure_ you have better ideas for how to use an internet-enabled small print
 * [Source code](http://github.com/freerange/printer)
 
 
-[Timmy]: /timmy
+[Timmy]: http://gofreerange.com/timmy
 [hack]: http://en.wikipedia.org/wiki/Kludge
 [hackcircus]: http://enemyofchaos.wordpress.com/2011/06/21/hack-circus-for-interesting-11-thank-you/

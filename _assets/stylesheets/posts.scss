@@ -1,23 +1,31 @@
-.post-container {
-  .meta {
+.post {
+
+  article {
+    @include make-sm-column(10);
+    @include make-md-column(8);
+    @include make-lg-column(7);
+  }
+
+  .date {
     font-style: italic;
     margin-bottom: 2em;
   }
 
-  article {
-    @include make-md-column(9);
-    @include make-lg-column(7);
-  }
-}
-
-.post {
   h2 {
     border-top: 2px solid #eee;
-    padding: 0.5em 0;
+    padding: 1em 0;
   }
 
   img {
+    @include img-responsive;
     margin-top: ($line-height-computed / 2);
     margin-bottom: ($line-height-computed / 2);
+  }
+
+  .footnotes {
+    margin-top: $line-height-computed;
+    padding-top: $line-height-computed;
+    border-top: 1px solid $gray-lighter;
+    font-size: $font-size-small;
   }
 }

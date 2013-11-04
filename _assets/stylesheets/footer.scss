@@ -7,9 +7,6 @@ footer {
   font-size: $font-size-small;
 
   p {
-    // @include make-sm-column(6);
-    // @include make-md-column(5);
-    // @include make-lg-column(4);
     margin-bottom: 0;
   }
 }
