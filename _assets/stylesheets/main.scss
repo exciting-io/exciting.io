@@ -12,15 +12,41 @@ $font-size-base: 20px;
 @import 'home';
 @import 'blog';
 
-.content {
-  clear: both;
-  overflow: auto;
-}
-
 body {
   @include font-body;
   color: $text-colour;
   -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.outer-container {
+  min-height: 100%;
+  padding-bottom: 6em;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 4em;
+  width: 100%;
+
+  color: $gray;
+  background-color: $gray-lighter;
+  padding: $line-height-computed 0 ($line-height-computed * 2) 0;
+  font-style: italic;
+  font-size: $font-size-small;
+}
+
+.content {
+  clear: both;
+  overflow: auto;
 }
 
 a {
