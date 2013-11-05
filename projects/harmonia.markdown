@@ -13,8 +13,7 @@ links: |
 
 ## Stronger teams through shared responsibilities.
 
-You're a manager, charged with delegating chores and tasks within your team, but your team is demotivated.
+Non-heirarchical team structures can produce teams with more motivation and higher morale. But without a traditional manager, how can you ensure that tasks are really getting done?
 
-Or maybe you are a team member, wondering why it's such a struggle for your group to actually get things done.
+[Harmonia](https://harmonia.io) is our answer, intelligently assigning responsibilities for tasks as required, promoting engagement across the team whilst giving visibility of progress across the whole team.
 
-In our experience running Go Free Range, we realised that the key to effectively handling some of the less glamourous responsibilities of a team was blah blah blah
