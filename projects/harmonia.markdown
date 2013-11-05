@@ -7,7 +7,7 @@ categories:
   - harmonia
 links: |
   * [Visit harmonia.io](https://harmonia.io/?utm_source=exciting.io&utm_medium=referral&utm_content=project+related&utm_campaign=non-heirarchical+team+structures)
-  * [Read blog](https://harmonia.io/blog)
+  * [Read blog](https://harmonia.io/blog?utm_source=exciting.io&utm_medium=referral&utm_content=project+related&utm_campaign=non-heirarchical+team+structures)
   * <a href="https://twitter.com/intent/user?screen_name=harmonia" class="twitter"><span>@harmonia</span></a>
 ---
 
