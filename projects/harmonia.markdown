@@ -8,7 +8,7 @@ categories:
 links: |
   * [Visit harmonia.io](https://harmonia.io)
   * [Read blog](https://harmonia.io/blog)
-  * [Follow @harmonia](https://twitter.com/harmonia)
+  * <a href="https://twitter.com/intent/user?screen_name=harmonia" class="twitter"><span>@harmonia</span></a>
 ---
 
 ## Stronger teams through shared responsibilities.

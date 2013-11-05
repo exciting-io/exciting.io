@@ -7,7 +7,7 @@ categories:
   - heylist
 links: |
   * [Visit heyli.st](http://heyli.st)
-  * [Follow @heylist](https://twitter.com/heylist)
+  * <a href="https://twitter.com/intent/user?screen_name=heylist" class="twitter"><span>@heylist</span></a>
 ---
 
 ## Tracking the pulse of conferences and events

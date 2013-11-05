@@ -111,19 +111,6 @@
 
     .social {
       margin-top: $line-height-computed / 2;
-
-      .twitter {
-        a {
-          background-image: url(/images/twitter-bird-light-bgs.png);
-          background-size: $line-height-computed * 1.25;
-          background-repeat: no-repeat;
-          background-position: -7px 0;
-
-          span {
-            padding-left: 1.1em;
-          }
-        }
-      }
     }
   }
 

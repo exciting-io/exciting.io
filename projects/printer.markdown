@@ -6,7 +6,7 @@ categories:
   - project
   - printer
 links: |
-  * [@gfrprinter](https://twitter.com/gfrprinter)
+  * <a href="https://twitter.com/intent/user?screen_name=gfrprinter" class="twitter"><span>@gfrprinter</span></a>
   * [Mailing list](https://groups.google.com/group)
   * [Backend server](http://printer.gofreerange.com)
   * [Source code](https://github.com/freerange/printer)
