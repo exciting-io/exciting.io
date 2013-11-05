@@ -1,5 +1,6 @@
 name: Exciting
 domain_name: Exciting.io
+url: http://exciting.io
 markdown: kramdown
 pygments: true
 permalink: pretty

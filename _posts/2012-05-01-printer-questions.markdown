@@ -9,6 +9,8 @@ The response to our open source printer project has been amazing, but some peopl
 
 If you've got a question about [Printer], or want to discuss your ideas for printer, why not [check the FAQ on the wiki][FAQ], [ask on the mailing list][mailing list], or [follow the printer project on Twitter][twitter]?
 
+<!-- more -->
+
 ## Q: ![I want to get my hands on one of these...](/images/printer-questions/get-one.jpg)
 
 **A:** That's great Rory, and we'd really love for as many people as possible to start exploring with us. For me, one of the main aims of this project is to get other people to build some great [content services][] that we can all take advantage of.

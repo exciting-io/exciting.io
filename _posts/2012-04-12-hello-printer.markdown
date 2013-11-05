@@ -5,7 +5,6 @@ banner_image_url: /images/printer/printer-and-board.jpg
 tags: printer
 ---
 
-
 For over a year, I have been playing around with printing things out on a receipt printer. Recently, a few accidents of implementation gave more life to my tinkerings than I had originally intended.
 
 ### _Update!_
@@ -15,6 +14,8 @@ For over a year, I have been playing around with printing things out on a receip
 * Follow [@gfrprinter](http://twitter.com/gfrprinter) and [join the community](http://groups.google.com/group/gfr-printer)
 
 ![Printer](/images/printer/14-breadboard.JPG)
+
+<!-- more -->
 
 **TL;DR**: In a nutshell, I've accidentally built a software system that makes it easy for **YOU** to:
 
