@@ -8,10 +8,10 @@ title: Projects
       <h1>Projects</h1>
     </article>
     <ul class="projects">
-      {% for page in site.pages %}
-        {% if page.categories contains 'project' %}
-          <li class="banner" style="background-image: url('{{ page.banner_image_url }}');" >
-            <div class="container"><h2><a href="{{ page.url }}">{{ page.title }}</a></h2></div>
+      {% for project in site.pages %}
+        {% if project.categories contains 'project' %}
+          <li class="banner" style="background-image: url('{{ project.banner_image_url }}');" >
+            <div class="container"><h2><a href="{{ project.url }}">{{ project.name }}</a></h2></div>
           </li>
         {% endif %}
       {% endfor %}

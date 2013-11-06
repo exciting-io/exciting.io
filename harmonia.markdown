@@ -1,6 +1,7 @@
 ---
 layout: project
-title: Harmonia
+name: Harmonia
+title: Harmonia &mdash; stronger teams through shared responsibilities and automatically task assignment
 banner_image_url: /images/harmonia/screenshot.jpg
 categories:
   - project

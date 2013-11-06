@@ -1,6 +1,7 @@
 ---
 layout: project
-title: HeyLi.st
+name: HeyLi.st
+title: HeyLi.st &mdash; tracking the pulse of conferences and events using Lanyrd and Twitter lists
 banner_image_url: /images/heylist/screenshot.jpg
 categories:
   - project
