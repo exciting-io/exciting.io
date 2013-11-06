@@ -6,6 +6,12 @@
     @include make-lg-column(7);
   }
 
+  .subscribe {
+    @include make-sm-column(12);
+    @include make-md-column(10);
+    @include make-lg-column(8);
+  }
+
   .date {
     font-style: italic;
     margin-bottom: 2em;
@@ -16,10 +22,13 @@
     padding: 1em 0;
   }
 
+  img, iframe {
+    margin-top: ($line-height-computed);
+    margin-bottom: ($line-height-computed);
+  }
+
   img {
     @include img-responsive;
-    margin-top: ($line-height-computed / 2);
-    margin-bottom: ($line-height-computed / 2);
   }
 
   .footnotes {
@@ -27,5 +36,35 @@
     padding-top: $line-height-computed;
     border-top: 1px solid $gray-lighter;
     font-size: $font-size-small;
+  }
+
+  .subscribe {
+    margin-top: $line-height-computed;
+    background-color: $light-blue-25;
+    padding-top: $line-height-computed / 2;
+    padding-bottom: $line-height-computed / 2;
+
+    h2 {
+      border-top: none;
+      margin-top: 0;
+      margin-bottom: $line-height-computed / 2;
+    }
+
+    label {
+      font-weight: normal;
+      margin-bottom: $line-height-computed / 2;
+    }
+
+    @media (min-width: $screen-sm) {
+      .form-inline {
+        .form-group {
+          width: 83%;
+        }
+
+        .btn {
+          vertical-align: bottom;
+        }
+      }
+    }
   }
 }
