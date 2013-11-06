@@ -9,8 +9,8 @@ For over a year, I have been playing around with printing things out on a receip
 
 ### _Update!_
 
-* [Get started making your own printer](https://github.com/freerange/printer/wiki/Making-your-own-printer)
-* [Explore more information about printer](https://github.com/freerange/printer/wiki) and [get the source code](https://github.com/freerange/printer)
+* [Get started making your own printer](https://github.com/exciting-io/printer/wiki/Making-your-own-printer)
+* [Explore more information about printer](https://github.com/exciting-io/printer/wiki) and [get the source code](https://github.com/exciting-io/printer)
 * Follow [@gfrprinter](http://twitter.com/gfrprinter) and [join the community](http://groups.google.com/group/gfr-printer)
 
 ![Printer](/images/printer/14-breadboard.JPG)
@@ -19,9 +19,9 @@ For over a year, I have been playing around with printing things out on a receip
 
 **TL;DR**: In a nutshell, I've accidentally built a software system that makes it easy for **YOU** to:
 
-* [build your own small internet-connected printers](https://github.com/freerange/printer/wiki/Making-your-own-printer),
-* [produce customised content](https://github.com/freerange/printer/wiki/Building-content-services) for them, and
-* [share that content](https://github.com/freerange/printer/wiki/Architecture) with other people who also have small internet-connected printers.
+* [build your own small internet-connected printers](https://github.com/exciting-io/printer/wiki/Making-your-own-printer),
+* [produce customised content](https://github.com/exciting-io/printer/wiki/Building-content-services) for them, and
+* [share that content](https://github.com/exciting-io/printer/wiki/Architecture) with other people who also have small internet-connected printers.
 
 I'm ready to share, and I'd like you to get involved, and I will explain how [at the bottom of this post](#skip-to-the-end). But before that -- if you can stand to wait -- indulge me in some introspection.
 
@@ -181,7 +181,7 @@ Even better, it's *far* simpler to design content in HTML, CSS and Javascript th
 
 When doing client work that involves javascript, we often test it using a "headless browser", which is roughly speaking a web browser that doesn't actually display its windows on your computer. We've had a lot of success with [PhantomJS](http://phantomjs.org), and as it happens it is quite easy for it to load a webpage and [save what would be displayed as an image](http://code.google.com/p/phantomjs/wiki/QuickStart#Rendering).
 
-With a little bit of tweaking to fix the browser width at 384 pixels, and some [helpful stylesheets to make prototyping content for printing at that size easier](http://printer.gofreerange.com/sample.html), it all worked. All that was required to print something was an HTTP page which could be dispatched through the existing software and finally be printed.
+With a little bit of tweaking to fix the browser width at 384 pixels, and some [helpful stylesheets to make prototyping content for printing at that size easier](http://printer.exciting.io/sample.html), it all worked. All that was required to print something was an HTTP page which could be dispatched through the existing software and finally be printed.
 
 (At each step, the boundary of the system moved closer to something that I felt I could pick up later without having to hack it all together again. This was progress.)
 
@@ -201,13 +201,13 @@ But this made me pause for thought. So... if there was another HTTP server that 
 
 _Oh my_.
 
-## Printers and content: [distributed and federated](https://github.com/freerange/printer/wiki/Architecture)
+## Printers and content: [distributed and federated](https://github.com/exciting-io/printer/wiki/Architecture)
 
 I drew this on the whiteboard:
 
 ![Distributed, federated architecture for printers](/images/printer/20-architecture.JPG)
 
-(You can see a [much tidier and hopefully clearer architecture explanation on the wiki](https://github.com/freerange/printer/wiki/Architecture).)
+(You can see a [much tidier and hopefully clearer architecture explanation on the wiki](https://github.com/exciting-io/printer/wiki/Architecture).)
 
 In the last couple of weeks, it was reasonably easy to implement all of this:
 
@@ -229,7 +229,7 @@ And then, most interestingly to me:
 
 If you and I both want weather forecasts to appear on our printers, but my printer was polling the backend at _http://server1_, and your printer was polling _http://server2_, then we just need the weather service to know that it should post the weather data for me to my server, and the weather data for you to your server. **There's no need for a central backend server if everything is dealing with URLs.**
 
-If you'd like to learn more about the architecture, [take a look at the wiki](https://github.com/freerange/printer/wiki/Architecture).
+If you'd like to learn more about the architecture, [take a look at the wiki](https://github.com/exciting-io/printer/wiki/Architecture).
 
 And so that's where we are now.
 
@@ -237,38 +237,38 @@ And so that's where we are now.
 
 As I mentioned at the top of this meandering prose, it's a software system that makes it easy for **YOU** to:
 
-* [build your own small internet-connected printers](https://github.com/freerange/printer/wiki/Making-your-own-printer),
-* [produce customised content](https://github.com/freerange/printer/wiki/Building-content-services) for them, and
-* [share that content](https://github.com/freerange/printer/wiki/Architecture) with other people who also have small internet-connected printers.
+* [build your own small internet-connected printers](https://github.com/exciting-io/printer/wiki/Making-your-own-printer),
+* [produce customised content](https://github.com/exciting-io/printer/wiki/Building-content-services) for them, and
+* [share that content](https://github.com/exciting-io/printer/wiki/Architecture) with other people who also have small internet-connected printers.
 
-The [main project page is here](/printer). We are running [a backend server](http://printer.gofreerange.com), which our office printer is connected to. If you do make a printer ([see below](#getting-a-printer)), you're more than welcome to use it rather than running your own.
+The [main project page is here](/printer). We are running [a backend server](http://printer.exciting.io), which our office printer is connected to. If you do make a printer ([see below](#getting-a-printer)), you're more than welcome to use it rather than running your own.
 
 ![Simple messages send using a distributed architecure](/images/printer/21-simple-messages.jpg)
 
 
 ### The software
 
-[Here's the code](http://github.com/freerange/printer); it's open source and you can do what you like with it.
+[Here's the code](http://github.com/exciting-io/printer); it's open source and you can do what you like with it.
 
-You can run your own copies of [the software](http://github.com/freerange/printer) if you wish; doing so will not isolate you from the "cloud" of software build by other people. As long as [backend servers and content services have publicly-accessible URLs](https://github.com/freerange/printer/wiki/Architecture), there's nothing preventing other people using any available service to generate content for their own printers.
+You can run your own copies of [the software](http://github.com/exciting-io/printer) if you wish; doing so will not isolate you from the "cloud" of software build by other people. As long as [backend servers and content services have publicly-accessible URLs](https://github.com/exciting-io/printer/wiki/Architecture), there's nothing preventing other people using any available service to generate content for their own printers.
 
-I've written some extremely trivial (both in scope and implementation) content services for [sending messages](http://printer-mail.herokuapp.com) ([source code](http://github.com/freerange/printer-mail), see picture above) and [sending drawings](http://printer-paint.herokuapp.com) ([source code](http://github.com/freerange/printer-paint), see picture below).
+I've written some extremely trivial (both in scope and implementation) content services for [sending messages](http://printer-mail.herokuapp.com) ([source code](http://github.com/exciting-io/printer-mail), see picture above) and [sending drawings](http://printer-paint.herokuapp.com) ([source code](http://github.com/exciting-io/printer-paint), see picture below).
 
 I've also written a very simple example of an automated content publisher, which "delivers" [a weather forecast](http://printer-weather.herokuapp.com) to a printer at a fixed time.
 
 (None of these applications are really more than demonstrations to clarify how I imagine things could fit together.)
 
-If you take a quick look at their source, and the [Printer API](https://github.com/freerange/printer/wiki/API), then it should be quite clear how you can add your own printer (see below) to those services, or run your own copies of them, and -- **most importantly** -- write your [own content services for the stuff *you* would like to print](https://github.com/freerange/printer/wiki/Building-content-services). If it isn't clear, [please let me know](http://groups.google.com/group/gfr-printer)!
+If you take a quick look at their source, and the [Printer API](https://github.com/exciting-io/printer/wiki/API), then it should be quite clear how you can add your own printer (see below) to those services, or run your own copies of them, and -- **most importantly** -- write your [own content services for the stuff *you* would like to print](https://github.com/exciting-io/printer/wiki/Building-content-services). If it isn't clear, [please let me know](http://groups.google.com/group/gfr-printer)!
 
 ![Simple pictures send using a distributed architecure](/images/printer/24-simple-drawings.JPG)
 
 ### Next steps
 
-The backend software is still evolving; I have some pretty clear ideas about [what needs to be improved and what I'd like to do next](https://github.com/freerange/printer/issues), but I think it's ready for other people to play with too.
+The backend software is still evolving; I have some pretty clear ideas about [what needs to be improved and what I'd like to do next](https://github.com/exciting-io/printer/issues), but I think it's ready for other people to play with too.
 
 ## Getting a printer ## {#getting-a-printer}
 
-If you want to make a printer, I've written a reasonably detailed and picture-ful [step by step guide to building one and setting it up](https://github.com/freerange/printer/wiki/Making-your-own-printer).
+If you want to make a printer, I've written a reasonably detailed and picture-ful [step by step guide to building one and setting it up](https://github.com/exciting-io/printer/wiki/Making-your-own-printer).
 
 We are going to make a [small number of printers available to loan](/printer#borrow) to people who have an idea they'd like to explore. We'd love to help, and everyone will benefit from the services and content you make.
 
@@ -318,10 +318,10 @@ I am _sure_ you have better ideas for how to use an internet-enabled small print
 ## More information
 
 * [More details](/printer)
-* [The wiki](http://github.com/freerange/printer/wiki)
-* [Our backend server](http://printer.gofreerange.com)
-* [Send a message to our printer](http://printer-mail.herokuapp.com/send/freerange)
-* [Source code](http://github.com/freerange/printer)
+* [The wiki](http://github.com/exciting-io/printer/wiki)
+* [Our backend server](http://printer.exciting.io)
+* [Send a message to our printer](http://printer-mail.herokuapp.com/send/exciting)
+* [Source code](http://github.com/exciting-io/printer)
 
 
 [Timmy]: http://gofreerange.com/timmy

@@ -53,14 +53,14 @@ I would expect it to be much easier to write the software to run on the Raspberr
 
 ## Q: ![Surely this relies on a proprietary printer and doesn't work with ALL thermal printers?](/images/printer-questions/different-printer.jpg) ![Hey, do you know if the EPSON TMT-88IV is supported?](/images/printer-questions/epson-printer.jpg)
 
-**A:** The printer-specific parts of the system are isolated inside [PrintProcessor](https://github.com/freerange/printer/tree/master/lib/print_processor) classes. These take abstract image data which the system produces (essentially an array of pixels), and should emit data suitable for a printer.
+**A:** The printer-specific parts of the system are isolated inside [PrintProcessor](https://github.com/exciting-io/printer/tree/master/lib/print_processor) classes. These take abstract image data which the system produces (essentially an array of pixels), and should emit data suitable for a printer.
 
 When the Arduino (or Raspberry PI, or anything else) polls the server for data, it does so with an _Accept_ header that is used to tell the server what kind of printer is being targetted. The default is _A2-raw_,  corresponding to the _A2Raw_ print processor, which translates the pixels into the raw serial bytes that the printer will understand.
 
 If you want to use a different kind of printer, you'll need to do two things:
 
-1. Define a new 'type' and change your Arduino to send that in the _Accept_ header (e.g. <tt>Accept: application/vnd.freerange.printer.TMT-88IV</tt>)
-2. Add a class that maps the image data into the specific commands for that printer (see [A2Raw](https://github.com/freerange/printer/blob/master/lib/print_processor/a2_raw.rb) for an example)
+1. Define a new 'type' and change your Arduino to send that in the _Accept_ header (e.g. <tt>Accept: application/vnd.exciting.printer.TMT-88IV</tt>)
+2. Add a class that maps the image data into the specific commands for that printer (see [A2Raw](https://github.com/exciting-io/printer/blob/master/lib/print_processor/a2_raw.rb) for an example)
 
 I'm hoping to get a chance to make the documentation around this more comprehensive, but there are already [quite a few things][issues] to investigate. If you're interesting in tackling this yourself, [get in touch on the mailing list][mailing list] and we'll do our best to help you out.
 
@@ -94,15 +94,15 @@ Watch [this blog](/blog), the [mailing list][] and the [gfrprinter twitter accou
 We'd love to hear from you. Sign up to the [mailing list], or [follow the printer project on Twitter][twitter] to ask us any other questions, or discuss your ideas for printing with other people.
 
 
-[making]: https://github.com/freerange/printer/wiki/Making-your-own-printer
-[content services]: https://github.com/freerange/printer/wiki/Building-content-services
+[making]: https://github.com/exciting-io/printer/wiki/Making-your-own-printer
+[content services]: https://github.com/exciting-io/printer/wiki/Building-content-services
 [Raspberry PI]: http://www.raspberrypi.org/
 [twitter]: http://twitter.com/gfrprinter
-[components]: https://github.com/freerange/printer/wiki/Component-list
-[printer-type]: https://github.com/freerange/printer/blob/master/printer.ino#L23
+[components]: https://github.com/exciting-io/printer/wiki/Component-list
+[printer-type]: https://github.com/exciting-io/printer/blob/master/printer.ino#L23
 [adafruit printer]: https://www.adafruit.com/products/717
-[printer]: http://gofreerange.com/printer
-[issues]: https://github.com/freerange/printer/issues
+[printer]: http://exciting.io/printer
+[issues]: https://github.com/exciting-io/printer/issues
 [mailing list]: http://groups.google.com/group/gfr-printer
 [LP]: http://bergcloud.com/littleprinter
-[FAQ]: https://github.com/freerange/printer/wiki/Frequently-Asked-Questions
+[FAQ]: https://github.com/exciting-io/printer/wiki/Frequently-Asked-Questions
