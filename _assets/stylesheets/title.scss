@@ -1,19 +1,27 @@
+// Proportional sizing & structure
+.title {
+  width: 3em;
+  height: 1em;
+  @include rotate(-4deg);
+
+  h1 {
+    @include rotate(4deg);
+    font-size: 58%;
+    line-height: 2em;
+  }
+}
+
+
+// Colours, etc
 .title {
   background-color: $black;
-  @include rotate(-4deg);
   text-align: center;
   color: white;
-  // undo bootstrap column padding
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 
   a {
-    // re-add bootstrap column padding.
-    padding-left: $grid-gutter-width / 2;
-    padding-right: $grid-gutter-width / 2;
     background-color: $black;
     transition: background-color 0.25s;
-    display: inline-block;
+    display: block;
     width: 100%;
     color: white;
 
@@ -23,11 +31,10 @@
     }
   }
 
-  h1, span.text {
+  h1 {
     @include font-heading;
     color: white;
     margin: 0;
-    @include rotate(4deg);
 
     // kerning fix with lettering.js
     .char2 {
@@ -38,13 +45,4 @@
       margin-right: -0.05em;
     }
   }
-}
-
-span.title,
-span.title span.text {
-  display: inline-block;
-}
-
-span.title {
-  padding: ($font-size-base / 4) ($font-size-base / 2);
 }

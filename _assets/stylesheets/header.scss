@@ -3,10 +3,7 @@ header {
     @include make-row();
 
     .title {
-      @include make-xs-column(5);
-      @include make-sm-column(4);
-      @include make-md-column(2);
-      @include make-lg-column(2);
+      float: left;
     }
 
     .navigation {
@@ -27,33 +24,24 @@ header {
 
     .title {
       float: none;
-      width: $font-size-base * 14.5;
       margin: auto auto $line-height-computed auto;
 
-      h1 {
-        font-size: $font-size-base * 2.75;
-        line-height: $line-height-computed * 4;
-      }
+      font-size: $font-size-base * 5;
     }
 
     @media (min-width: $screen-xs) {
       .title {
+        font-size: $font-size-base * 2.5;
         float: left;
-        width: $font-size-base * 8;
         margin-left: $grid-gutter-width / 2;
         margin-right: $grid-gutter-width / 2;
         margin-bottom: $line-height-computed / 2;
-
-        h1 {
-          font-size: $font-size-base * 1.25;
-          line-height: $line-height-computed * 2;
-        }
       }
     }
 
     @media (min-width: $screen-sm) {
       .title {
-        margin-left: -($grid-gutter-width / 3);
+        margin-left: 0;
       }
     }
 
