@@ -25,7 +25,7 @@
           font-size: $font-size-base * 1.6;
         }
 
-        .date {
+        .date, .comments {
           @include font-body-italic;
           font-size: $font-size-small;
           line-height: $font-size-small;

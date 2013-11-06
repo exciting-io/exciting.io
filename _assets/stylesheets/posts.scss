@@ -1,6 +1,6 @@
 .post {
 
-  article {
+  article, section {
     @include make-sm-column(10);
     @include make-md-column(8);
     @include make-lg-column(7);
