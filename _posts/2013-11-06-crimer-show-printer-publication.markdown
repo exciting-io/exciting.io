@@ -7,7 +7,9 @@ tags:   printer
 
 We've been exploring the possibilities of small, connected printers for a while now -- not only how to build them, via our [Printer](/printer) platform and dabbling with BERG's [Little Printer](http://bergcloud.com/littleprinter), but more importantly _how best to employ them_.
 
-Is there a balance between utility and whimsy where this new medium shines? We think so, and we think we have a good example to share with you.
+Is there a balance between utility and whimsy where this new medium shines? We think so, and we think we have a good example &hellip; (puts on sunglasses) &hellip; to share with you.
+
+![Put on your sunglasses too](/images/crimershow-glasses.jpg)
 
 <!-- more -->
 
@@ -45,9 +47,11 @@ And so we present: __[The Crimer Show Printer Publication](http://remote.bergclo
 
 You can [subscribe using BERGCloud remote here](http://remote.bergcloud.com/publications/342). Every weekday you will be treated to the next three parts of _Crimer Show_, starting from the very beginning.
 
-We think it's the perfect way to enjoy catching up with the world of _Crimer_, alongside whatever other information you happen to be printing.
+We think it's the perfect way to enjoy catching up with the world of _Crimer_, alongside whatever other information you happen to be printing. You can see it sitting very comfortably in a normal daily printout:
 
-But what do you think? Let us know in the comments below, on [twitter](https://twitter.com/exciting_io) or by emailing [hello@exciting.io](mailto:hello@exciting.io)
+[![Crimer Show in a daily printout](/images/crimershow-publication-live.jpg)](http://remote.bergcloud.com/publications/342)
+
+But what do you think? Maybe you're still unconvinced by little printers? We don't necessarily think you're wrong, but let us know in the comments below, on [twitter](https://twitter.com/exciting_io) or by emailing [hello@exciting.io](mailto:hello@exciting.io)
 
 [^horse-ebooks]: There's [some context here](http://en.wikipedia.org/wiki/Horse_ebooks) about the origins and ultimate demise of the account.
 [^markov]: Some [background](http://infovore.org/archives/2012/01/17/markov-chocolates-a-new-diversion/) about Tom's exploration of Markov chains.
