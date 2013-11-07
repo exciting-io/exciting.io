@@ -15,9 +15,9 @@ Is there a balance between utility and whimsy where this new medium shines? We t
 
 Just as the then-new medium of broadcast radio gave birth to unique forms of storytelling, like live episodic dramas, there's a new form of story developing on one of the new mediums of this generation -- Twitter. The blend of anonymity, parody and the constraints of Twitter (like limited tweet length) are becoming sufficiently familar that the internet is now starting to create and experiment _on top_ of that platform, knowing, exploring and exploiting its particular strengths and weaknesses.
 
-Accounts like [horse_ebooks](https://twitter.com/Horse_ebooks)[^horse-ebooks] are a fairly extreme example of this experimentation, as are the likes of [Markov Chocolate](https://twitter.com/MarkovChocolate)[^markov] and the anthropomorphised [Tower Bridge (Itself)](https://twitter.com/twrbrdg_itself)[^tower-bridge], both by friend of Exciting [Tom Armitage](http://tomarmitage.com).
+Accounts like [horse_ebooks](https://twitter.com/Horse_ebooks)[^horse-ebooks] are a fairly extreme example of this experimentation, as are the likes of [Markov Chocolate](https://twitter.com/MarkovChocolate)[^markov] and the anthropomorphised [Tower Bridge (Itself)](https://twitter.com/twrbrdg_itself)[^tower-bridge], both by friend of _Exciting_ [Tom Armitage](http://tomarmitage.com).
 
-But lets focus on the part of the spectrum that more closely resembles "normal" fiction. Here's Andrew Fitzgerald giving a great overview:
+But lets focus on the part of the spectrum that more closely resembles "normal" fiction -- in other words, where there's definitely an author with intent. Here's Andrew Fitzgerald giving a great overview:
 
 <iframe src="http://embed.ted.com/talks/andrew_fitzgerald_adventures_in_twitter_fiction.html" width="560" height="315" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
