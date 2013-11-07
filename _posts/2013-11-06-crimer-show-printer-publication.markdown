@@ -31,7 +31,7 @@ One of our favourite examples of this new kind of fiction is _[Crimer Show](http
 
 > __CRIMER:__ Imhave do my last crimeing. Nomore crimes from Me ! __DETETCIVE:__ Thats Goodnews! __CRIMER:__ (turns to camera) Im defnitley do more crimes
 
-It's the familiar gritty policy world wherein the _Detetcive_ (sic) has a drinking problem and the _Mayoore_ (sic) is a drug addict, but the substances abused aren't vodka and crack, but "melk" and "jeleybeens" (sic sic) respectively.
+It's the familiar gritty policy world wherein the _Detetcive_ (sic) has a drinking problem and the _Mayoore_ (sic) is a drug addict, but the substances abused aren't vodka and crack, but "melk" and "jeleybeens" (sic, sic) respectively.
 
 ### Catching up
 
