@@ -7,7 +7,7 @@ tags:   printer
 
 We've been exploring the possibilities of small, connected printers for a while now -- not only how to build them, via our [Printer](/printer) platform and dabbling with BERG's [Little Printer](http://bergcloud.com/littleprinter), but more importantly _how best to employ them_.
 
-Is there a balance utility and whimsy where this new medium shines? We think so, and we think we have a good example to share with you.
+Is there a balance between utility and whimsy where this new medium shines? We think so, and we think we have a good example to share with you.
 
 <!-- more -->
 
