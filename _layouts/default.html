@@ -69,14 +69,12 @@
       }(document, "script", "twitter-wjs"));
 
       function trackTwitterFollow(intent_event) {
-        if (!intentEvent) return;
+        if (!intent_event) return;
         var opt_pagePath;
         if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
           opt_pagePath = extractParamFromUri(intent_event.target.src, 'url');
         }
-        console.log('sending follow');
-        ga('send', 'social', 'twitter', 'follow', opt_pagePath, {'hitCallback': function() { console.log('sent')} });
-        console.log('done');
+        ga('send', 'social', 'twitter', 'follow', opt_pagePath);
       }
 
       twttr.ready(function (twttr) {
