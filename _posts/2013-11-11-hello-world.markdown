@@ -1,21 +1,15 @@
 ---
 layout: post
 title:  Hello, World
-date:   2013-10-21 15:18:52
+date:   2013-11-11 15:18:52
 tags: company
 ---
 
-Hello, in fact, just to __you__ specifically. Thanks for looking in.
-
-Welcome to _Exciting_.
-
-<!-- more -->
-
-(In your mind, you are hearing the computer startup chime.)
-
-<iframe src="//player.vimeo.com/video/78566487" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+Hello, in fact, just to __you__ specifically. Thanks for looking in. Welcome to _[Exciting](/)_.
 
 This is a new company, with a new focus on exploring how to use simple software systems to make the world a little bit better. We are curious; we like to prototype things, often without knowing for certain whether or not they are going to work. [Printer](/printer) is a great example of that. Not knowing for certain that something is going to work is part of the fun, and fosters serendipity.
+
+<!-- more -->
 
 Some of the projects that are now under the _Exciting_ banner, you may already be familiar with: [Harmonia](https://harmonia.io), [Printer](http://printer.exciting.io), [HeyLi.st](http://heyli.st), and maybe a few others. Some of the notable blog posts about them have also come along for the ride.
 
