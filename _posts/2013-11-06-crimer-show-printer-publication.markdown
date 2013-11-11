@@ -29,7 +29,7 @@ He puts it better than I did:
 
 ### Crimer
 
-One of our favourite examples of this new kind of fiction is _[Crimer Show](http://twitter.com/CrimerShow)_, by [Astonishing Sod](http://twitter.com/astonishingsod). Ostensibly an absurdist take on the inexhaustible supply of police procedural dramas, but using the same alternate-universe spelling and grammar of [Frients](http://twitter.com/frients_show), _Crimer Show_ gradually builds its own world using [clichés from CSI](http://www.youtube.com/watch?v=mznsEcZlM2I) -- (puts on sunglasses) -- and [the like](http://tvtropes.org/pmwiki/pmwiki.php/Literature/CrimerShow?from=Main.CrimerShow):
+One of our favourite examples of this new kind of fiction is _[Crimer Show](http://twitter.com/CrimerShow)_, by [Astonishing Sod](http://twitter.com/astonishingsod). Ostensibly an absurdist take on the inexhaustible supply of police procedural dramas, but using the same alternate-universe spelling and grammar of [Freints](http://twitter.com/freints_show), _Crimer Show_ gradually builds its own world using [clichés from CSI](http://www.youtube.com/watch?v=mznsEcZlM2I) -- (puts on sunglasses) -- and [the like](http://tvtropes.org/pmwiki/pmwiki.php/Literature/CrimerShow?from=Main.CrimerShow):
 
 > __CRIMER:__ Imhave do my last crimeing. Nomore crimes from Me ! __DETETCIVE:__ Thats Goodnews! __CRIMER:__ (turns to camera) Im defnitley do more crimes
 
