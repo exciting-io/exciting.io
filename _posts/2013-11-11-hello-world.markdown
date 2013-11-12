@@ -13,7 +13,7 @@ This is a new company, with a new focus on exploring how to use simple software 
 
 Some of the projects that are now under the _Exciting_ banner, you may already be familiar with: [Harmonia](https://harmonia.io), [Printer](http://printer.exciting.io), [HeyLi.st](http://heyli.st), and maybe a few others. Some of the notable blog posts about them have also come along for the ride.
 
-[Go Free Range](http://gofreerange.com) was kind enough to foster these ideas in their infancy, but the time has come to give them a bit more space to grow in new ways. We are really exciting to start developing them in exciting new directions. I'll say a bit more about that in the near future on the [GFR Blog](http://gofreerange.com/blog).
+[Go Free Range](http://gofreerange.com) was kind enough to foster these ideas in their infancy, but the time has come to give them a bit more space to grow in new ways. We are really exciting to start developing them in exciting new directions. <strike>I'll say a bit more about that in the near future on the GFR Blog</strike> I've written a bit more about this on [the GFR blog](http://gofreerange.com/some-exciting-news).
 
 But it's not just about those projects; there will be (hopefully) many new things here as we get back up to the speed. If there's one thing that _Exciting_ is about, it's __momentum__.
 
