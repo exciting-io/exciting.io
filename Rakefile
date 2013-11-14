@@ -1,3 +1,5 @@
+task :default => :build
+
 task :build do
   system("jekyll build")
 end
