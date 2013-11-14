@@ -12,7 +12,11 @@ However, what particularly resonated with us was this part of his [post about th
 
 > Not least, I’ve been reminded how much longer it takes to make something with as few rough edges as possible and that has code suitable for other people to use &hellip; even though I had something quite similar up and running very early on in that process.
 
-This has been one of the most important lessons we've learned while making. [Printer][] is a good example of an project where -- despite technologically taking users 95% of the way towards everything they need to start printing things, with almost all of the architecture and implementation already available -- that last 5% is still enough of a rough edge to make it almost prohibitively hard for most people to build something for themselves on top of what we made.
+This has been one of the most important lessons we've learned while making.
+
+<!-- more -->
+
+[Printer][] is a good example of a project where -- despite technologically taking users 95% of the way towards everything they need to start printing things, with almost all of the architecture and implementation already available -- that last 5% is still enough of a rough edge to make it almost prohibitively hard for most people to build something for themselves on top of what we made.
 
 Many of the people who actually *did* build something using [Printer][] re-purposed the demonstration applications (like [Printer Mail][]) rather than making their own HTML content.
 
