@@ -10,7 +10,7 @@ layout: none
     <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:10 %}
       <item>
-        <title>{{ post.title }}</title>
+        <title>{{ post.title | encode_entities }}</title>
         <description>
           {{ post | longer_excerpt | markdownify | relative_urls_to_absolute | xml_escape }}
 
