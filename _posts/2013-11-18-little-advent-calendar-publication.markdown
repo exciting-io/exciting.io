@@ -17,6 +17,6 @@ Making this publication has had us thinking more about the opportunities for the
 
 Anyone who subscribes to this (or indeed any) publication cannot know for certain what might pop out of their printer from one day to the next. Once subscribed, the power to control what any subscriber receives is entirely in the hands of the publisher.
 
-Using our advent calendar as an example, the first print may be what the subscriver expects (a simple advent calendar entry), but the next might be something _completely different_ and completely unexpected.
+Using our advent calendar as an example, the first print may be what the subscriber expects (a simple advent calendar entry), but the next might be something _completely different_ and completely unexpected.
 
 Can we take advantage of this potential source of mystery and delight without it becoming confusing? We've got some ideas...
