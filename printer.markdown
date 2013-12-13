@@ -24,7 +24,7 @@ The best background is [the introductory blog post][blogpost]. In a nutshell, it
 * produce [customised content](https://github.com/exciting-io/printer/wiki/Building-content-services) for them, and
 * [share that content](https://github.com/exciting-io/printer/wiki/Architecture) with other people who also have small internet-connected printers.
 
-Read more about it in [the introductory blog post][blogpost], in [the wiki](github-wiki) or go [straight to the source][printer-github].
+Read more about it in [the introductory blog post][blogpost], in [the wiki][github-wiki] or go [straight to the source][printer-github].
 
 You can also get news and updates from [@gfrprinter][twitter] and [the mailing list][mailing-list].
 
@@ -35,3 +35,4 @@ You can also get news and updates from [@gfrprinter][twitter] and [the mailing l
 [twitter]: http://twitter.com/gfrprinter
 [blogpost]: {% post_url 2012-04-12-hello-printer %}
 [mailing-list]: https://groups.google.com/forum/#!forum/gfr-printer
+[github-wiki]: https://github.com/exciting-io/printer/wiki
