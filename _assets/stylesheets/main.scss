@@ -1,6 +1,7 @@
 $font-size-base: 20px;
 
 @import 'bootstrap';
+@import '_mixins.scss';
 @import 'colours';
 @import 'typography';
 @import 'title';
@@ -10,6 +11,7 @@ $font-size-base: 20px;
 @import 'projects';
 @import 'home';
 @import 'blog';
+@import 'wide';
 
 body {
   @include font-body;
@@ -97,22 +99,6 @@ section {
   }
 
   @media (min-width: $screen-xs) {
-    margin-bottom: 0;
-  }
-}
-
-.strapline-row {
-  @include make-row();
-
-  .strapline {
-    @include make-md-column(10);
-    @include make-lg-column(8);
-  }
-
-  .strapline {
-    @include font-body-italic;
-    color: $gray;
-    opacity: 0.7;
     margin-bottom: 0;
   }
 }

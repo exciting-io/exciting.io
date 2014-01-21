@@ -1,0 +1,168 @@
+body.wide {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  .outer-container {
+    height: 100%;
+    padding-bottom: 0;
+  }
+
+  footer {
+    display: block;
+    position: relative;
+    margin-top: 2em;
+  }
+
+  header {
+    width: 100%;
+    height: 85%;
+    position: relative;
+    background-image: url(/images/backgrounds/millenium-bridge.jpg);
+    background-repeat: no-repeat;
+    @media (max-width: ($screen-sm - 1)) {
+      background-size: auto $screen-sm;
+    }
+    @media (min-width: $screen-md) {
+      background-position: 50% 100%;
+    }
+    background-attachment: fixed;
+    background-size: cover;
+
+    nav {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      margin-left: 0;
+      margin-right: 0;
+
+      .title {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        margin-top: -0.7em;
+        margin-left: -1.5em !important;
+
+        @media (min-height: 500px) {
+          top: 50%;
+        }
+
+        font-size: $font-size-base * 4;
+
+        @media (min-width: $screen-xs) and (min-height: 500px) {
+          font-size: $font-size-base * 8;
+        }
+
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.3em;
+        background-color: transparent;
+
+        a {
+          background-color: rgba(0, 0, 0, 0.8);
+
+          &:hover {
+            background-color: $link-hover-colour;
+          }
+        }
+      }
+
+      .subtitle {
+        position: absolute;
+        bottom: 3em;
+        padding: 0 1em;
+        @media (min-width: $screen-xs) {
+          bottom: 4em;
+        }
+        z-index: 100;
+        width: 100%;
+        text-align: center;
+        text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+        font-weight: bold;
+      }
+    }
+
+    ul.navigation {
+      margin: 0 auto;
+      float: none;
+      position: absolute;
+      bottom: 0;
+      padding: ($line-height-computed * 2) 0 $line-height-computed 0;
+      width: 100%;
+      text-shadow: 0px 0px 10px 10px rgba(0,0,0,0.8);
+      font-weight: bold;
+      background-image: url(/images/blur.png);
+
+      li {
+        float: none;
+        display: inline-block;
+        padding-right: $grid-gutter-width;
+        &:last-child {
+          padding-right: 0;
+        }
+
+        a {
+          border-bottom: 1px solid white;
+          color: white;
+
+          &:hover {
+            background-color: $link-hover-colour;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  #home {
+    margin-top: $line-height-computed;
+  }
+
+  header.bokeh {
+    background-image: url(/images/backgrounds/bokeh.jpg)
+  }
+  header.bricks {
+    background-image: url(/images/backgrounds/bricks.jpg);
+  }
+  header.bridge-at-night {
+    background-image: url(/images/backgrounds/bridge-at-night.jpg);
+  }
+  header.bridge-from-below {
+    background-image: url(/images/backgrounds/bridge-from-below.jpg);
+  }
+  header.buildings {
+    background-image: url(/images/backgrounds/buildings.jpg);
+  }
+  header.doors {
+    background-image: url(/images/backgrounds/doors.jpg);
+  }
+  header.forest {
+    background-image: url(/images/backgrounds/forest.jpg);
+  }
+  header.hiker {
+    background-image: url(/images/backgrounds/hiker.jpg);
+  }
+  header.millenium-bridge {
+    background-image: url(/images/backgrounds/millenium-bridge.jpg);
+  }
+  header.mist {
+    background-image: url(/images/backgrounds/mist.jpg);
+  }
+  header.mountains {
+    background-image: url(/images/backgrounds/mountains.jpg);
+  }
+  header.phones-and-coffee {
+    background-image: url(/images/backgrounds/phones-and-coffee.jpg);
+  }
+  header.rail-bridge {
+    background-image: url(/images/backgrounds/rail-bridge.jpg);
+  }
+  header.shoes-in-field {
+    background-image: url(/images/backgrounds/shoes-in-field.jpg);
+  }
+  header.window-raindrops {
+    background-image: url(/images/backgrounds/window-raindrops.jpg);
+  }
+}
