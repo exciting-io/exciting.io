@@ -21,6 +21,6 @@ $(function() {
       'shoes-in-field',
       'window-raindrops'];
       var selected_background = backgrounds[Math.round(Math.random()*backgrounds.length)];
-      $("body.wide header").attr('class', selected_background);
+      // $("body.wide header").attr('class', selected_background);
   })();
 })

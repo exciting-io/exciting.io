@@ -8,7 +8,7 @@ categories:
   - printer
 links: |
   * <a href="https://twitter.com/intent/user?screen_name=gfrprinter" class="twitter"><span>@gfrprinter</span></a>
-  * [Mailing list](https://groups.google.com/group)
+  * [Mailing list](https://groups.google.com/group/gfr-printer)
   * [Backend server](http://printer.exciting.io)
   * [Source code](https://github.com/exciting-io/printer)
   * [Documentation](https://github.com/exciting-io/printer/wiki)
