@@ -1,7 +1,7 @@
 ---
 layout: project
 name: Harmonia
-title: Harmonia &mdash; stronger teams through shared responsibilities and automatically task assignment
+title: Harmonia &mdash; Manage less. Achieve more. Task management for modern, self-organising teams
 banner_image_url: /images/harmonia/screenshot.jpg
 categories:
   - project
@@ -12,7 +12,9 @@ links: |
   * <a href="https://twitter.com/intent/user?screen_name=harmonia" class="twitter"><span>@harmonia</span></a>
 ---
 
-## Stronger teams through shared responsibilities.
+## Manage less. Achieve More.
+
+### Task management for modern, self-organising teams
 
 Non-heirarchical team structures can produce teams with more motivation and higher morale. But without a traditional manager, how can you ensure that tasks are really getting done?
 
