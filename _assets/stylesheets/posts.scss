@@ -31,6 +31,10 @@
     @include img-responsive;
   }
 
+  img.img-shadow {
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  }
+
   .footnotes {
     margin-top: $line-height-computed;
     padding-top: $line-height-computed;
