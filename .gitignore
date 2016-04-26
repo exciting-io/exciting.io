@@ -1,4 +1,5 @@
 _site
 css
 .jekyll-assets-cache
+.asset-cache
 public

@@ -1,3 +1,5 @@
+__END__
+
 # Sitemap.xml Generator is a Jekyll plugin that generates a sitemap.xml file by
 # traversing all of the available posts and pages.
 #
@@ -138,6 +140,7 @@ module Jekyll
     # Returns last_modified_date of latest post
     def fill_posts(site, urlset)
       last_modified_date = nil
+      p posts: site.posts.docs.first.data
       site.posts.each do |post|
         if !excluded?(post.name)
           url = fill_url(site, post)

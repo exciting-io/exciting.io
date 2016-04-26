@@ -2,9 +2,13 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'kramdown'
-# gem 'bootstrap-sass', git: 'https://github.com/thomas-mcdonald/bootstrap-sass.git', branch: '3'
 gem 'sass'
-gem 'jekyll-assets'
 gem 'uglifier'
 gem 'rake'
 gem 'htmlentities'
+
+group :jekyll_plugins do
+  gem 'jekyll-assets'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-feed'
+end

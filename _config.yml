@@ -2,14 +2,18 @@ name: Exciting
 domain_name: Exciting.io
 url: http://exciting.io
 markdown: kramdown
-pygments: true
+highlighter: pygments
 permalink: pretty
 exclude:
   - Gemfile
   - Gemfile.lock
   - public
+  - feed.xml
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
+  - jekyll-feed
 assets:
-  cache: true
   js_compressor:  uglifier
   css_compressor: sass
   sources:
