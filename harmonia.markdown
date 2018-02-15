@@ -1,6 +1,6 @@
 ---
 layout: project
-name: Harmonia
+project_name: Harmonia
 title: Harmonia &mdash; Manage less. Achieve more. Task management for modern, self-organising teams
 banner_image_url: /images/harmonia/screenshot.jpg
 categories:

@@ -1,6 +1,6 @@
 ---
 layout: project
-name: Printer
+project_name: Printer
 title: Printer &mdash; an open source kit for exploring the possibilities of internet-of-things-printing
 banner_image_url: /images/printer/printer-and-board.jpg
 categories:

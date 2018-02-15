@@ -11,7 +11,7 @@ title: Projects
       {% for project in site.pages %}
         {% if project.categories contains 'project' %}
           <li class="banner" style="background-image: url('{{ project.banner_image_url }}');" >
-            <div class="container"><h2><a href="{{ project.url }}">{{ project.name }}</a></h2></div>
+            <div class="container"><h2><a href="{{ project.url }}">{{ project.project_name }}</a></h2></div>
           </li>
         {% endif %}
       {% endfor %}
