@@ -1,9 +1,7 @@
-module Jekyll
-  class JekyllFeed < Jekyll::Generator
-    private
+class JekyllFeed::Generator < Jekyll::Generator
+  private
 
-    def source_path
-      File.expand_path "../_layouts/feed.xml", File.dirname(__FILE__)
-    end
+  def feed_source_path
+    File.expand_path "../_layouts/feed.xml", File.dirname(__FILE__)
   end
 end
