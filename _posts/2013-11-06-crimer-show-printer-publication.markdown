@@ -51,7 +51,7 @@ We think it's the perfect way to enjoy catching up with the world of _Crimer_, a
 
 [![Crimer Show in a daily printout](/images/crimershow-publication-live.jpg)](http://remote.bergcloud.com/publications/342)
 
-But what do you think? Maybe you're still unconvinced by little printers? You could be right. Let us know in the comments below, on [twitter](https://twitter.com/exciting_io) or by emailing [hello@exciting.io](mailto:hello@exciting.io).
+But what do you think? Maybe you're still unconvinced by little printers? You could be right. Let us know in the comments below, on [twitter](https://twitter.com/exciting) or by emailing [hello@exciting.io](mailto:hello@exciting.io).
 
 [^horse-ebooks]: There's [some context here](http://en.wikipedia.org/wiki/Horse_ebooks) about the origins and ultimate demise of the account.
 [^markov]: Some [background](http://infovore.org/archives/2012/01/17/markov-chocolates-a-new-diversion/) about Tom's exploration of Markov chains.
