@@ -19,4 +19,4 @@ But it's not just about those projects; there will be (hopefully) many new thing
 
 Speaking of which, we better get started. [Here's a freshly baked bit of software]({% post_url 2013-11-06-crimer-show-printer-publication %}) for you already!
 
-If you'd like to hear about what we get up to, why not [follow us on Twitter](https://twitter.com/intent/user?screen_name=exciting) or join our mailing list (see below) -- we'll try our very best to make it worth your while.
+If you'd like to hear about what we get up to, why not [follow us on Twitter](https://twitter.com/intent/user?screen_name=exciting_io) or join our mailing list (see below) -- we'll try our very best to make it worth your while.
