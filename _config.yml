@@ -20,6 +20,7 @@ assets:
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
+    - _assets/fonts
     - _assets/vendors/bootstrap-sass/stylesheets
     - _assets/vendors/bootstrap-sass/javascripts
     - _assets/vendors/bootstrap-sass/fonts
