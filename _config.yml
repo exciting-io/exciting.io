@@ -9,7 +9,7 @@ exclude:
   - Gemfile.lock
   - public
   - feed.xml
-gems:
+plugins:
   - jekyll-assets
   - jekyll-sitemap
   - jekyll-feed
