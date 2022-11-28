@@ -252,9 +252,9 @@ The [main project page is here](/printer). We are running [a backend server](htt
 
 You can run your own copies of [the software](http://github.com/exciting-io/printer) if you wish; doing so will not isolate you from the "cloud" of software build by other people. As long as [backend servers and content services have publicly-accessible URLs](https://github.com/exciting-io/printer/wiki/Architecture), there's nothing preventing other people using any available service to generate content for their own printers.
 
-I've written some extremely trivial (both in scope and implementation) content services for [sending messages](http://printer-mail.herokuapp.com) ([source code](http://github.com/exciting-io/printer-mail), see picture above) and [sending drawings](http://printer-paint.herokuapp.com) ([source code](http://github.com/exciting-io/printer-paint), see picture below).
+I've written some extremely trivial (both in scope and implementation) content services for [sending messages](http://mail.printer.exciting.io) ([source code](http://github.com/exciting-io/printer-mail), see picture above) and [sending drawings](http://paint.printer.exciting.io) ([source code](http://github.com/exciting-io/printer-paint), see picture below).
 
-I've also written a very simple example of an automated content publisher, which "delivers" [a weather forecast](http://printer-weather.herokuapp.com) to a printer at a fixed time.
+I've also written a very simple example of an automated content publisher, which "delivers" [a weather forecast](http://weather.printer.exciting.io) to a printer at a fixed time.
 
 (None of these applications are really more than demonstrations to clarify how I imagine things could fit together.)
 
@@ -320,7 +320,7 @@ I am _sure_ you have better ideas for how to use an internet-enabled small print
 * [More details](/printer)
 * [The wiki](http://github.com/exciting-io/printer/wiki)
 * [Our backend server](http://printer.exciting.io)
-* [Send a message to our printer](http://printer-mail.herokuapp.com/send/exciting)
+* [Send a message to our printer](http://mail.printer.exciting.io/send/exciting)
 * [Source code](http://github.com/exciting-io/printer)
 
 

@@ -28,7 +28,7 @@ Read more about it in [the introductory blog post][blogpost], in [the wiki][gith
 
 You can also get news and updates from [@gfrprinter][twitter] and [the mailing list][mailing-list].
 
-[Send us a message](http://printer-mail.herokuapp.com/send/exciting) or [draw us a picture](http://printer-paint.herokuapp.com/send/exciting) and it will be printed in our office.
+[Send us a message](http://mail.printer.exciting.io/send/exciting) or [draw us a picture](http://paint.printer.exciting.io/send/exciting) and it will be printed in our office.
 
 
 [printer-github]: https://github.com/exciting-io/printer
