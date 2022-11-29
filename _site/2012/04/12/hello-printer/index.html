@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hello, Printer &mdash; Exciting.io</title>
+    <meta name="description" content="Exciting - a digital product development and prototyping studio. We build software and tinker in hardware. We explore the potential of simple systems.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="WGH_WmdfMdwIYOXa16GMPrnJaM8EzGmcI9OiyAkv5sU" />
+
+    <link rel="stylesheet" type="text/css" href="/assets/main-c96feab6fbd24213fe472f6b6536dd4c45825dbd2995d7d25ff9e1b7cd13b8cf.css">
+
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="outer-container">
+      <header class="container">
+        <nav>
+          <div class="title"><a href="/"><h1>Exciting</h1></a></div>
+          <ul class="navigation">
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/projects">Projects</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="post container">
+  <div class="row">
+    <article>
+      <h1>Hello, Printer</h1>
+      <p class="date">12 April 2012</p>
+      <div class="post">
+      <p>For over a year, I have been playing around with printing things out on a receipt printer. Recently, a few accidents of implementation gave more life to my tinkerings than I had originally intended.</p>
+
+<h3 id="update"><em>Update!</em></h3>
+
+<ul>
+  <li><a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer">Get started making your own printer</a></li>
+  <li><a href="https://github.com/exciting-io/printer/wiki">Explore more information about printer</a> and <a href="https://github.com/exciting-io/printer">get the source code</a></li>
+  <li>Follow <a href="http://twitter.com/gfrprinter">@gfrprinter</a> and <a href="http://groups.google.com/group/gfr-printer">join the community</a></li>
+</ul>
+
+<p><img src="/images/printer/14-breadboard.JPG" alt="Printer" /></p>
+
+<!-- more -->
+
+<p><strong>TL;DR</strong>: In a nutshell, I’ve accidentally built a software system that makes it easy for <strong>YOU</strong> to:</p>
+
+<ul>
+  <li><a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer">build your own small internet-connected printers</a>,</li>
+  <li><a href="https://github.com/exciting-io/printer/wiki/Building-content-services">produce customised content</a> for them, and</li>
+  <li><a href="https://github.com/exciting-io/printer/wiki/Architecture">share that content</a> with other people who also have small internet-connected printers.</li>
+</ul>
+
+<p>I’m ready to share, and I’d like you to get involved, and I will explain how <a href="#skip-to-the-end">at the bottom of this post</a>. But before that – if you can stand to wait – indulge me in some introspection.</p>
+
+<p>I am often asked <em>“why are you doing this printing stuff?”</em> or <em>“what is this all for?”</em>. These are good questions. I struggle to answer them. The truth is: <strong>I don’t really know why</strong>. I wish I could tell you. I can’t even really justify it. There may be no practical purpose for this.</p>
+
+<p>But: I have a hunch that there’s something interesting to be explored.</p>
+
+<p>If you’re really impatient, you can <a href="#skip-to-the-end">skip to the end</a> to find out what I’ve done, but first I wanted to explain how I got here from essentially <em>no-clue-what-I-was-trying-to-do</em>.</p>
+
+<p>It’s important to me that you understand that <strong>there was no grand plan</strong>. I didn’t have any sort of vision. The solution to each problem pointed in a fairly straightforward way to the solution of the next problem, and so the evolution of my original goal into the idea I’ll describe at the end is just one simple step after another.</p>
+
+<p>But the best way to understand is to simply <em>start from the start</em>. Really, I just wanted to <em>finish</em> something.</p>
+
+<h2 id="finishing-timmy">Finishing Timmy</h2>
+
+<p>A year ago, we used a receipt printer to print SMS messages using the <a href="https://api.hashblue.com">hashblue API</a> that we built for O2.</p>
+
+<p>I called it <a href="http://gofreerange.com/timmy">Timmy Printface</a>:</p>
+
+<p><img src="/images/timmy/timmy-behind-the-scenes.jpg" alt="Timmy" /></p>
+
+<p>When I made <a href="http://gofreerange.com/timmy">Timmy Printface</a>, it was designed in large part to market something a client asked us to build back at the client – to help them understand the value of what we had done.</p>
+
+<p><img src="/images/printer/0-timmy.jpg" alt="Timmy printing a text message" /></p>
+
+<p>But in terms of software, it was a <a href="http://en.wikipedia.org/wiki/Kludge">hack</a>.</p>
+
+<p>Later, <a href="http://enemyofchaos.wordpress.com/2011/06/21/hack-circus-for-interesting-11-thank-you/">I was asked to enhance Timmy</a> to do more – to print instagrams, and conduct a pseudo-dialogue via tweets. I dusted off the hack, bodged some more bits on, and nursed Timmy’s laptop brain for a day as it crashed and misbehaved and generally ran with all the reliability and ease that you might expect from a hacky, flaky piece of software.</p>
+
+<p><img src="/images/printer/2-timmy-instagram.JPG" alt="Timmy printing instagrams" /></p>
+
+<p>As someone in <a href="/">the business of producing software</a>, I don’t get a lot of satisfaction out of long-lived hacks. Our clients tend to prefer software that runs reliably, and so it’s not surprising that we tend to enjoy creating software that is robust and well-designed.</p>
+
+<p>Timmy was not robust. Or well designed.</p>
+
+<p><img src="/images/printer/1-timmy-error.JPG" alt="Timmy breaking" /></p>
+
+<p>Rather than letting the hack fester in the back of my mind, I decided to try and polish it into a simple, reliable tool that I could pick up and use later, should the occasion arise.</p>
+
+<p>There’s only one thing I wanted to <em>achieve</em>, and that was to “finish it”, whatever that actually meant. In doing so, by accident, I think I’ve stumbled upon something that’s interesting enough to share.</p>
+
+<h2 id="beyond-timmy">Beyond Timmy</h2>
+
+<p>Since Timmy, I decided it would be good to have my own printer to play with, rather than relying too much on the original (which was on loan from <a href="http://www.riglondon.com">RIG</a>-and-<a href="http://www.newspaperclub.com/">Newspaper Club</a>’s <a href="http://tomtaylor.co.uk/">Tom Taylor</a>).</p>
+
+<p>So I bought a couple on eBay.</p>
+
+<p>I didn’t want to spend too much money (not having that much of an idea of why I was doing this made me reluctant to throw much money at it), but it turns out that you get what you pay for.</p>
+
+<h3 id="im-not-great-with-electronics">I’m not great with electronics</h3>
+
+<p>The first didn’t come with a power supply, or paper, or the extremely proprietary cables required to communicate with it. I managed to hack a connection for a power supply on it, but my soldering skills were no match for the surface-mounted custom serial interface.</p>
+
+<p>The second had a much more amenable communication port, but also came without a power supply, and asked for 20 volts at 2 amps to be delivered to it via yet another impossible-to-source DIN plug. I made less progress with it than I did with the first printer; I came close to splicing an old laptop power supply directly onto its PCB, but I am at best an electronics amateur and I know that 20 volts and 2 amps is not a trivial amount of electricity.</p>
+
+<p>This wasn’t doing much to support my desire to “finish it”, and so I put it all in a cupboard for a few months.</p>
+
+<h2 id="a-simple-usable-thermal-printer">A simple, usable thermal printer</h2>
+
+<p>But then I stumbled onto this little device, which seemed easy to power (5V) and communicate with (three wires you can plug into any breadboard). Better still, a good chunk of the work to drive it from an <a href="http://arduino.cc">Arduino</a> had <a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library">already been done</a>.</p>
+
+<p>Within a few minutes of plugging everything together, I could get the printer to spit out characters with ease, and without a tangle of wires ultimately leading to a kludge-filled script on a computer.</p>
+
+<p><img src="/images/printer/3-adafruit-sample-printout.JPG" alt="The simple Adafruit printer demo" /></p>
+
+<h3 id="an-aside-on-thermal-printing">An aside on thermal printing</h3>
+
+<p>Receipt printers tend to have one very simple mode of printing, which is just text-based. That’s what you’ll see on most shop receipts, and that’s what <a href="http://gofreerange.com/timmy">Timmy</a> used. You can make the characters more bold, or inverse, or larger, but basically you’re telling the printer “print an ‘a’ on the paper” and it will do just that.</p>
+
+<p>Some printers will also let you print barcodes, which is obviously useful if you’re printing an actual receipt.</p>
+
+<p>Finally, printers often need to produce a logo of some kind, and so they offer a bitmap mode, where you can specify the exact image to be reproduced in glorious low-fidelity monochrome.</p>
+
+<h2 id="bringing-graphics-to-the-printer">Bringing graphics to the printer</h2>
+
+<p>I had already explored text-based printing with <a href="http://gofreerange.com/timmy">Timmy</a>, but to produce something that actually looks nice, you need to use bitmap output. The first thing I needed to do was extend the existing library to better support graphics printing.</p>
+
+<p><img src="/images/printer/4-simple-graphics.jpg" alt="Some simple graphics" /></p>
+
+<p>The printer expected the dots for printing to be encoded directly as an array of bits in memory, and so I wrote some tools to generate the corresponding C arrays <a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library/pull/3/commits/d5fdbf276cd1d67973231364a9d7704120bd36c9">from ASCII files</a>, and then <a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library/pull/3/commits/346206de3d1c86a833a59462146090976f4b2a05">from images directly</a>.</p>
+
+<p><img src="/images/printer/5-slightly-more-advanced-graphics.JPG" alt="Some slightly more advanced graphics" /></p>
+
+<p>The specific printer would only print up to 255 rows of dots, and so I needed to figure out how to <a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library/pull/3/commits/6010b56a01015d1674b8b12969a08f0b4706ee0c">split larger graphics up into chunks which could be sent to the printer sequentially</a>. Eventually, I was able to print graphics that were longer than 255 rows:</p>
+
+<p><img src="/images/printer/6-longer-graphics.jpg" alt="Graphics that were longer than 255 rows" /></p>
+
+<h3 id="out-of-memory">Out of memory</h3>
+
+<p>However, the Arduino only has a limited amount of flash memory (normally around 32k), which meant that the largest full-width image that could be compiled into the program was around 450 rows high. (That’s why the above image looks like it’s missing one half - I cropped it to fit in the Arduino’s memory.)</p>
+
+<p>That was a limitation that I wasn’t happy with. Obviously some external storage for the data would be required, and thankfully the <a href="http://arduino.cc/en/Main/ArduinoEthernetShield">Ardunio Ethernet shield</a> comes with a MicroSD reader built in. I added the ability to convert images into files containing the right bits for the printer, and wrote an Arduino library to print bitmaps using those files (and subsequently <a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library/pull/3/commits/82dacbdd6c3ea6a32fe123cb1ff17b6810a4c330">from any Stream object</a>).</p>
+
+<p><img src="/images/printer/7-full-graphics.JPG" alt="Full-width graphics of more than 255 pixel rows" /></p>
+
+<p>With this in place, I could now print any image that I generated on my computer, saved onto the SD card and put into the Arduino. Here’s the long test image I cobbled together in Fireworks to explore different font sizes and line weights:</p>
+
+<p><img src="/images/printer/8-graphics-test.jpg" alt="Full-width graphics. I drew this in Fireworks to get a feel for different line weights and font sizes" /></p>
+
+<h2 id="moving-data-more-easily">Moving data more easily</h2>
+
+<p>But that’s not really ideal for a simple, reusable tool – having to handle an SD card every time you want to print something is cumbersome at best. The fact that I’m already using the <em>Ethernet</em> shield clearly pointed towards the obvious thing to do: send the data over the network to the SD card, before printing the data from it as before.</p>
+
+<p>I spent most of February <a href="http://arduino.cc/forum/index.php/topic,95531.0.html">wrangling with the Arduino ethernet library and networks</a>. When I was tinkering at the office, the connection would often seem flaky and unreliable. Larger downloads (50-100k, or about 15cm of printing) would stall, or fail inexplicably.</p>
+
+<p>I became familiar with <a href="http://www.wireshark.org">Wireshark</a>, watching the low-level networking traffic between my computer and the hardware, and went through every permutation of network cable and socket it could be plugged into, every network device in the office (hub, switch, directly into the router), and every connection protocol possible (direct sockets, HTTP server on the Arduino, HTTP client on the Arduino).</p>
+
+<p>Eventually, after a lot of amateur effort and stubbornness, I managed to put a simple HTTP client on the Ardunio that would reliably download the data from my computer, save it onto the SD card, and then start printing.</p>
+
+<p>If the size of the data downloaded didn’t match the size indicated by the HTTP headers, then I would be alerted by a red LED that there was still something unreliable in the stack. Thankfully, I haven’t seen the red LED for some time now.</p>
+
+<h3 id="translating-the-problem">Translating the problem</h3>
+
+<p>Slowly but surely I was translating my goal towards the domain I knew best. From sending serial commands to the printer board, to programming bitmap arrays onto an Arduino via C++, I was now dealing with something far closer to my daily work: an HTTP interface.</p>
+
+<p><a href="http://sinatrarb.com">Sinatra</a> makes it simple to <a href="https://gist.github.com/2291071#file_1_hardcoded_simple_printer_server.rb">write a server</a> for the Arduino’s client to poll against. If the server sent an empty response, the printer would do nothing; in effect, it would “wait” for data to become available, and then print it without caring much about why.</p>
+
+<p>Now I just needed a nicer way to generate bitmaps for printing than my clumsy Fireworks efforts.</p>
+
+<h2 id="generating-images">Generating images</h2>
+
+<p>I was already using <a href="http://www.imagemagick.org/">ImageMagick</a> to translate images into the bitmap format for the printer, so I started to investigate using <a href="http://www.imagemagick.org/RMagick/doc/rvgtut.html">RVG</a> (which <a href="http://rmagick.rubyforge.org/">RMagick</a> provides) to generate graphics for printing.</p>
+
+<p><img src="/images/printer/9-rvg-logo-tests.jpg" alt="Go Free Range" /></p>
+
+<p>After a bit of trial and error, I had produced our company logo as a generated image; this could then be fed through the existing routines to convert it into bits, which the printer would then download as it was polling the server.</p>
+
+<p><img src="/images/printer/10-rvg-logo.JPG" alt="Go Free Range" /></p>
+
+<p>Next, I “drew” a sudoku grid and printed that:</p>
+
+<p><img src="/images/printer/11-sudoku.jpg" alt="Sudoku" /></p>
+
+<p>To make it all dynamic, I generated the RVG from within the ‘backend server’ that the printer was polling. However, if I wanted to change the image for printing, I would have to restart the server, so I <a href="https://gist.github.com/2291071#file_3_rvg_image_generator.rb">extracted that code</a>, and made the server <a href="https://gist.github.com/2291071#file_2_simple_queue_printer_server.rb">check on a “data queue” each time it was polled</a> by the printer. The script which generated the graphic then simply had to “push” its data onto the queue, after which it would be “popped” from the queue the next time the printer made a request.</p>
+
+<p><img src="/images/printer/12-sudoku.jpg" alt="Endless sudoku" /></p>
+
+<p>This was great, but RVG isn’t exactly easy to generate, or fun to write. Complex shapes had to be laid out in a painstakingly-precise way.</p>
+
+<p>But more importantly, it wasn’t very useful for printing text.</p>
+
+<h2 id="dynamic-content">Dynamic content</h2>
+
+<p>If I ever wanted to print something dynamic like, say, the day of the week, then there was no way to know if the changing length of that string would be too long for the printout. RVG didn’t know anything about ‘flowing text’, which is what causes long sentences to wrap to the next line when you’re typing a sentence in any text editor.</p>
+
+<p>What I needed was some way of producing an image that I knew could be constrained at the maximum width of the printer (384 dots or pixels), and would intelligently format the content within those constraints.</p>
+
+<h3 id="designing-in-the-browser">Designing in the browser</h3>
+
+<p>After a bit of pondering, the solution to both problems became obvious. I use some software every day that expects to take content and reformat it at whatever width I specify: <a href="http://www.webkit.org/">the web browser</a>. When you adjust the width of your browser window, unless the document has specifically directed otherwise the text will reflow and wrap so that it fits perfectly within the visible window.</p>
+
+<p><img src="/images/printer/13-web-based-design.JPG" alt="The first web-based printout" /></p>
+
+<p>Even better, it’s <em>far</em> simpler to design content in HTML, CSS and Javascript than it is in RVG, and these were tools I was already familiar with. All I needed was a way to turn a webpage into an image, which I could then pop into the existing stack.</p>
+
+<h3 id="teaching-the-computer-to-surf-the-web">Teaching the computer to surf the web</h3>
+
+<p>When doing client work that involves javascript, we often test it using a “headless browser”, which is roughly speaking a web browser that doesn’t actually display its windows on your computer. We’ve had a lot of success with <a href="http://phantomjs.org">PhantomJS</a>, and as it happens it is quite easy for it to load a webpage and <a href="http://code.google.com/p/phantomjs/wiki/QuickStart#Rendering">save what would be displayed as an image</a>.</p>
+
+<p>With a little bit of tweaking to fix the browser width at 384 pixels, and some <a href="http://printer.exciting.io/sample.html">helpful stylesheets to make prototyping content for printing at that size easier</a>, it all worked. All that was required to print something was an HTTP page which could be dispatched through the existing software and finally be printed.</p>
+
+<p>(At each step, the boundary of the system moved closer to something that I felt I could pick up later without having to hack it all together again. This was progress.)</p>
+
+<p><img src="/images/printer/15-canvas-icons.JPG" alt="Weather icons via Javascript and Canvas" /></p>
+
+<p>I added a simple HTML page to the backend server with some fake weather output using HTML5 canvas icons, and some twitter mentions marked up with HTML and CSS, and printed that about thirty times.</p>
+
+<p><img src="/images/printer/17-simple-publication.jpg" alt="A simple 'publication'" /></p>
+
+<h2 id="extracting-content-generation">Extracting content generation</h2>
+
+<p>I started to make the weather data “live” using the <a href="http://www.wunderground.com/weather/api/">Wunderground API</a>, but I was getting back into the <a href="http://en.wikipedia.org/wiki/Kludge">hackish</a> territory that I started this whole endeavour to avoid. Parsing JSON weather data wasn’t directly helping me to <em>finish</em> the printer.</p>
+
+<p>I realised that I could remove all of the “content” logic from the code, because the HTML I was turning into an image didn’t necessarily have to be served by the same software that was doing the printer processing.</p>
+
+<p>But this made me pause for thought. So… if there was another HTTP server that made a printer-suitable HTML page of weather data available at URL “<em>http://some-service</em>”, then I could post the URL of that page to the backend server, and as long as PhantomJS could load the content at “<em>http://some-service</em>” then it would happily process the page into an image and the data would end up at the printer exactly as before.</p>
+
+<p><em>Oh my</em>.</p>
+
+<h2 id="printers-and-content-distributed-and-federated">Printers and content: <a href="https://github.com/exciting-io/printer/wiki/Architecture">distributed and federated</a></h2>
+
+<p>I drew this on the whiteboard:</p>
+
+<p><img src="/images/printer/20-architecture.JPG" alt="Distributed, federated architecture for printers" /></p>
+
+<p>(You can see a <a href="https://github.com/exciting-io/printer/wiki/Architecture">much tidier and hopefully clearer architecture explanation on the wiki</a>.)</p>
+
+<p>In the last couple of weeks, it was reasonably easy to implement all of this:</p>
+
+<ul>
+  <li>Allow the posting of a URL to the ‘backend server’, which would trigger the conversion of the page at that URL</li>
+  <li>Allow posting of HTML content itself to the ‘backend server’, which would be rendered directly</li>
+  <li>Separating each of the parts of the rendering into its their own queues - turning the page into an image, turning the image into bits</li>
+  <li>Allowing some way to <em>preview</em> how some content might appear on the printer, by generating the page image and serving that from the ‘backend server’.</li>
+  <li>Extract the printer logic out of the Arduino, and back into the server, making it easier to support other printers (maybe you have one of <a href="http://microprinter.pbworks.com/">those CBM 231s</a>?)</li>
+</ul>
+
+<p>I also realised some of the implications of the architectural choices I’d made:</p>
+
+<ul>
+  <li>It would be possible to support <em>multiple printers</em> in the same backend server, by sending URLs for printing to a printer-specific endpoint (i.e. posting the URL to /printer/123)</li>
+  <li>Responsibility for content was completely delegated to service software that simply had to provide URLs</li>
+  <li>Data for printing could therefore come from multiple, completely independent services that didn’t need to know anything about each other, only the URLs to which they should post content.</li>
+</ul>
+
+<p>And then, most interestingly to me:</p>
+
+<ul>
+  <li>Because the content service might be responsible for posting their URLs to the backend print server, there’s no reason why there needs to be a single print server either. <em>You could all run your own</em>.</li>
+</ul>
+
+<p>If you and I both want weather forecasts to appear on our printers, but my printer was polling the backend at <em>http://server1</em>, and your printer was polling <em>http://server2</em>, then we just need the weather service to know that it should post the weather data for me to my server, and the weather data for you to your server. <strong>There’s no need for a central backend server if everything is dealing with URLs.</strong></p>
+
+<p>If you’d like to learn more about the architecture, <a href="https://github.com/exciting-io/printer/wiki/Architecture">take a look at the wiki</a>.</p>
+
+<p>And so that’s where we are now.</p>
+
+<h2 id="skip-to-the-end">What it is</h2>
+
+<p>As I mentioned at the top of this meandering prose, it’s a software system that makes it easy for <strong>YOU</strong> to:</p>
+
+<ul>
+  <li><a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer">build your own small internet-connected printers</a>,</li>
+  <li><a href="https://github.com/exciting-io/printer/wiki/Building-content-services">produce customised content</a> for them, and</li>
+  <li><a href="https://github.com/exciting-io/printer/wiki/Architecture">share that content</a> with other people who also have small internet-connected printers.</li>
+</ul>
+
+<p>The <a href="/printer">main project page is here</a>. We are running <a href="http://printer.exciting.io">a backend server</a>, which our office printer is connected to. If you do make a printer (<a href="#getting-a-printer">see below</a>), you’re more than welcome to use it rather than running your own.</p>
+
+<p><img src="/images/printer/21-simple-messages.jpg" alt="Simple messages send using a distributed architecure" /></p>
+
+<h3 id="the-software">The software</h3>
+
+<p><a href="http://github.com/exciting-io/printer">Here’s the code</a>; it’s open source and you can do what you like with it.</p>
+
+<p>You can run your own copies of <a href="http://github.com/exciting-io/printer">the software</a> if you wish; doing so will not isolate you from the “cloud” of software build by other people. As long as <a href="https://github.com/exciting-io/printer/wiki/Architecture">backend servers and content services have publicly-accessible URLs</a>, there’s nothing preventing other people using any available service to generate content for their own printers.</p>
+
+<p>I’ve written some extremely trivial (both in scope and implementation) content services for <a href="http://mail.printer.exciting.io">sending messages</a> (<a href="http://github.com/exciting-io/printer-mail">source code</a>, see picture above) and <a href="http://paint.printer.exciting.io">sending drawings</a> (<a href="http://github.com/exciting-io/printer-paint">source code</a>, see picture below).</p>
+
+<p>I’ve also written a very simple example of an automated content publisher, which “delivers” <a href="http://weather.printer.exciting.io">a weather forecast</a> to a printer at a fixed time.</p>
+
+<p>(None of these applications are really more than demonstrations to clarify how I imagine things could fit together.)</p>
+
+<p>If you take a quick look at their source, and the <a href="https://github.com/exciting-io/printer/wiki/API">Printer API</a>, then it should be quite clear how you can add your own printer (see below) to those services, or run your own copies of them, and – <strong>most importantly</strong> – write your <a href="https://github.com/exciting-io/printer/wiki/Building-content-services">own content services for the stuff <em>you</em> would like to print</a>. If it isn’t clear, <a href="http://groups.google.com/group/gfr-printer">please let me know</a>!</p>
+
+<p><img src="/images/printer/24-simple-drawings.JPG" alt="Simple pictures send using a distributed architecure" /></p>
+
+<h3 id="next-steps">Next steps</h3>
+
+<p>The backend software is still evolving; I have some pretty clear ideas about <a href="https://github.com/exciting-io/printer/issues">what needs to be improved and what I’d like to do next</a>, but I think it’s ready for other people to play with too.</p>
+
+<h2 id="getting-a-printer">Getting a printer</h2>
+
+<p>If you want to make a printer, I’ve written a reasonably detailed and picture-ful <a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer">step by step guide to building one and setting it up</a>.</p>
+
+<p>We are going to make a <a href="/printer#borrow">small number of printers available to loan</a> to people who have an idea they’d like to explore. We’d love to help, and everyone will benefit from the services and content you make.</p>
+
+<p><img src="/images/printer/18-maps.JPG" alt="Maps" /></p>
+
+<h2 id="why">Why?</h2>
+
+<p>As I said above, this is <em>all open source</em>; we’re not selling this as a commercial venture because we’re more interested in how a distributed, federated network of producers and consumers might work and evolve. It’s an experiment.</p>
+
+<p>This isn’t going to be interesting to most people, because they (quite rightly) value a polished and supported product, rather than a DIY exploratory tool.</p>
+
+<p>But if you <em>are</em> interested in collaboratively exploring what might be possible with “internet-of-things printing”, then I think this is a reasonable place for us to start together. I’m looking forward to what we might discover.</p>
+
+<h2 id="other-printers">Other printers</h2>
+
+<p>The thermal printer that I’ve used is the exact same one that Adafruit provide as part of their “<a href="http://wiki.ladyada.net/tutorials/products/iotp">IoT Printer Kit</a>”, which prints out tweets matching a given keyword as they are encountered.</p>
+
+<p>If you were willing to sacrifice the LEDs and print button, there’s no reason why you couldn’t use that kit with the printer backend software presented here.</p>
+
+<p>News International’s research lab have produced some alternative software (unfortunately now removed) for the Adafruit kit called the <a href="https://web.archive.org/web/20160617191333/http://newsinternational.github.io/iot-assistant/">IoT assistant</a> (<a href="https://github.com/jeanm4t/iot-assistant">extant fork here</a>), which is slightly more advanced in that it can print information from your google calendar and gmail accounts too. I believe they have plans to expand their software to support more than one printer per instance, but their architecture is more centralised (the content is generated by a single server) than that presented here.</p>
+
+<p>It’s also worth mentioning some “historical” printers of note. The printer that ran <a href="http://gofreerange.com/timmy">Timmy Printface</a> a year ago was used by <a href="http://tomtaylor.co.uk">Tom Taylor</a> in 2009 to <a href="http://tomtaylor.co.uk/projects/microprinter">print out daily memos</a>. His software is perhaps closer in architecture to what I’ve built (a printer polling from a queue). <a href="http://flipbit.co.uk/">Chris Wood</a> extended the software to <a href="http://flipbit.co.uk/microprinting.html">print tube information</a>.</p>
+
+<p>There’s even a <a href="http://microprinter.pbworks.com/">wiki</a> that has sprung up around the CBM 231 printers that people commonly used.</p>
+
+<p>What most clearly distinguishes this project from all of the printers above – <a href="http://gofreerange.com/timmy">Timmy</a> included – is the ease with which independent people can create <em>great-looking content</em> for these printers, and <em>share</em> that content with other interested people.</p>
+
+<p>Rather than being limited to text-based output, far richer designs can be easily constructed using standard web tools like HTML, CSS and Javascript. <em>And</em> you don’t need to care about the printing infrastructure – you can just focus on making the content as useful and interesting as possible.</p>
+
+<h3 id="little-printer">Little Printer</h3>
+
+<p>And, of course, there is the upcoming <a href="http://bergcloud.com/littleprinter">Little Printer</a> from <a href="http://berglondon.com">BERG</a>, available later this year.</p>
+
+<p>For what it’s worth, <em>I believe the two projects complement each other perfectly</em>. Little Printer is a commercial, polished and supported product, with a huge amount of attention to detail going in to both the hardware and the content that it produces.</p>
+
+<p><a href="/printer">This project</a> is open source, and well suited to collaboratively explore what might be interesting to print in a more undirected and open-ended way.</p>
+
+<h2 id="lets-explore">Let’s explore</h2>
+
+<p>If internet printing is an island, then Little Printer is like a lighthouse, signaling its presence.</p>
+
+<p>With the open source software and hardware outlined above, we now have some tools to collaboratively explore the many other coastlines and inland jungles of this new territory.</p>
+
+<p>I am <em>sure</em> you have better ideas for how to use an internet-enabled small printer than I do. I’m looking forward to exploring together.</p>
+
+<h2 id="more-information">More information</h2>
+
+<ul>
+  <li><a href="/printer">More details</a></li>
+  <li><a href="http://github.com/exciting-io/printer/wiki">The wiki</a></li>
+  <li><a href="http://printer.exciting.io">Our backend server</a></li>
+  <li><a href="http://mail.printer.exciting.io/send/exciting">Send a message to our printer</a></li>
+  <li><a href="http://github.com/exciting-io/printer">Source code</a></li>
+</ul>
+
+
+      </div>
+    </article>
+  </div>
+  <div class="row subscribe">
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="//exciting.us3.list-manage2.com/subscribe/post?u=6bb4c7c29d4cee15704e2a1a1&id=fb5276ed61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp form-inline" target="_blank" role="form" novalidate>
+      <div class="form-group">
+        <label for="mce-EMAIL">Get updates about this and other Exciting projects&hellip;</label>
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Your email address">
+      </div>
+      <input type="hidden" value="/2012/04/12/hello-printer/" name="SOURCE" id="mce-SOURCE">
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+      </form>
+    </div>
+    <!--End mc_embed_signup-->
+  </div>
+  <div class="row">
+    <section class="comments">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'exciting-io'; // required: replace example with your forum shortname
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </section>
+  </div>
+</main>
+
+
+      <footer>
+        <div class="container">
+          <p>&copy; 2020 <a href="/">Exciting</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+    <script src="/assets/main-0a8873d61841df05a097b21227840ebd15ffcf4bcc6ecdb01b1611c7940dd8c4.js" type="text/javascript"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-8045787-8', 'exciting.io');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script>
+      window.twttr = (function (d,s,id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+        js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+      }(document, "script", "twitter-wjs"));
+
+      function trackTwitterFollow(intent_event) {
+        if (!intent_event) return;
+        var opt_pagePath;
+        if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+          opt_pagePath = extractParamFromUri(intent_event.target.src, 'url');
+        }
+        ga('send', 'social', 'twitter', 'follow', opt_pagePath);
+      }
+
+      twttr.ready(function (twttr) {
+        twttr.events.bind('follow', trackTwitterFollow);
+      });
+    </script>
+  </body>
+</html>

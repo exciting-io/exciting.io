@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/lazyatom
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://exciting.io
+  * I am lazyatom (https://keybase.io/lazyatom) on keybase.
+  * I have a public key ASCOG_UOL8zKMaRY6y5aDr4GhoYGpWQcmPf-fvIwr20pPAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010106202cf7675986327196ddeb4aad5af1a349d35e9bcf29a3693f336be90208670a",
+      "host": "keybase.io",
+      "kid": "01208e1bf50e2fccca31a458eb2e5a0ebe06868606a5641c98f7fe7ef230af6d293c0a",
+      "uid": "6b8755d688a5e6a3293c0ab8d7405500",
+      "username": "lazyatom"
+    },
+    "merkle_root": {
+      "ctime": 1518780837,
+      "hash": "ce72254ea9cd9ae8e86b4352745572d21c87b1370af5207264a6ae060cd9ca329b453e78d8a962471d2ac51452c0eb085ad42501b6e4981b561186f13a2cfba3",
+      "hash_meta": "62596d1341311855e10c1b6f5f0ae45915e03716846117f7728557434447313f",
+      "seqno": 2111052
+    },
+    "service": {
+      "hostname": "exciting.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.40"
+  },
+  "ctime": 1518780842,
+  "expire_in": 504576000,
+  "prev": "06e340c87b6240da51dd1b055fd40ad0d1e9164c5ead1a2fc405c4cdabd037d8",
+  "seqno": 56,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgjhv1Di/MyjGkWOsuWg6+BoaGBqVkHJj3/n7yMK9tKTwKp3BheWxvYWTFA0R7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMDYyMDJjZjc2NzU5ODYzMjcxOTZkZGViNGFhZDVhZjFhMzQ5ZDM1ZTliY2YyOWEzNjkzZjMzNmJlOTAyMDg2NzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOGUxYmY1MGUyZmNjY2EzMWE0NThlYjJlNWEwZWJlMDY4Njg2MDZhNTY0MWM5OGY3ZmU3ZWYyMzBhZjZkMjkzYzBhIiwidWlkIjoiNmI4NzU1ZDY4OGE1ZTZhMzI5M2MwYWI4ZDc0MDU1MDAiLCJ1c2VybmFtZSI6ImxhenlhdG9tIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTE4NzgwODM3LCJoYXNoIjoiY2U3MjI1NGVhOWNkOWFlOGU4NmI0MzUyNzQ1NTcyZDIxYzg3YjEzNzBhZjUyMDcyNjRhNmFlMDYwY2Q5Y2EzMjliNDUzZTc4ZDhhOTYyNDcxZDJhYzUxNDUyYzBlYjA4NWFkNDI1MDFiNmU0OTgxYjU2MTE4NmYxM2EyY2ZiYTMiLCJoYXNoX21ldGEiOiI2MjU5NmQxMzQxMzExODU1ZTEwYzFiNmY1ZjBhZTQ1OTE1ZTAzNzE2ODQ2MTE3Zjc3Mjg1NTc0MzQ0NDczMTNmIiwic2Vxbm8iOjIxMTEwNTJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZXhjaXRpbmcuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC40MCJ9LCJjdGltZSI6MTUxODc4MDg0MiwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIwNmUzNDBjODdiNjI0MGRhNTFkZDFiMDU1ZmQ0MGFkMGQxZTkxNjRjNWVhZDFhMmZjNDA1YzRjZGFiZDAzN2Q4Iiwic2Vxbm8iOjU2LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQFJfCkTla8usmSaY0c8dWi6qJ3PUFGPSEkTRVNitz6QGnw9XwIdzmYZvHY0rXJ4KxdlrjakSDGgi3Rh3C04KIAuoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDtmxvrtssmSv9HhadpgFORu6WeL+nZrv/5rzEj32tLbaN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lazyatom
+
+==================================================================
