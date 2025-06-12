@@ -1,11 +1,7 @@
 @font-face {
   font-family: "BrandonGrotesque-Regular";
-  src: asset_url("brandon-grotesque-regular.eot"); /* IE9*/
-  src: asset_url("brandon-grotesque-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-       asset_url("brandon-grotesque-regular.woff2") format("woff2"), /* chrome、firefox */
-       asset_url("brandon-grotesque-regular.woff") format("woff"), /* chrome、firefox */
-       asset_url("brandon-grotesque-regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-       asset_url("brandon-grotesque-regular.svg#BrandonGrotesque-Regular") format("svg"); /* iOS 4.1- */
+  src: asset_url("BrandonGrotesque-Regular.woff2") format("woff2"),
+       asset_url("BrandonGrotesque-Regular.woff") format("woff");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');

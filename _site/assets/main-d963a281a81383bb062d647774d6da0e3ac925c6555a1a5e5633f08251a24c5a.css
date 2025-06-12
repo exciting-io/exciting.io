@@ -4889,10 +4889,7 @@ td.visible-print {
 /* New Greys */
 @font-face {
   font-family: "BrandonGrotesque-Regular";
-  src: url(/assets/brandon-grotesque-regular-34443ae0413bf41940419515c8f87d0d6f73f2137006911d31b2edfec23f66b7.eot);
-  /* IE9*/
-  src: url(/assets/brandon-grotesque-regular-34443ae0413bf41940419515c8f87d0d6f73f2137006911d31b2edfec23f66b7.eot#iefix) format("embedded-opentype"), url(/assets/brandon-grotesque-regular-75c6cf14c310995f6656b51e822c83aeef928b84e9b15c194defb91731ce06bd.woff2) format("woff2"), url(/assets/brandon-grotesque-regular-d380af42a53dc7606e6476cac351d89874f8085c1cd20352fd4ef9506cf966d1.woff) format("woff"), url(/assets/brandon-grotesque-regular-324270ef8737c6f25704ad45ba8638bac1ad236f992d203df93db20b95d7186d.ttf) format("truetype"), url(/assets/brandon-grotesque-regular-c48dfe39c61b6c658bf7bea838682ec021d382559aa28fea44e047641476e646.svg#BrandonGrotesque-Regular) format("svg");
-  /* iOS 4.1- */ }
+  src: url(/assets/BrandonGrotesque-Regular-c92f8f783b3123e885cf4e61dc730eb8c7989540cdc7ecb1548097f977f70514.woff2) format("woff2"), url(/assets/BrandonGrotesque-Regular-65e85f534b19d33a69183a2e6fe225d6e1de46816ea2471f6f56f6c1259f1b8a.woff) format("woff"); }
 .title {
   width: 3em;
   height: 1em;
