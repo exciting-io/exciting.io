@@ -1,1 +1,1 @@
-Sitemap: http://exciting.io/sitemap.xml
+Sitemap: https://exciting.io/sitemap.xml

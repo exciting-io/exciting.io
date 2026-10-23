@@ -1,5 +1,2 @@
-.sass-cache
-css
-.jekyll-assets-cache
-.asset-cache
-public
+.DS_Store
+redesign/
