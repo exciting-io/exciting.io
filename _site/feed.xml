@@ -1,24 +1,195 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Exciting</title><description></description><link>http://exciting.io?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><atom:link href="http://exciting.io/feed.xml" rel="self" type="application/rss+xml" /><item><title>The Internet of Things needs to move beyond context-shifting old technology</title><description>&lt;p&gt;&lt;a href=&quot;https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a&quot;&gt;Joto&lt;/a&gt; is an “internet connected drawing board”; it’s whimsical, and it’s fun. &lt;strong&gt;But I just can’t shake my doubts about it&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Exciting</title><description>Exciting is a digital product development and prototyping studio. We build software and tinker in hardware. We explore the potential of simple systems.</description><link>https://exciting.io/</link><atom:link href="https://exciting.io/feed.xml" rel="self" type="application/rss+xml" />
+<item><title>The Internet of Things needs to move beyond context-shifting old technology</title><description>&lt;p&gt;&lt;a href="https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a"&gt;Joto&lt;/a&gt; is an “internet connected drawing board”; it’s whimsical, and it’s fun. &lt;strong&gt;But I just can’t shake my doubts about it&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;a href="http://exciting.io/2017/03/15/joto/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Wed, 15 Mar 2017 11:15:00 +0000</pubDate><link>http://exciting.io/2017/03/15/joto/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2017/03/15/joto/</guid></item><item><title>A Little Printer Mystery</title><description>&lt;p&gt;&lt;img src=&quot;http://exciting.io/images/mystery/start.png&quot; class=&quot;img-shadow&quot; /&gt;&lt;/p&gt;
+&lt;iframe width="640" height="360" src="https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a/widget/video.html" frameborder="0" scrolling="no"&gt; &lt;/iframe&gt;
 
-&lt;p&gt;Some &lt;a href=&quot;http://blog.bergcloud.com/2014/09/09/week-483/&quot;&gt;sad news&lt;/a&gt; from BERG today, one consequence of which being that the Little Printer service &lt;a href=&quot;http://littleprinterblog.tumblr.com/post/97047976103/the-future-of-little-printer&quot;&gt;may only be running for another six months or so&lt;/a&gt;, depending on whether or not another company can be found to buy the service.&lt;/p&gt;
+&lt;p&gt;I’m genuinely hesitant to be critical about what is &lt;em&gt;certainly&lt;/em&gt; many, many months of hard work and effort by Joto’s designers and creators. They should be applauded and celebrating for enduring the hard work required to bring an idea to life.&lt;/p&gt;
+
+&lt;p&gt;However, Joto serves to highlight an emerging pattern in consumer “internet of things” devices that it’s worth making explicit. We’ll explore that below, under “Context”.&lt;/p&gt;
+
+&lt;p&gt;But first, let’s strip away the marketing and understand what Joto actually is.&lt;/p&gt;
+
+&lt;h2 id="off-screen-on-a-screen"&gt;“Off screen”, on a screen&lt;/h2&gt;
+
+&lt;p&gt;At the end of the video, the voiceover tells us:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Some things in life are just better off screen.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s increasingly popular to frame technologies as post-screen or beyond screens; beyond the world of information, as BERG coined,“trapped behind glass”. Indeed, there’s some &lt;a href="http://buckleywilliams.com/case-studies/bulletin/"&gt;genuinely interesting work&lt;/a&gt; exploring devices that support interactions without screens.&lt;/p&gt;
+
+&lt;p&gt;But the output of Joto is visual in two dimensions, and so really it’s just a different kind of screen. It’s a screen that’s always visible, glanceable, and perhaps more aesthetically pleasing. And, perhaps this makes it more appropriate to be mounted in places we are not accustomed to be bombarding us with backlit displays. That aspect alone could be enough to change your personal relationship with it as an object…&lt;/p&gt;
+
+&lt;p&gt;… but it is still fundamentally a &lt;em&gt;screen&lt;/em&gt;, and as a screen, it has some significant drawbacks.&lt;/p&gt;
+
+&lt;h2 id="its-slow-because-its-mechanical"&gt;It’s slow, because it’s mechanical&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/joto/waterfalls.png" alt="&amp;quot;Waterfalls&amp;quot;" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’d estimate that it takes at least 30 seconds to draw a simple “jot”, and at least five minutes for a complex piece of art like the rendition of “waterfalls”. That’s a long time to wait, in screen terms.&lt;/p&gt;
+
+&lt;p&gt;The Kickstarter video indicates that you’ll be alerted to new “jots” on your phone, which you can then use to tell Joto to draw. At this point point you’ve probably already seen what’s going to be drawn in a preview, and so all that remains is whatever residual delight there is in watching Joto recreate the image over the many minutes it takes to do it’s job.&lt;/p&gt;
+
+&lt;p&gt;The alternative, that Joto might automatically start drawing as soon as an item is received, has its own drawbacks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/joto/todo-list.png" alt="Joto erases that list you were using to make way for another sketch" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine if you wake up to find the todo list you scheduled for display before breakfast has been erased and drawn over by a well-meaning but ill-timed message from a friend? Are you going to wait for Joto to re-draw your list?&lt;/p&gt;
+
+&lt;h2 id="its-noisy-because-its-mechanical"&gt;It’s noisy (because it’s mechanical)&lt;/h2&gt;
+
+&lt;p&gt;This is potentially much more significant. It’s hard to say for sure, because all of the instances of it drawing in the main Kickstarter video don’t include the environmental audio, but it’s quite likely that &lt;a href="https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a#prototype-slide-45963"&gt;Joto won’t be silent in operation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/joto/mechanism.jpg" alt="The basic mechanisms involved in 2D plotters" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This effectively cancels out the idea that Joto, as a screen, is less intrusive than something more traditional. From the moment drawing begins its actuators herald the oncoming “jot”, your attention is not only demanded but held, as the noise only abates when the drawing is complete. This also undermines the “wake up to a todo list” scenario, since the noise from the plotter will pre-empt any alarm you might have set to start your day.&lt;/p&gt;
+
+&lt;p&gt;It’s very possible that the final version will be significantly quieter than the prototypes, but even at a whisper, if you’re sharing a room with Joto, it’s whisper of operation will act as the quiet, sustained rustling of someone nearby who, in five or ten minutes, may have something to tell you.&lt;/p&gt;
+
+&lt;h2 id="context"&gt;Context&lt;/h2&gt;
+
+&lt;p&gt;So if Joto is slower than many other display technologies, and operates more loudly than many other display technologies, what is it that Joto excels at?&lt;/p&gt;
+
+&lt;p&gt;It all comes down to context. Joto is really just a plotter printer in a different context, the same way that Little Printer was just a fax machine in a different context. Joto represents the translation of an old, “boring” technology via some updated design into a new environment: the home.&lt;/p&gt;
+
+&lt;p&gt;The question is, then: &lt;em&gt;is the home the right context for it to be in&lt;/em&gt;?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/joto/shop-window.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Joto started life as something &lt;a href="https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a#prototype-slide-45925"&gt;drawing on shop windows&lt;/a&gt;, which are by their nature much more about communication and spectacle. The things which might make Joto’s precursor captivating and effective on public display might not easily translate into the quiet private solace of your home or workplace.&lt;/p&gt;
+
+&lt;p&gt;As a device, and even as a screen, it has spades of charm, whimsy, and for some even delight, but as a design choice it brings relatively little utility. If the former outweighs the latter enough for you, then perhaps you will welcome Joto into your home.&lt;/p&gt;
+
+&lt;p&gt;But much as I try to stifle my cynicism, I can’t help but think that it’s not always enough to &lt;em&gt;just&lt;/em&gt; take an existing object, make it smaller and bring it into the home context, as hard a task as even that might be. While Joto might be able to reduce the already-minimal friction required to share sketches or notes with friends and colleagues over the internet, it does so using a mechanism that’s wholly unsuited for doing so.&lt;/p&gt;
+
+&lt;p&gt;If you had the choice between Joto, and a silent, transparent, e-Ink display on your wall, which would you choose? My point is not to compare things based on metrics like speed or operating noise alone, but to ask to what extent products like Joto are just a &lt;em&gt;wilful rejection of those metrics&lt;/em&gt;. And maybe it’s perfectly fine to do that, but I think when such aspects form a significant part of the choices we make, it’s worthwhile to do so consciously.&lt;/p&gt;
+
+&lt;p&gt;I genuinely do wish the makers of Joto every success, and it’s very possible that my perspective on the device is missing key insights that would flip the subjective balance of utility vs. charm even for me. I suppose only time will time.&lt;/p&gt;</description><pubDate>Wed, 15 Mar 2017 11:15:00 +0000</pubDate><link>https://exciting.io/2017/03/15/joto/</link><guid isPermaLink="true">http://exciting.io/2017/03/15/joto/</guid></item>
+<item><title>A Little Printer Mystery</title><description>&lt;p&gt;&lt;img src="https://exciting.io/images/mystery/start.png" class="img-shadow" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Some &lt;a href="http://blog.bergcloud.com/2014/09/09/week-483/"&gt;sad news&lt;/a&gt; from BERG today, one consequence of which being that the Little Printer service &lt;a href="http://littleprinterblog.tumblr.com/post/97047976103/the-future-of-little-printer"&gt;may only be running for another six months or so&lt;/a&gt;, depending on whether or not another company can be found to buy the service.&lt;/p&gt;
 
 &lt;p&gt;This reminded me that I still haven’t posted about a Little Printer thing that happened earlier this year: printers everywhere started producing strange, unexpected output.&lt;/p&gt;
 
-&lt;a href="http://exciting.io/2014/09/09/a-little-printer-mystery/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Tue, 09 Sep 2014 13:15:00 +0100</pubDate><link>http://exciting.io/2014/09/09/a-little-printer-mystery/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2014/09/09/a-little-printer-mystery/</guid></item><item><title>Little Advent Calendar Publication</title><description>&lt;p&gt;We’ve made another publication for small, connected printers like our own &lt;a href=&quot;http://exciting.io/printer&quot;&gt;Printer&lt;/a&gt; and BERG’s Little Printer, but this one’s a bit more seasonal.&lt;/p&gt;
+&lt;h2 id="the-mystery-begins"&gt;The mystery begins&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://so.exciting.io/mmkjxQ&quot;&gt;&lt;img src=&quot;http://exciting.io/images/little-advent-calendar-publication.jpg&quot; alt=&quot;Little Advent Calendar&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It all started on the 27th of March, 2014. Amidst the normal publications I subscribe to, something else appeared (click to enlarge the images):&lt;/p&gt;
 
-&lt;p&gt;You can &lt;a href=&quot;http://so.exciting.io/mmkjxQ&quot;&gt;subscribe via BERGcloud remote here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="printouts"&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-02-27.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-02-27.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-02-28.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-02-28.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I wasn’t the only person to notice. People posted on instagram:&lt;/p&gt;
+
+&lt;iframe src="https://instagram.com/p/k6OQdmo9LB/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;… and then, a few days later, some more:&lt;/p&gt;
+
+&lt;div class="printouts"&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-02.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-02.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-03.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-03.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-04.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-04.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-05.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-05.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-06.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-06.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;iframe src="https://instagram.com/p/lNufWXo9O-/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Everything was back to normal on the 7th of March, but the next day, more strangeness:&lt;/p&gt;
+
+&lt;div class="printouts"&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-08.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-08.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-09.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-09.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-10.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-10.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-11.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-11.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;iframe src="https://instagram.com/p/lZbZ9-sIis/embed/" width="612" height="710" frameborder="0" scrolling="no" allowtransparency="true"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The comments on one instagram were particularly intriguing; even the people responsible for Little Printer had seen this strangeness, but didn’t know what was going on.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Matt Webb&lt;/em&gt;: I don’t know… but I have a theory&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Then, some more sporadic conversations, even going so far as to quote Beckett.&lt;/p&gt;
+
+&lt;div class="printouts"&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-13.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-13.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-15.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-15.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-21.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-21.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This, at least, felt like a clue:&lt;/p&gt;
+
+&lt;div class="printouts"&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-22.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-22.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And then some meta-physical self reflection:&lt;/p&gt;
+
+&lt;div class="printouts"&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-25.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-25.png" /&gt;&lt;/a&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-03-26.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-03-26.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And, weeks later this final message:&lt;/p&gt;
+
+&lt;div class="printouts"&gt;
+  &lt;a class="mystery-printout" href="https://exciting.io/images/mystery/2014-04-17.png"&gt;&lt;img src="https://exciting.io/images/mystery/2014-04-17.png" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;… and since then, nothing. But who was having those conversations? What happened to them? What did it all mean?&lt;/p&gt;
+
+&lt;h2 id="a-source-of-mystery-and-delight"&gt;A source of mystery and delight?&lt;/h2&gt;
+
+&lt;p&gt;Well, we hinted as much that this was going to happen in &lt;a href="https://exciting.io/2013/11/18/little-advent-calendar-publication/"&gt;our ‘Advent Calendar’ post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Anyone who subscribes to this (or indeed any) publication cannot know for certain what might pop out of their printer from one day to the next.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Would it be possible to make unexpected content appear? Indeed, it is. However, what I found most surprising was that nobody really found it particularly strange. Actually, as I kept tabs on Twitter and instagram, and with 150 subscribers to the piggy-backed publication, there was really almost no reaction at all.&lt;/p&gt;
+
+&lt;p&gt;So, some mystery, but really not much delight. It’s interesting to explore how far “personality” can enter into the world of connected products; &lt;a href="http://ntlk.net/2014/03/20/internet-of-dependent-things/"&gt;NTLK’s view is particularly interesting&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I’m assuming it’s designed to give this object an opportunity to appear as if it has a life and identity independent of the owner, to make it more lively, interesting and playful; but for me it just regularly reminds me that someone else is in control.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;BERG themselves wrote about explorations into the personality possibilities of connected products. They called this “&lt;a href="http://www.wired.com/2013/02/little-printer-gets-a-haircut/all/"&gt;BotWorld&lt;/a&gt;”. In our view, the results of that experiment were inconclusive; some people were delighted by the haircuts and sunglasses, while others (such as NTLK above) feel it highlighted that the device was being externally controlled.&lt;/p&gt;
+
+&lt;p&gt;And, perhaps, there is another slice of Little Printer owners who didn’t pay much attention to it at all, which would be a shame if it were true, but unfortunately not surprising.&lt;/p&gt;
+
+&lt;h2 id="postscript"&gt;Postscript&lt;/h2&gt;
+
+&lt;p&gt;The mystery messages stopped in April, but a few months later Nick Ludlam (then BERG’s CTO) finally – and accidentally – discovered what had been happening:&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" lang="en"&gt;&lt;p&gt;&lt;a href="https://twitter.com/lazyatom"&gt;@lazyatom&lt;/a&gt; I think I just found a bunch of easter egg content in your LP advent calendar publication :)&lt;/p&gt;&amp;mdash; Nick Ludlam (@nickludlam) &lt;a href="https://twitter.com/nickludlam/status/476058574855372802"&gt;June 9, 2014&lt;/a&gt;&lt;/blockquote&gt;
+&lt;p&gt;While there was no deep meaning to it, I’m glad that Nick unearthed our little game; for me it was as much a conversation between me-the-developer and BERG-Cloud-the-system as it was an attempted conversation between two mystery characters, or between the Little Printer and its owner.&lt;/p&gt;
+
+&lt;p&gt;BERG explored the fringes of the world of connected products, and it was fun to in-turn explore the fringes of their exploration.&lt;/p&gt;</description><pubDate>Tue, 09 Sep 2014 13:15:00 +0100</pubDate><link>https://exciting.io/2014/09/09/a-little-printer-mystery/</link><guid isPermaLink="true">http://exciting.io/2014/09/09/a-little-printer-mystery/</guid></item>
+<item><title>Little Advent Calendar Publication</title><description>&lt;p&gt;We’ve made another publication for small, connected printers like our own &lt;a href="https://exciting.io/printer/"&gt;Printer&lt;/a&gt; and BERG’s Little Printer, but this one’s a bit more seasonal.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://so.exciting.io/mmkjxQ"&gt;&lt;img src="https://exciting.io/images/little-advent-calendar-publication.jpg" alt="Little Advent Calendar" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href="http://so.exciting.io/mmkjxQ"&gt;subscribe via BERGcloud remote here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Making this publication has had us thinking more about the opportunities for the &lt;em&gt;unexpected&lt;/em&gt;.&lt;/p&gt;
 
-&lt;a href="http://exciting.io/2013/11/18/little-advent-calendar-publication/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Mon, 18 Nov 2013 12:15:00 +0000</pubDate><link>http://exciting.io/2013/11/18/little-advent-calendar-publication/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2013/11/18/little-advent-calendar-publication/</guid></item><item><title>Making things &#8212; it&#39;s all about the polish</title><description>&lt;p&gt;We enjoyed &lt;a href=&quot;http://www.gyford.com&quot;&gt;Phil Gyford&lt;/a&gt;’s new application &lt;a href=&quot;http://www.twelescreen.com/&quot;&gt;Twelescreen&lt;/a&gt; earlier today, and the &lt;a href=&quot;http://www.gyford.com/phil/writing/2013/11/14/twelescreen.php&quot;&gt;background post&lt;/a&gt; he wrote about how it came to be, and how he’s even somewhat unsettled that the tools of Big Brother might seem so… useful.&lt;/p&gt;
+&lt;p&gt;Anyone who subscribes to this (or indeed any) publication cannot know for certain what might pop out of their printer from one day to the next. Once subscribed, the power to control what any subscriber receives is entirely in the hands of the publisher.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.twelescreen.com/&quot;&gt;&lt;img src=&quot;http://exciting.io/images/twelescreen.png&quot; alt=&quot;ALERT CITIZENS&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Using our advent calendar as an example, the first print may be what the subscriber expects (a simple advent calendar entry), but the next might be something &lt;em&gt;completely different&lt;/em&gt; and completely unexpected.&lt;/p&gt;
 
-&lt;p&gt;However, what particularly resonated with us was this part of his &lt;a href=&quot;http://www.gyford.com/phil/writing/2013/11/14/twelescreen-code.php&quot;&gt;post about the software itself&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Can we take advantage of this potential source of mystery and delight without it becoming confusing? We’ve got some ideas…&lt;/p&gt;</description><pubDate>Mon, 18 Nov 2013 12:15:00 +0000</pubDate><link>https://exciting.io/2013/11/18/little-advent-calendar-publication/</link><guid isPermaLink="true">http://exciting.io/2013/11/18/little-advent-calendar-publication/</guid></item>
+<item><title>Making things — it's all about the polish</title><description>&lt;p&gt;We enjoyed &lt;a href="http://www.gyford.com"&gt;Phil Gyford&lt;/a&gt;’s new application &lt;a href="http://www.twelescreen.com/"&gt;Twelescreen&lt;/a&gt; earlier today, and the &lt;a href="http://www.gyford.com/phil/writing/2013/11/14/twelescreen.php"&gt;background post&lt;/a&gt; he wrote about how it came to be, and how he’s even somewhat unsettled that the tools of Big Brother might seem so… useful.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.twelescreen.com/"&gt;&lt;img src="https://exciting.io/images/twelescreen.png" alt="ALERT CITIZENS" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;However, what particularly resonated with us was this part of his &lt;a href="http://www.gyford.com/phil/writing/2013/11/14/twelescreen-code.php"&gt;post about the software itself&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Not least, I’ve been reminded how much longer it takes to make something with as few rough edges as possible and that has code suitable for other people to use … even though I had something quite similar up and running very early on in that process.&lt;/p&gt;
@@ -26,34 +197,554 @@
 
 &lt;p&gt;This has been one of the most important lessons we’ve learned while making.&lt;/p&gt;
 
-&lt;a href="http://exciting.io/2013/11/14/making-things-is-all-about-the-polish/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Thu, 14 Nov 2013 09:18:52 +0000</pubDate><link>http://exciting.io/2013/11/14/making-things-is-all-about-the-polish/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2013/11/14/making-things-is-all-about-the-polish/</guid></item><item><title>Hello, World</title><description>&lt;p&gt;Hello, in fact, just to &lt;strong&gt;you&lt;/strong&gt; specifically. Thanks for looking in. Welcome to &lt;em&gt;&lt;a href=&quot;http://exciting.io/&quot;&gt;Exciting&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://exciting.io/printer/"&gt;Printer&lt;/a&gt; is a good example of a project where – despite technologically taking users 95% of the way towards everything they need to start printing things, with almost all of the architecture and implementation already available – that last 5% is still enough of a rough edge to make it almost prohibitively hard for most people to build something for themselves on top of what we made.&lt;/p&gt;
 
-&lt;p&gt;This is a new company, with a new focus on exploring how to use simple software systems to make the world a little bit better. We are curious; we like to prototype things, often without knowing for certain whether or not they are going to work. &lt;a href=&quot;http://exciting.io/printer&quot;&gt;Printer&lt;/a&gt; is a great example of that. Not knowing for certain that something is going to work is part of the fun, and fosters serendipity.&lt;/p&gt;
+&lt;p&gt;Many of the people who actually &lt;em&gt;did&lt;/em&gt; build something using &lt;a href="https://exciting.io/printer/"&gt;Printer&lt;/a&gt; re-purposed the demonstration applications (like &lt;a href="http://mail.printer.exciting.io"&gt;Printer Mail&lt;/a&gt;) rather than making their own HTML content.&lt;/p&gt;
 
-&lt;a href="http://exciting.io/2013/11/11/hello-world/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Mon, 11 Nov 2013 15:18:52 +0000</pubDate><link>http://exciting.io/2013/11/11/hello-world/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2013/11/11/hello-world/</guid></item><item><title>Crimer Show Printer Publication</title><description>&lt;p&gt;We’ve been exploring the possibilities of small, connected printers for a while now – not only how to build them, via our &lt;a href=&quot;http://exciting.io/printer&quot;&gt;Printer&lt;/a&gt; platform and dabbling with BERG’s &lt;a href=&quot;http://bergcloud.com/littleprinter&quot;&gt;Little Printer&lt;/a&gt;, but more importantly &lt;em&gt;how best to employ them&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Designing by making, refining and polishing, refactoring nasty code, re-working the configuration, writing documentation… it all takes so long, even after the first rough attempt is basically working.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you want other people to actually use some software – and particularly if you want them to consider deploying it themselves – &lt;strong&gt;it’s not enough to just demonstrate a proof of concept, or even one specific use-case&lt;/strong&gt;. You have expend an incredible amount of effort making your work almost trivial for other people to use.&lt;/p&gt;</description><pubDate>Thu, 14 Nov 2013 09:18:52 +0000</pubDate><link>https://exciting.io/2013/11/14/making-things-is-all-about-the-polish/</link><guid isPermaLink="true">http://exciting.io/2013/11/14/making-things-is-all-about-the-polish/</guid></item>
+<item><title>Hello, World</title><description>&lt;p&gt;Hello, in fact, just to &lt;strong&gt;you&lt;/strong&gt; specifically. Thanks for looking in. Welcome to &lt;em&gt;&lt;a href="https://exciting.io/"&gt;Exciting&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is a new company, with a new focus on exploring how to use simple software systems to make the world a little bit better. We are curious; we like to prototype things, often without knowing for certain whether or not they are going to work. &lt;a href="https://exciting.io/printer/"&gt;Printer&lt;/a&gt; is a great example of that. Not knowing for certain that something is going to work is part of the fun, and fosters serendipity.&lt;/p&gt;
+
+&lt;p&gt;Some of the projects that are now under the &lt;em&gt;Exciting&lt;/em&gt; banner, you may already be familiar with: &lt;a href="https://harmonia.io"&gt;Harmonia&lt;/a&gt;, &lt;a href="http://printer.exciting.io"&gt;Printer&lt;/a&gt;, &lt;a href="http://heyli.st"&gt;HeyLi.st&lt;/a&gt;, and maybe a few others. Some of the notable blog posts about them have also come along for the ride.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://gofreerange.com"&gt;Go Free Range&lt;/a&gt; was kind enough to foster these ideas in their infancy, but the time has come to give them a bit more space to grow in new ways. We are really exciting to start developing them in exciting new directions. &lt;strike&gt;I'll say a bit more about that in the near future on the GFR Blog&lt;/strike&gt; I’ve written a bit more about this on &lt;a href="http://gofreerange.com/some-exciting-news"&gt;the GFR blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But it’s not just about those projects; there will be (hopefully) many new things here as we get back up to the speed. If there’s one thing that &lt;em&gt;Exciting&lt;/em&gt; is about, it’s &lt;strong&gt;momentum&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Speaking of which, we better get started. &lt;a href="https://exciting.io/2013/11/06/crimer-show-printer-publication/"&gt;Here’s a freshly baked bit of software&lt;/a&gt; for you already!&lt;/p&gt;
+
+&lt;p&gt;If you’d like to hear about what we get up to, why not &lt;a href="https://twitter.com/intent/user?screen_name=exciting_io"&gt;follow us on Twitter&lt;/a&gt; or join our mailing list (see below) – we’ll try our very best to make it worth your while.&lt;/p&gt;</description><pubDate>Mon, 11 Nov 2013 15:18:52 +0000</pubDate><link>https://exciting.io/2013/11/11/hello-world/</link><guid isPermaLink="true">http://exciting.io/2013/11/11/hello-world/</guid></item>
+<item><title>Crimer Show Printer Publication</title><description>&lt;p&gt;We’ve been exploring the possibilities of small, connected printers for a while now – not only how to build them, via our &lt;a href="https://exciting.io/printer/"&gt;Printer&lt;/a&gt; platform and dabbling with BERG’s &lt;a href="http://bergcloud.com/littleprinter"&gt;Little Printer&lt;/a&gt;, but more importantly &lt;em&gt;how best to employ them&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Is there a balance between utility and whimsy where this new medium shines? We think so, and we think we have a good example … (puts on sunglasses) … to share with you.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://exciting.io/images/crimershow-glasses.jpg&quot; alt=&quot;Put on your sunglasses too&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://exciting.io/images/crimershow-glasses.jpg" alt="Put on your sunglasses too" /&gt;&lt;/p&gt;
 
-&lt;a href="http://exciting.io/2013/11/06/crimer-show-printer-publication/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Wed, 06 Nov 2013 17:00:00 +0000</pubDate><link>http://exciting.io/2013/11/06/crimer-show-printer-publication/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2013/11/06/crimer-show-printer-publication/</guid></item><item><title>Introducing HeyList!</title><description>&lt;p&gt;Probably the most important and useful aspect of going to conferences and meetups is spending time with the people there. It’s often useful finding out what new things communities are working on, what they are interested in, and where they are going for dinner (or a &lt;a href=&quot;https://twitter.com/#!/search/scotruby%20whisky&quot;&gt;dram&lt;/a&gt;).&lt;/p&gt;
+&lt;h3 id="new-forms-of-fiction"&gt;New forms of fiction&lt;/h3&gt;
+
+&lt;p&gt;Just as the then-new medium of broadcast radio gave birth to unique forms of storytelling, like live episodic dramas, there’s a new form of story developing on one of the new mediums of this generation – Twitter. The blend of anonymity, parody and the constraints of Twitter (like limited tweet length) are becoming sufficiently familar that the internet is now starting to create and experiment &lt;em&gt;on top&lt;/em&gt; of that platform, knowing, exploring and exploiting its particular strengths and weaknesses.&lt;/p&gt;
+
+&lt;p&gt;Accounts like &lt;a href="https://twitter.com/Horse_ebooks"&gt;horse_ebooks&lt;/a&gt;&lt;sup id="fnref:horse-ebooks" role="doc-noteref"&gt;&lt;a href="#fn:horse-ebooks" class="footnote" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; are a fairly extreme example of this experimentation, as are the likes of &lt;a href="https://twitter.com/MarkovChocolate"&gt;Markov Chocolate&lt;/a&gt;&lt;sup id="fnref:markov" role="doc-noteref"&gt;&lt;a href="#fn:markov" class="footnote" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; and the anthropomorphised &lt;a href="https://twitter.com/twrbrdg_itself"&gt;Tower Bridge (Itself)&lt;/a&gt;&lt;sup id="fnref:tower-bridge" role="doc-noteref"&gt;&lt;a href="#fn:tower-bridge" class="footnote" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;, both by friend of &lt;em&gt;Exciting&lt;/em&gt; &lt;a href="http://tomarmitage.com"&gt;Tom Armitage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But lets focus on the part of the spectrum that more closely resembles “normal” fiction – in other words, where there’s definitely an author with intent. Here’s Andrew Fitzgerald giving a great overview:&lt;/p&gt;
+
+&lt;iframe src="http://embed.ted.com/talks/andrew_fitzgerald_adventures_in_twitter_fiction.html" width="560" height="315" frameborder="0" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""&gt;&lt;/iframe&gt;
+
+&lt;p&gt;He puts it better than I did:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;So once you take flexible identity, anonymity, engagement with the real world, and you move beyond simple homage or parody and you put these tools to work in telling a story, that’s when things get really interesting.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id="crimer"&gt;Crimer&lt;/h3&gt;
+
+&lt;p&gt;One of our favourite examples of this new kind of fiction is &lt;em&gt;&lt;a href="http://twitter.com/CrimerShow"&gt;Crimer Show&lt;/a&gt;&lt;/em&gt;, by &lt;a href="http://twitter.com/astonishingsod"&gt;Astonishing Sod&lt;/a&gt;. Ostensibly an absurdist take on the inexhaustible supply of police procedural dramas, but using the same alternate-universe spelling and grammar of &lt;a href="http://twitter.com/freints_show"&gt;Freints&lt;/a&gt;, &lt;em&gt;Crimer Show&lt;/em&gt; gradually builds its own world using &lt;a href="http://www.youtube.com/watch?v=mznsEcZlM2I"&gt;clichés from CSI&lt;/a&gt; – (puts on sunglasses) – and &lt;a href="http://tvtropes.org/pmwiki/pmwiki.php/Literature/CrimerShow?from=Main.CrimerShow"&gt;the like&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;CRIMER:&lt;/strong&gt; Imhave do my last crimeing. Nomore crimes from Me ! &lt;strong&gt;DETETCIVE:&lt;/strong&gt; Thats Goodnews! &lt;strong&gt;CRIMER:&lt;/strong&gt; (turns to camera) Im defnitley do more crimes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It’s the familiar gritty policy world wherein the &lt;em&gt;Detetcive&lt;/em&gt; (sic) has a drinking problem and the &lt;em&gt;Mayoore&lt;/em&gt; (sic) is a drug addict, but the substances abused aren’t vodka and crack, but “melk” and “jeleybeens” (sic, sic) respectively.&lt;/p&gt;
+
+&lt;h3 id="catching-up"&gt;Catching up&lt;/h3&gt;
+
+&lt;p&gt;While one of the unique ways Twitter fiction works is by spreading its narrative throughout the rest of your timeline, in real-time as it were, it can be hard to introduce new people to these stories once they are well under way. &lt;em&gt;Crimer Show&lt;/em&gt; is, at the time of writing, almost 1,200 tweets in, which represents a fairly arduous scrolling mission for someone who wishes to start at the start.&lt;/p&gt;
+
+&lt;p&gt;And it’s in this problem that our &lt;a href="http://bergcloud.com"&gt;little&lt;/a&gt; &lt;a href="https://exciting.io/printer/"&gt;printers&lt;/a&gt; might provide a solution that strikes the balance of novel, useful and whimsical to which these devices seem most suited.&lt;/p&gt;
+
+&lt;p&gt;And so we present: &lt;strong&gt;&lt;a href="http://remote.bergcloud.com/publications/342"&gt;The Crimer Show Printer Publication&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://remote.bergcloud.com/publications/342"&gt;&lt;img src="https://exciting.io/images/crimershow-publication-sample.jpg" alt="A sample of the Crimer Show publication" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href="http://remote.bergcloud.com/publications/342"&gt;subscribe using BERGCloud remote here&lt;/a&gt;. Every weekday you will be treated to the next three parts of &lt;em&gt;Crimer Show&lt;/em&gt;, starting from the very beginning.&lt;/p&gt;
+
+&lt;p&gt;We think it’s the perfect way to enjoy catching up with the world of &lt;em&gt;Crimer&lt;/em&gt;, alongside whatever other information you happen to be printing. You can see it sitting very comfortably in a normal daily printout:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://remote.bergcloud.com/publications/342"&gt;&lt;img src="https://exciting.io/images/crimershow-publication-live.jpg" alt="Crimer Show in a daily printout" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;But what do you think? Maybe you’re still unconvinced by little printers? You could be right. Let us know in the comments below, on &lt;a href="https://twitter.com/exciting_io"&gt;twitter&lt;/a&gt; or by emailing &lt;a href="mailto:hello@exciting.io"&gt;hello@exciting.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:horse-ebooks" role="doc-endnote"&gt;
+      &lt;p&gt;There’s &lt;a href="http://en.wikipedia.org/wiki/Horse_ebooks"&gt;some context here&lt;/a&gt; about the origins and ultimate demise of the account. &lt;a href="#fnref:horse-ebooks" class="reversefootnote" role="doc-backlink"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id="fn:markov" role="doc-endnote"&gt;
+      &lt;p&gt;Some &lt;a href="http://infovore.org/archives/2012/01/17/markov-chocolates-a-new-diversion/"&gt;background&lt;/a&gt; about Tom’s exploration of Markov chains. &lt;a href="#fnref:markov" class="reversefootnote" role="doc-backlink"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id="fn:tower-bridge" role="doc-endnote"&gt;
+      &lt;p&gt;The subject of some &lt;a href="http://infovore.org/archives/2011/06/12/towerbridge-a-bit-more-clarity/"&gt;minor internet drama&lt;/a&gt; itself &lt;a href="#fnref:tower-bridge" class="reversefootnote" role="doc-backlink"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</description><pubDate>Wed, 06 Nov 2013 17:00:00 +0000</pubDate><link>https://exciting.io/2013/11/06/crimer-show-printer-publication/</link><guid isPermaLink="true">http://exciting.io/2013/11/06/crimer-show-printer-publication/</guid></item>
+<item><title>Introducing HeyList!</title><description>&lt;p&gt;Probably the most important and useful aspect of going to conferences and meetups is spending time with the people there. It’s often useful finding out what new things communities are working on, what they are interested in, and where they are going for dinner (or a &lt;a href="https://twitter.com/#!/search/scotruby%20whisky"&gt;dram&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;The obvious way to feel the collective pulse of an event is via Twitter, and hashtags aren’t too bad for listening in on a conference hive-mind. That said, we have a suspicion that there could be a better option.&lt;/p&gt;
 
-&lt;a href="http://exciting.io/2013/03/25/introducing-heylist/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Mon, 25 Mar 2013 13:00:00 +0000</pubDate><link>http://exciting.io/2013/03/25/introducing-heylist/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2013/03/25/introducing-heylist/</guid></item><item><title>Printer Questions</title><description>&lt;p&gt;The response to our open source printer project has been amazing, but some people rightly have questions, so I’ll try to answer them here.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This was originally posted on the &lt;a href="http://gofreerange.com/blog"&gt;GFR blog&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;If you’ve got a question about &lt;a href=&quot;http://exciting.io/printer&quot;&gt;Printer&lt;/a&gt;, or want to discuss your ideas for printer, why not &lt;a href=&quot;https://github.com/exciting-io/printer/wiki/Frequently-Asked-Questions&quot;&gt;check the FAQ on the wiki&lt;/a&gt;, &lt;a href=&quot;http://groups.google.com/group/gfr-printer&quot;&gt;ask on the mailing list&lt;/a&gt;, or &lt;a href=&quot;http://twitter.com/gfrprinter&quot;&gt;follow the printer project on Twitter&lt;/a&gt;?&lt;/p&gt;
+&lt;h2 id="background"&gt;Background&lt;/h2&gt;
 
-&lt;a href="http://exciting.io/2012/05/01/printer-questions/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Tue, 01 May 2012 01:05:00 +0100</pubDate><link>http://exciting.io/2012/05/01/printer-questions/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2012/05/01/printer-questions/</guid></item><item><title>Hello, Printer</title><description>&lt;p&gt;For over a year, I have been playing around with printing things out on a receipt printer. Recently, a few accidents of implementation gave more life to my tinkerings than I had originally intended.&lt;/p&gt;
+&lt;p&gt;We’ve &lt;a href="http://gofreerange.com/week-179"&gt;spoken about the idea before&lt;/a&gt;, and even &lt;a href="http://gofreerange.com/twitter-lists-and-scottish-ruby-conf"&gt;run a quick prototype&lt;/a&gt; to gather feedback and test the concept. However, those are just &lt;em&gt;explorations in software&lt;/em&gt;; they don’t qualify in my eyes as a “product”.&lt;/p&gt;
 
-&lt;h3 id=&quot;update&quot;&gt;&lt;em&gt;Update!&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;After a few days of flipping between &lt;em&gt;developer&lt;/em&gt; and &lt;em&gt;user&lt;/em&gt; roles, I think we finally have something ready for consumption.&lt;/p&gt;
+
+&lt;h2 id="heylist"&gt;&lt;a href="http://heyli.st"&gt;HeyList!&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;The idea is called &lt;a href="http://heyli.st"&gt;HeyList!&lt;/a&gt;, and this is what it looks like now:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://heyli.st"&gt;&lt;img src="https://exciting.io/images/heylist/heylist.png" alt="HeyList! Homepage" /&gt;&lt;/a&gt; &lt;a href="http://heyli.st"&gt;&lt;img src="https://exciting.io/images/heylist/heylist-lists.png" alt="HeyList! Homepage" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The premise is quite simple. When a bunch of people are together at an event like a conference, social services like Twitter can really enhance the experience. You find out what’s happening in other rooms, what people are doing and thinking at the event, and lots more.&lt;/p&gt;
+
+&lt;p&gt;It’s fairly typical for people at such an event to use a &lt;em&gt;hashtag&lt;/em&gt;, like &lt;a href="https://twitter.com/search?q=%23railsconf"&gt;#railsconf&lt;/a&gt; or &lt;a href="https://twitter.com/search?q=%23rubymanor"&gt;#rubymanor&lt;/a&gt;, to mark their tweet as relevant to that event.&lt;/p&gt;
+
+&lt;h3 id="hashtags-suck"&gt;#hashtags suck&lt;/h3&gt;
+
+&lt;p&gt;What we’ve found, however, is following the hashtag tends to only reveal the superficial or conterversial aspects of the event; the tweetable quotes, the quips, and the musings of a fairly small set of “Twitterati”.&lt;/p&gt;
+
+&lt;p&gt;You miss out on lots of information that’s peripheral to the content of the conference, but potentially far more valuable. A great example of this is where people are going to socialise afterwards.&lt;/p&gt;
+
+&lt;h3 id="twitter-lists--lanyrd--heylist"&gt;Twitter Lists + Lanyrd = HeyList!&lt;/h3&gt;
+
+&lt;p&gt;Twitter has another mechanism for gathering together a curated set of tweets: &lt;em&gt;lists&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://support.twitter.com/articles/76460-how-to-use-twitter-lists"&gt;Twitter lists&lt;/a&gt; create an alternative timeline of tweets from all of the people added to that list. You can create your own lists, or subscribe to lists created by other people. You can also add people to your lists that you don’t necessarily follow. Most twitter clients support lists now, including the mobile web-based client.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://lanyrd.com"&gt;Lanyrd&lt;/a&gt; is a social conference directory that people can use to find events and mark themselves as attending those events. Many people sign in to Lanyrd using their twitter accounts, and anyone can browse the list of attendees for any event.&lt;/p&gt;
+
+&lt;p&gt;And so, that’s our solution to the hashtag problem: create twitter lists for events using Lanyrd’s attendee directory. We imagine that conferences could use HeyList to create lists on their own account (e.g &lt;a href="https://twitter.com/rubymanor/ruby-manor-4"&gt;@rubymanor/ruby-manor-4&lt;/a&gt;), and have other people subscribe to those lists, but anyone can use &lt;a href="http://heyli.st"&gt;HeyList!&lt;/a&gt; to build a list against their own twitter account if they like.&lt;/p&gt;
+
+&lt;p&gt;Here are some example lists that have already been made:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/exciting-io/printer/wiki/Making-your-own-printer&quot;&gt;Get started making your own printer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/exciting-io/printer/wiki&quot;&gt;Explore more information about printer&lt;/a&gt; and &lt;a href=&quot;https://github.com/exciting-io/printer&quot;&gt;get the source code&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Follow &lt;a href=&quot;http://twitter.com/gfrprinter&quot;&gt;@gfrprinter&lt;/a&gt; and &lt;a href=&quot;http://groups.google.com/group/gfr-printer&quot;&gt;join the community&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/tomafro/pycon-2013"&gt;tomafro/pycon-2013&lt;/a&gt;, for PyCon 2013&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/rubymanor/ruby-manor-4"&gt;rubymanor/ruby-manor-4&lt;/a&gt;, for Ruby Manor 4&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/lazyatom/confab"&gt;lazyatom/confab&lt;/a&gt;, for ConFab&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://exciting.io/images/printer/14-breadboard.JPG&quot; alt=&quot;Printer&quot; /&gt;&lt;/p&gt;
+&lt;h2 id="try-it-out"&gt;Try it out&lt;/h2&gt;
 
-&lt;a href="http://exciting.io/2012/04/12/hello-printer/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS">Read more...&lt;/a></description><pubDate>Thu, 12 Apr 2012 00:00:00 +0100</pubDate><link>http://exciting.io/2012/04/12/hello-printer/?utm_source=RSS&amp;utm_medium=RSS&amp;utm_campaign=RSS</link><guid isPermaLink="true">http://exciting.io/2012/04/12/hello-printer/</guid></item></channel></rss>
+&lt;p&gt;Anyone can &lt;a href="http://heyli.st"&gt;sign up to HeyList!&lt;/a&gt;, and we’d be really intersted in your feedback about it. &lt;a href="http://heyli.st"&gt;Try it now&lt;/a&gt; and follow the &lt;a href="http://twitter.com/heylist"&gt;@heylist&lt;/a&gt; account for updates and news.&lt;/p&gt;</description><pubDate>Mon, 25 Mar 2013 13:00:00 +0000</pubDate><link>https://exciting.io/2013/03/25/introducing-heylist/</link><guid isPermaLink="true">http://exciting.io/2013/03/25/introducing-heylist/</guid></item>
+<item><title>Printer Questions</title><description>&lt;p&gt;The response to our open source printer project has been amazing, but some people rightly have questions, so I’ll try to answer them here.&lt;/p&gt;
+
+&lt;p&gt;If you’ve got a question about &lt;a href="https://exciting.io/printer/"&gt;Printer&lt;/a&gt;, or want to discuss your ideas for printer, why not &lt;a href="https://github.com/exciting-io/printer/wiki/Frequently-Asked-Questions"&gt;check the FAQ on the wiki&lt;/a&gt;, &lt;a href="http://groups.google.com/group/gfr-printer"&gt;ask on the mailing list&lt;/a&gt;, or &lt;a href="http://twitter.com/gfrprinter"&gt;follow the printer project on Twitter&lt;/a&gt;?&lt;/p&gt;
+
+&lt;h2 id="q-"&gt;Q: &lt;img src="https://exciting.io/images/printer-questions/get-one.jpg" alt="I want to get my hands on one of these..." /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; That’s great Rory, and we’d really love for as many people as possible to start exploring with us. For me, one of the main aims of this project is to get other people to build some great &lt;a href="https://github.com/exciting-io/printer/wiki/Building-content-services"&gt;content services&lt;/a&gt; that we can all take advantage of.&lt;/p&gt;
+
+&lt;p&gt;The fastest way of getting your hands on one right now is building one yourself. There are &lt;a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer"&gt;some hopefully comprehensive instructions&lt;/a&gt; on the github wiki, which should be easy for anyone to follow.&lt;/p&gt;
+
+&lt;h2 id="q--1"&gt;Q: &lt;img src="https://exciting.io/images/printer-questions/different-to-lp.jpg" alt="Why is this different to little printer or the adafruit iot printer" /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; This is a great question, which for various reasons I’ve avoided answering, but may as well address it now.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href="https://www.adafruit.com/products/717"&gt;Adafruit IoT printer&lt;/a&gt; consists of the same printer unit that we’re using, with a nice enclosure and some simple Arduino software for printing tweets. If you want to use the printer to print something else, you will need to write new software for the Arduino to do so. If you want to print something other than ASCII text, you’ll have quite a bit of work do to too&lt;sup id="fnref:adafruit-graphics" role="doc-noteref"&gt;&lt;a href="#fn:adafruit-graphics" class="footnote" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Our &lt;a href="https://exciting.io/printer/"&gt;printer platform&lt;/a&gt; system, on the other hand, separates the content from the printer entirely, and makes it very simple to send rich content for printing from a variety of services.&lt;/p&gt;
+
+&lt;p&gt;However, it’s fairly simple to configure the Adafruit IoT printer to work with the &lt;a href="https://exciting.io/printer/"&gt;Printer&lt;/a&gt;. You’ll need to add an SD card, and modify the sketch slightly since the Adafruit kit doesn’t have the same LEDs or switch, but those are relatively trivial changes to make.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://bergcloud.com/littleprinter"&gt;Little Printer&lt;/a&gt; is going to be a lovely, polished piece of hardware, with some very polished and intuitive software that works with it. I want one. However, it’s not clear to what extent you will be able to use that hardware outside of the experiences that BERG and their partners have built&lt;sup id="fnref:lp-api" role="doc-noteref"&gt;&lt;a href="#fn:lp-api" class="footnote" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;I think the best way to characterise it is as follows: if you just want a simple printer in your living room, with as little fuss as possible, you probably want the consumer experience that Little Printer will hopefully deliver. If you’re interested in tinkering and exploring what (potentially esoteric) things might be interesting to print, then you might be interested in using what we’ve built.&lt;/p&gt;
+
+&lt;p&gt;There’s no reason why you can’t use both. I probably will. I don’t see our project as being competitive with Little Printer. Instead, I think it’s a nice open-source complement which some people might find interesting, and they can use &lt;a href="https://exciting.io/printer/"&gt;our system&lt;/a&gt; to get started exploring small printers &lt;em&gt;now&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id="q--2"&gt;Q: &lt;img src="https://exciting.io/images/printer-questions/amazing.jpg" alt="THIS IS AMAZING" /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; Gosh. Thanks Tim! And thanks also for including us in your &lt;a href="http://www.wired.com/design/2012/04/iny-printer-trend/"&gt;Wired Design article&lt;/a&gt;, which also gives a good overview of some other really interesting printer projects.&lt;/p&gt;
+
+&lt;h2 id="q--3"&gt;Q: &lt;img src="https://exciting.io/images/printer-questions/raspberry-pi.jpg" alt="Super cool idea! But will this library work with Raspberry Pi?" /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; Well, Xander, there’s no reason why the &lt;a href="http://www.raspberrypi.org/"&gt;Raspberry PI&lt;/a&gt; couldn’t be set up to work with Printer. It would, I imagine, fill the same role as the Arduino, whose only job is to poll a URL for data, and then send any received data over a serial port.&lt;/p&gt;
+
+&lt;p&gt;I would expect it to be much easier to write the software to run on the Raspberry PI, because you’ll be able to program it in a high-level language like Ruby or Python.&lt;/p&gt;
+
+&lt;h2 id="q--"&gt;Q: &lt;img src="https://exciting.io/images/printer-questions/different-printer.jpg" alt="Surely this relies on a proprietary printer and doesn't work with ALL thermal printers?" /&gt; &lt;img src="https://exciting.io/images/printer-questions/epson-printer.jpg" alt="Hey, do you know if the EPSON TMT-88IV is supported?" /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; The printer-specific parts of the system are isolated inside &lt;a href="https://github.com/exciting-io/printer/tree/master/lib/print_processor"&gt;PrintProcessor&lt;/a&gt; classes. These take abstract image data which the system produces (essentially an array of pixels), and should emit data suitable for a printer.&lt;/p&gt;
+
+&lt;p&gt;When the Arduino (or Raspberry PI, or anything else) polls the server for data, it does so with an &lt;em&gt;Accept&lt;/em&gt; header that is used to tell the server what kind of printer is being targetted. The default is &lt;em&gt;A2-raw&lt;/em&gt;,  corresponding to the &lt;em&gt;A2Raw&lt;/em&gt; print processor, which translates the pixels into the raw serial bytes that the printer will understand.&lt;/p&gt;
+
+&lt;p&gt;If you want to use a different kind of printer, you’ll need to do two things:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Define a new ‘type’ and change your Arduino to send that in the &lt;em&gt;Accept&lt;/em&gt; header (e.g. &lt;tt&gt;Accept: application/vnd.exciting.printer.TMT-88IV&lt;/tt&gt;)&lt;/li&gt;
+  &lt;li&gt;Add a class that maps the image data into the specific commands for that printer (see &lt;a href="https://github.com/exciting-io/printer/blob/master/lib/print_processor/a2_raw.rb"&gt;A2Raw&lt;/a&gt; for an example)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I’m hoping to get a chance to make the documentation around this more comprehensive, but there are already &lt;a href="https://github.com/exciting-io/printer/issues"&gt;quite a few things&lt;/a&gt; to investigate. If you’re interesting in tackling this yourself, &lt;a href="http://groups.google.com/group/gfr-printer"&gt;get in touch on the mailing list&lt;/a&gt; and we’ll do our best to help you out.&lt;/p&gt;
+
+&lt;h2 id="q--4"&gt;Q: &lt;img src="https://exciting.io/images/printer-questions/darker.jpg" alt="I wonder how I make it a bit darker?" /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; I’d like to add some configuration via the server to control the darkness of printing, but for the moment you can control this by  modifying &lt;a href="https://github.com/exciting-io/printer/blob/master/printer.ino#L23"&gt;the type in the Arduino sketch&lt;/a&gt; to something like &lt;tt&gt;A2-raw.240&lt;/tt&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can tweak this value to suit your printer. What I’ve found is that the darker you make it the more likely it is that the paper will stick to the print head.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer-questions/darker-solution.jpg" alt="A2-raw.240" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Exactly. Bravo, Andy!&lt;/p&gt;
+
+&lt;h2 id="q--5"&gt;Q: &lt;img src="https://exciting.io/images/printer-questions/upside-down.jpg" alt="This seems to be upside down; How about that" /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; If you’re using the default printer type, you can flip it by editing the Arduino sketch and &lt;a href="https://github.com/exciting-io/printer/blob/master/printer.ino#L23"&gt;setting the type&lt;/a&gt; to &lt;tt&gt;A2-raw.240.flipped&lt;/tt&gt;. Again, I’d like make this a bit more elegant, but for the moment this works.&lt;/p&gt;
+
+&lt;h2 id="q--6"&gt;Q: &lt;img src="https://exciting.io/images/printer-questions/price.jpg" alt="I like the idea of printer output I can stuff into my wallet or post onto a surface. Cool that it is ephemeral In that the Images fade over time. I may get one to play with if Its price is &amp;lt; $100" /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;A:&lt;/strong&gt; I’ve spent some time investigating costs for doing this, and you can see a fairly detailed breakdown in &lt;a href="https://github.com/exciting-io/printer/wiki/Component-list"&gt;the component list on the wiki&lt;/a&gt;. As that page concludes, there’s a fairly hard lower bound to the component cost, even buying in bulk, and it looks like the raw cost is around $140 or £80. That’s without any margin at all, and doesn’t include postage or any local taxes (like VAT here in the UK).&lt;/p&gt;
+
+&lt;p&gt;I’d love to be able to sell everybody a printer for as little as possible, but realistically that would mean building our own controller boards, rather than using Arduinos. This would be very expensive for us to develop (as I’m sure BERG will have experienced), and also makes the final hardware less hackable for you.&lt;/p&gt;
+
+&lt;p&gt;We’re still keen to help as many people explore printing as possible, and so we’ll keep looking at how we might do this. We still have a small number of kits available to loan if you are based near us (London), and there is a chance that there will be a very small number of kits available to sell in the near future.&lt;/p&gt;
+
+&lt;p&gt;Watch &lt;a href="https://exciting.io/blog/"&gt;this blog&lt;/a&gt;, the &lt;a href="http://groups.google.com/group/gfr-printer"&gt;mailing list&lt;/a&gt; and the &lt;a href="http://twitter.com/gfrprinter"&gt;gfrprinter twitter account&lt;/a&gt; for updates.&lt;/p&gt;
+
+&lt;h2 id="more-questions"&gt;More questions?&lt;/h2&gt;
+
+&lt;p&gt;We’d love to hear from you. Sign up to the &lt;a href="http://groups.google.com/group/gfr-printer"&gt;mailing list&lt;/a&gt;, or &lt;a href="http://twitter.com/gfrprinter"&gt;follow the printer project on Twitter&lt;/a&gt; to ask us any other questions, or discuss your ideas for printing with other people.&lt;/p&gt;
+
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+  &lt;ol&gt;
+    &lt;li id="fn:adafruit-graphics" role="doc-endnote"&gt;
+      &lt;p&gt;Although it’s not simple to use the Ardunio directly to print graphical content, as part of my early work on the &lt;a href="https://exciting.io/printer/"&gt;Printer&lt;/a&gt; system I contributed some code to the &lt;a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library"&gt;Arduino Library&lt;/a&gt; which does make this simpler. &lt;a href="#fnref:adafruit-graphics" class="reversefootnote" role="doc-backlink"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id="fn:lp-api" role="doc-endnote"&gt;
+      &lt;p&gt;BERG haven’t made any specific information available (beyond &lt;a href="https://twitter.com/bergcloud/status/195450384515465216"&gt;hints&lt;/a&gt;) about what kind of user-accessible API that Little Printer may have. I have a few ideas about what they &lt;em&gt;might&lt;/em&gt; do, but you’d really need to ask them. It’s quite possible that what they are building will allow similar flexibility &lt;a href="#fnref:lp-api" class="reversefootnote" role="doc-backlink"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</description><pubDate>Tue, 01 May 2012 01:05:00 +0100</pubDate><link>https://exciting.io/2012/05/01/printer-questions/</link><guid isPermaLink="true">http://exciting.io/2012/05/01/printer-questions/</guid></item>
+<item><title>Hello, Printer</title><description>&lt;p&gt;For over a year, I have been playing around with printing things out on a receipt printer. Recently, a few accidents of implementation gave more life to my tinkerings than I had originally intended.&lt;/p&gt;
+
+&lt;h3 id="update"&gt;&lt;em&gt;Update!&lt;/em&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer"&gt;Get started making your own printer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/exciting-io/printer/wiki"&gt;Explore more information about printer&lt;/a&gt; and &lt;a href="https://github.com/exciting-io/printer"&gt;get the source code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Follow &lt;a href="http://twitter.com/gfrprinter"&gt;@gfrprinter&lt;/a&gt; and &lt;a href="http://groups.google.com/group/gfr-printer"&gt;join the community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/14-breadboard.JPG" alt="Printer" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: In a nutshell, I’ve accidentally built a software system that makes it easy for &lt;strong&gt;YOU&lt;/strong&gt; to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer"&gt;build your own small internet-connected printers&lt;/a&gt;,&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/exciting-io/printer/wiki/Building-content-services"&gt;produce customised content&lt;/a&gt; for them, and&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/exciting-io/printer/wiki/Architecture"&gt;share that content&lt;/a&gt; with other people who also have small internet-connected printers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m ready to share, and I’d like you to get involved, and I will explain how &lt;a href="#skip-to-the-end"&gt;at the bottom of this post&lt;/a&gt;. But before that – if you can stand to wait – indulge me in some introspection.&lt;/p&gt;
+
+&lt;p&gt;I am often asked &lt;em&gt;“why are you doing this printing stuff?”&lt;/em&gt; or &lt;em&gt;“what is this all for?”&lt;/em&gt;. These are good questions. I struggle to answer them. The truth is: &lt;strong&gt;I don’t really know why&lt;/strong&gt;. I wish I could tell you. I can’t even really justify it. There may be no practical purpose for this.&lt;/p&gt;
+
+&lt;p&gt;But: I have a hunch that there’s something interesting to be explored.&lt;/p&gt;
+
+&lt;p&gt;If you’re really impatient, you can &lt;a href="#skip-to-the-end"&gt;skip to the end&lt;/a&gt; to find out what I’ve done, but first I wanted to explain how I got here from essentially &lt;em&gt;no-clue-what-I-was-trying-to-do&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;It’s important to me that you understand that &lt;strong&gt;there was no grand plan&lt;/strong&gt;. I didn’t have any sort of vision. The solution to each problem pointed in a fairly straightforward way to the solution of the next problem, and so the evolution of my original goal into the idea I’ll describe at the end is just one simple step after another.&lt;/p&gt;
+
+&lt;p&gt;But the best way to understand is to simply &lt;em&gt;start from the start&lt;/em&gt;. Really, I just wanted to &lt;em&gt;finish&lt;/em&gt; something.&lt;/p&gt;
+
+&lt;h2 id="finishing-timmy"&gt;Finishing Timmy&lt;/h2&gt;
+
+&lt;p&gt;A year ago, we used a receipt printer to print SMS messages using the &lt;a href="https://api.hashblue.com"&gt;hashblue API&lt;/a&gt; that we built for O2.&lt;/p&gt;
+
+&lt;p&gt;I called it &lt;a href="http://gofreerange.com/timmy"&gt;Timmy Printface&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/timmy/timmy-behind-the-scenes.jpg" alt="Timmy" /&gt;&lt;/p&gt;
+
+&lt;p&gt;When I made &lt;a href="http://gofreerange.com/timmy"&gt;Timmy Printface&lt;/a&gt;, it was designed in large part to market something a client asked us to build back at the client – to help them understand the value of what we had done.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/0-timmy.jpg" alt="Timmy printing a text message" /&gt;&lt;/p&gt;
+
+&lt;p&gt;But in terms of software, it was a &lt;a href="http://en.wikipedia.org/wiki/Kludge"&gt;hack&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Later, &lt;a href="http://enemyofchaos.wordpress.com/2011/06/21/hack-circus-for-interesting-11-thank-you/"&gt;I was asked to enhance Timmy&lt;/a&gt; to do more – to print instagrams, and conduct a pseudo-dialogue via tweets. I dusted off the hack, bodged some more bits on, and nursed Timmy’s laptop brain for a day as it crashed and misbehaved and generally ran with all the reliability and ease that you might expect from a hacky, flaky piece of software.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/2-timmy-instagram.JPG" alt="Timmy printing instagrams" /&gt;&lt;/p&gt;
+
+&lt;p&gt;As someone in &lt;a href="https://exciting.io/"&gt;the business of producing software&lt;/a&gt;, I don’t get a lot of satisfaction out of long-lived hacks. Our clients tend to prefer software that runs reliably, and so it’s not surprising that we tend to enjoy creating software that is robust and well-designed.&lt;/p&gt;
+
+&lt;p&gt;Timmy was not robust. Or well designed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/1-timmy-error.JPG" alt="Timmy breaking" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Rather than letting the hack fester in the back of my mind, I decided to try and polish it into a simple, reliable tool that I could pick up and use later, should the occasion arise.&lt;/p&gt;
+
+&lt;p&gt;There’s only one thing I wanted to &lt;em&gt;achieve&lt;/em&gt;, and that was to “finish it”, whatever that actually meant. In doing so, by accident, I think I’ve stumbled upon something that’s interesting enough to share.&lt;/p&gt;
+
+&lt;h2 id="beyond-timmy"&gt;Beyond Timmy&lt;/h2&gt;
+
+&lt;p&gt;Since Timmy, I decided it would be good to have my own printer to play with, rather than relying too much on the original (which was on loan from &lt;a href="http://www.riglondon.com"&gt;RIG&lt;/a&gt;-and-&lt;a href="http://www.newspaperclub.com/"&gt;Newspaper Club&lt;/a&gt;’s &lt;a href="http://tomtaylor.co.uk/"&gt;Tom Taylor&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;So I bought a couple on eBay.&lt;/p&gt;
+
+&lt;p&gt;I didn’t want to spend too much money (not having that much of an idea of why I was doing this made me reluctant to throw much money at it), but it turns out that you get what you pay for.&lt;/p&gt;
+
+&lt;h3 id="im-not-great-with-electronics"&gt;I’m not great with electronics&lt;/h3&gt;
+
+&lt;p&gt;The first didn’t come with a power supply, or paper, or the extremely proprietary cables required to communicate with it. I managed to hack a connection for a power supply on it, but my soldering skills were no match for the surface-mounted custom serial interface.&lt;/p&gt;
+
+&lt;p&gt;The second had a much more amenable communication port, but also came without a power supply, and asked for 20 volts at 2 amps to be delivered to it via yet another impossible-to-source DIN plug. I made less progress with it than I did with the first printer; I came close to splicing an old laptop power supply directly onto its PCB, but I am at best an electronics amateur and I know that 20 volts and 2 amps is not a trivial amount of electricity.&lt;/p&gt;
+
+&lt;p&gt;This wasn’t doing much to support my desire to “finish it”, and so I put it all in a cupboard for a few months.&lt;/p&gt;
+
+&lt;h2 id="a-simple-usable-thermal-printer"&gt;A simple, usable thermal printer&lt;/h2&gt;
+
+&lt;p&gt;But then I stumbled onto this little device, which seemed easy to power (5V) and communicate with (three wires you can plug into any breadboard). Better still, a good chunk of the work to drive it from an &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt; had &lt;a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library"&gt;already been done&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Within a few minutes of plugging everything together, I could get the printer to spit out characters with ease, and without a tangle of wires ultimately leading to a kludge-filled script on a computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/3-adafruit-sample-printout.JPG" alt="The simple Adafruit printer demo" /&gt;&lt;/p&gt;
+
+&lt;h3 id="an-aside-on-thermal-printing"&gt;An aside on thermal printing&lt;/h3&gt;
+
+&lt;p&gt;Receipt printers tend to have one very simple mode of printing, which is just text-based. That’s what you’ll see on most shop receipts, and that’s what &lt;a href="http://gofreerange.com/timmy"&gt;Timmy&lt;/a&gt; used. You can make the characters more bold, or inverse, or larger, but basically you’re telling the printer “print an ‘a’ on the paper” and it will do just that.&lt;/p&gt;
+
+&lt;p&gt;Some printers will also let you print barcodes, which is obviously useful if you’re printing an actual receipt.&lt;/p&gt;
+
+&lt;p&gt;Finally, printers often need to produce a logo of some kind, and so they offer a bitmap mode, where you can specify the exact image to be reproduced in glorious low-fidelity monochrome.&lt;/p&gt;
+
+&lt;h2 id="bringing-graphics-to-the-printer"&gt;Bringing graphics to the printer&lt;/h2&gt;
+
+&lt;p&gt;I had already explored text-based printing with &lt;a href="http://gofreerange.com/timmy"&gt;Timmy&lt;/a&gt;, but to produce something that actually looks nice, you need to use bitmap output. The first thing I needed to do was extend the existing library to better support graphics printing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/4-simple-graphics.jpg" alt="Some simple graphics" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The printer expected the dots for printing to be encoded directly as an array of bits in memory, and so I wrote some tools to generate the corresponding C arrays &lt;a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library/pull/3/commits/d5fdbf276cd1d67973231364a9d7704120bd36c9"&gt;from ASCII files&lt;/a&gt;, and then &lt;a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library/pull/3/commits/346206de3d1c86a833a59462146090976f4b2a05"&gt;from images directly&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/5-slightly-more-advanced-graphics.JPG" alt="Some slightly more advanced graphics" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The specific printer would only print up to 255 rows of dots, and so I needed to figure out how to &lt;a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library/pull/3/commits/6010b56a01015d1674b8b12969a08f0b4706ee0c"&gt;split larger graphics up into chunks which could be sent to the printer sequentially&lt;/a&gt;. Eventually, I was able to print graphics that were longer than 255 rows:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/6-longer-graphics.jpg" alt="Graphics that were longer than 255 rows" /&gt;&lt;/p&gt;
+
+&lt;h3 id="out-of-memory"&gt;Out of memory&lt;/h3&gt;
+
+&lt;p&gt;However, the Arduino only has a limited amount of flash memory (normally around 32k), which meant that the largest full-width image that could be compiled into the program was around 450 rows high. (That’s why the above image looks like it’s missing one half - I cropped it to fit in the Arduino’s memory.)&lt;/p&gt;
+
+&lt;p&gt;That was a limitation that I wasn’t happy with. Obviously some external storage for the data would be required, and thankfully the &lt;a href="http://arduino.cc/en/Main/ArduinoEthernetShield"&gt;Ardunio Ethernet shield&lt;/a&gt; comes with a MicroSD reader built in. I added the ability to convert images into files containing the right bits for the printer, and wrote an Arduino library to print bitmaps using those files (and subsequently &lt;a href="https://github.com/adafruit/Adafruit-Thermal-Printer-Library/pull/3/commits/82dacbdd6c3ea6a32fe123cb1ff17b6810a4c330"&gt;from any Stream object&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/7-full-graphics.JPG" alt="Full-width graphics of more than 255 pixel rows" /&gt;&lt;/p&gt;
+
+&lt;p&gt;With this in place, I could now print any image that I generated on my computer, saved onto the SD card and put into the Arduino. Here’s the long test image I cobbled together in Fireworks to explore different font sizes and line weights:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/8-graphics-test.jpg" alt="Full-width graphics. I drew this in Fireworks to get a feel for different line weights and font sizes" /&gt;&lt;/p&gt;
+
+&lt;h2 id="moving-data-more-easily"&gt;Moving data more easily&lt;/h2&gt;
+
+&lt;p&gt;But that’s not really ideal for a simple, reusable tool – having to handle an SD card every time you want to print something is cumbersome at best. The fact that I’m already using the &lt;em&gt;Ethernet&lt;/em&gt; shield clearly pointed towards the obvious thing to do: send the data over the network to the SD card, before printing the data from it as before.&lt;/p&gt;
+
+&lt;p&gt;I spent most of February &lt;a href="http://arduino.cc/forum/index.php/topic,95531.0.html"&gt;wrangling with the Arduino ethernet library and networks&lt;/a&gt;. When I was tinkering at the office, the connection would often seem flaky and unreliable. Larger downloads (50-100k, or about 15cm of printing) would stall, or fail inexplicably.&lt;/p&gt;
+
+&lt;p&gt;I became familiar with &lt;a href="http://www.wireshark.org"&gt;Wireshark&lt;/a&gt;, watching the low-level networking traffic between my computer and the hardware, and went through every permutation of network cable and socket it could be plugged into, every network device in the office (hub, switch, directly into the router), and every connection protocol possible (direct sockets, HTTP server on the Arduino, HTTP client on the Arduino).&lt;/p&gt;
+
+&lt;p&gt;Eventually, after a lot of amateur effort and stubbornness, I managed to put a simple HTTP client on the Ardunio that would reliably download the data from my computer, save it onto the SD card, and then start printing.&lt;/p&gt;
+
+&lt;p&gt;If the size of the data downloaded didn’t match the size indicated by the HTTP headers, then I would be alerted by a red LED that there was still something unreliable in the stack. Thankfully, I haven’t seen the red LED for some time now.&lt;/p&gt;
+
+&lt;h3 id="translating-the-problem"&gt;Translating the problem&lt;/h3&gt;
+
+&lt;p&gt;Slowly but surely I was translating my goal towards the domain I knew best. From sending serial commands to the printer board, to programming bitmap arrays onto an Arduino via C++, I was now dealing with something far closer to my daily work: an HTTP interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://sinatrarb.com"&gt;Sinatra&lt;/a&gt; makes it simple to &lt;a href="https://gist.github.com/2291071#file_1_hardcoded_simple_printer_server.rb"&gt;write a server&lt;/a&gt; for the Arduino’s client to poll against. If the server sent an empty response, the printer would do nothing; in effect, it would “wait” for data to become available, and then print it without caring much about why.&lt;/p&gt;
+
+&lt;p&gt;Now I just needed a nicer way to generate bitmaps for printing than my clumsy Fireworks efforts.&lt;/p&gt;
+
+&lt;h2 id="generating-images"&gt;Generating images&lt;/h2&gt;
+
+&lt;p&gt;I was already using &lt;a href="http://www.imagemagick.org/"&gt;ImageMagick&lt;/a&gt; to translate images into the bitmap format for the printer, so I started to investigate using &lt;a href="http://www.imagemagick.org/RMagick/doc/rvgtut.html"&gt;RVG&lt;/a&gt; (which &lt;a href="http://rmagick.rubyforge.org/"&gt;RMagick&lt;/a&gt; provides) to generate graphics for printing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/9-rvg-logo-tests.jpg" alt="Go Free Range" /&gt;&lt;/p&gt;
+
+&lt;p&gt;After a bit of trial and error, I had produced our company logo as a generated image; this could then be fed through the existing routines to convert it into bits, which the printer would then download as it was polling the server.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/10-rvg-logo.JPG" alt="Go Free Range" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, I “drew” a sudoku grid and printed that:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/11-sudoku.jpg" alt="Sudoku" /&gt;&lt;/p&gt;
+
+&lt;p&gt;To make it all dynamic, I generated the RVG from within the ‘backend server’ that the printer was polling. However, if I wanted to change the image for printing, I would have to restart the server, so I &lt;a href="https://gist.github.com/2291071#file_3_rvg_image_generator.rb"&gt;extracted that code&lt;/a&gt;, and made the server &lt;a href="https://gist.github.com/2291071#file_2_simple_queue_printer_server.rb"&gt;check on a “data queue” each time it was polled&lt;/a&gt; by the printer. The script which generated the graphic then simply had to “push” its data onto the queue, after which it would be “popped” from the queue the next time the printer made a request.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/12-sudoku.jpg" alt="Endless sudoku" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This was great, but RVG isn’t exactly easy to generate, or fun to write. Complex shapes had to be laid out in a painstakingly-precise way.&lt;/p&gt;
+
+&lt;p&gt;But more importantly, it wasn’t very useful for printing text.&lt;/p&gt;
+
+&lt;h2 id="dynamic-content"&gt;Dynamic content&lt;/h2&gt;
+
+&lt;p&gt;If I ever wanted to print something dynamic like, say, the day of the week, then there was no way to know if the changing length of that string would be too long for the printout. RVG didn’t know anything about ‘flowing text’, which is what causes long sentences to wrap to the next line when you’re typing a sentence in any text editor.&lt;/p&gt;
+
+&lt;p&gt;What I needed was some way of producing an image that I knew could be constrained at the maximum width of the printer (384 dots or pixels), and would intelligently format the content within those constraints.&lt;/p&gt;
+
+&lt;h3 id="designing-in-the-browser"&gt;Designing in the browser&lt;/h3&gt;
+
+&lt;p&gt;After a bit of pondering, the solution to both problems became obvious. I use some software every day that expects to take content and reformat it at whatever width I specify: &lt;a href="http://www.webkit.org/"&gt;the web browser&lt;/a&gt;. When you adjust the width of your browser window, unless the document has specifically directed otherwise the text will reflow and wrap so that it fits perfectly within the visible window.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/13-web-based-design.JPG" alt="The first web-based printout" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Even better, it’s &lt;em&gt;far&lt;/em&gt; simpler to design content in HTML, CSS and Javascript than it is in RVG, and these were tools I was already familiar with. All I needed was a way to turn a webpage into an image, which I could then pop into the existing stack.&lt;/p&gt;
+
+&lt;h3 id="teaching-the-computer-to-surf-the-web"&gt;Teaching the computer to surf the web&lt;/h3&gt;
+
+&lt;p&gt;When doing client work that involves javascript, we often test it using a “headless browser”, which is roughly speaking a web browser that doesn’t actually display its windows on your computer. We’ve had a lot of success with &lt;a href="http://phantomjs.org"&gt;PhantomJS&lt;/a&gt;, and as it happens it is quite easy for it to load a webpage and &lt;a href="http://code.google.com/p/phantomjs/wiki/QuickStart#Rendering"&gt;save what would be displayed as an image&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;With a little bit of tweaking to fix the browser width at 384 pixels, and some &lt;a href="http://printer.exciting.io/sample.html"&gt;helpful stylesheets to make prototyping content for printing at that size easier&lt;/a&gt;, it all worked. All that was required to print something was an HTTP page which could be dispatched through the existing software and finally be printed.&lt;/p&gt;
+
+&lt;p&gt;(At each step, the boundary of the system moved closer to something that I felt I could pick up later without having to hack it all together again. This was progress.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/15-canvas-icons.JPG" alt="Weather icons via Javascript and Canvas" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I added a simple HTML page to the backend server with some fake weather output using HTML5 canvas icons, and some twitter mentions marked up with HTML and CSS, and printed that about thirty times.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/17-simple-publication.jpg" alt="A simple 'publication'" /&gt;&lt;/p&gt;
+
+&lt;h2 id="extracting-content-generation"&gt;Extracting content generation&lt;/h2&gt;
+
+&lt;p&gt;I started to make the weather data “live” using the &lt;a href="http://www.wunderground.com/weather/api/"&gt;Wunderground API&lt;/a&gt;, but I was getting back into the &lt;a href="http://en.wikipedia.org/wiki/Kludge"&gt;hackish&lt;/a&gt; territory that I started this whole endeavour to avoid. Parsing JSON weather data wasn’t directly helping me to &lt;em&gt;finish&lt;/em&gt; the printer.&lt;/p&gt;
+
+&lt;p&gt;I realised that I could remove all of the “content” logic from the code, because the HTML I was turning into an image didn’t necessarily have to be served by the same software that was doing the printer processing.&lt;/p&gt;
+
+&lt;p&gt;But this made me pause for thought. So… if there was another HTTP server that made a printer-suitable HTML page of weather data available at URL “&lt;em&gt;http://some-service&lt;/em&gt;”, then I could post the URL of that page to the backend server, and as long as PhantomJS could load the content at “&lt;em&gt;http://some-service&lt;/em&gt;” then it would happily process the page into an image and the data would end up at the printer exactly as before.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Oh my&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id="printers-and-content-distributed-and-federated"&gt;Printers and content: &lt;a href="https://github.com/exciting-io/printer/wiki/Architecture"&gt;distributed and federated&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;I drew this on the whiteboard:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/20-architecture.JPG" alt="Distributed, federated architecture for printers" /&gt;&lt;/p&gt;
+
+&lt;p&gt;(You can see a &lt;a href="https://github.com/exciting-io/printer/wiki/Architecture"&gt;much tidier and hopefully clearer architecture explanation on the wiki&lt;/a&gt;.)&lt;/p&gt;
+
+&lt;p&gt;In the last couple of weeks, it was reasonably easy to implement all of this:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Allow the posting of a URL to the ‘backend server’, which would trigger the conversion of the page at that URL&lt;/li&gt;
+  &lt;li&gt;Allow posting of HTML content itself to the ‘backend server’, which would be rendered directly&lt;/li&gt;
+  &lt;li&gt;Separating each of the parts of the rendering into its their own queues - turning the page into an image, turning the image into bits&lt;/li&gt;
+  &lt;li&gt;Allowing some way to &lt;em&gt;preview&lt;/em&gt; how some content might appear on the printer, by generating the page image and serving that from the ‘backend server’.&lt;/li&gt;
+  &lt;li&gt;Extract the printer logic out of the Arduino, and back into the server, making it easier to support other printers (maybe you have one of &lt;a href="http://microprinter.pbworks.com/"&gt;those CBM 231s&lt;/a&gt;?)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also realised some of the implications of the architectural choices I’d made:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It would be possible to support &lt;em&gt;multiple printers&lt;/em&gt; in the same backend server, by sending URLs for printing to a printer-specific endpoint (i.e. posting the URL to /printer/123)&lt;/li&gt;
+  &lt;li&gt;Responsibility for content was completely delegated to service software that simply had to provide URLs&lt;/li&gt;
+  &lt;li&gt;Data for printing could therefore come from multiple, completely independent services that didn’t need to know anything about each other, only the URLs to which they should post content.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And then, most interestingly to me:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Because the content service might be responsible for posting their URLs to the backend print server, there’s no reason why there needs to be a single print server either. &lt;em&gt;You could all run your own&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you and I both want weather forecasts to appear on our printers, but my printer was polling the backend at &lt;em&gt;http://server1&lt;/em&gt;, and your printer was polling &lt;em&gt;http://server2&lt;/em&gt;, then we just need the weather service to know that it should post the weather data for me to my server, and the weather data for you to your server. &lt;strong&gt;There’s no need for a central backend server if everything is dealing with URLs.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’d like to learn more about the architecture, &lt;a href="https://github.com/exciting-io/printer/wiki/Architecture"&gt;take a look at the wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And so that’s where we are now.&lt;/p&gt;
+
+&lt;h2 id="skip-to-the-end"&gt;What it is&lt;/h2&gt;
+
+&lt;p&gt;As I mentioned at the top of this meandering prose, it’s a software system that makes it easy for &lt;strong&gt;YOU&lt;/strong&gt; to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer"&gt;build your own small internet-connected printers&lt;/a&gt;,&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/exciting-io/printer/wiki/Building-content-services"&gt;produce customised content&lt;/a&gt; for them, and&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/exciting-io/printer/wiki/Architecture"&gt;share that content&lt;/a&gt; with other people who also have small internet-connected printers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;a href="https://exciting.io/printer/"&gt;main project page is here&lt;/a&gt;. We are running &lt;a href="http://printer.exciting.io"&gt;a backend server&lt;/a&gt;, which our office printer is connected to. If you do make a printer (&lt;a href="#getting-a-printer"&gt;see below&lt;/a&gt;), you’re more than welcome to use it rather than running your own.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/21-simple-messages.jpg" alt="Simple messages send using a distributed architecure" /&gt;&lt;/p&gt;
+
+&lt;h3 id="the-software"&gt;The software&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://github.com/exciting-io/printer"&gt;Here’s the code&lt;/a&gt;; it’s open source and you can do what you like with it.&lt;/p&gt;
+
+&lt;p&gt;You can run your own copies of &lt;a href="http://github.com/exciting-io/printer"&gt;the software&lt;/a&gt; if you wish; doing so will not isolate you from the “cloud” of software build by other people. As long as &lt;a href="https://github.com/exciting-io/printer/wiki/Architecture"&gt;backend servers and content services have publicly-accessible URLs&lt;/a&gt;, there’s nothing preventing other people using any available service to generate content for their own printers.&lt;/p&gt;
+
+&lt;p&gt;I’ve written some extremely trivial (both in scope and implementation) content services for &lt;a href="http://mail.printer.exciting.io"&gt;sending messages&lt;/a&gt; (&lt;a href="http://github.com/exciting-io/printer-mail"&gt;source code&lt;/a&gt;, see picture above) and &lt;a href="http://paint.printer.exciting.io"&gt;sending drawings&lt;/a&gt; (&lt;a href="http://github.com/exciting-io/printer-paint"&gt;source code&lt;/a&gt;, see picture below).&lt;/p&gt;
+
+&lt;p&gt;I’ve also written a very simple example of an automated content publisher, which “delivers” &lt;a href="http://weather.printer.exciting.io"&gt;a weather forecast&lt;/a&gt; to a printer at a fixed time.&lt;/p&gt;
+
+&lt;p&gt;(None of these applications are really more than demonstrations to clarify how I imagine things could fit together.)&lt;/p&gt;
+
+&lt;p&gt;If you take a quick look at their source, and the &lt;a href="https://github.com/exciting-io/printer/wiki/API"&gt;Printer API&lt;/a&gt;, then it should be quite clear how you can add your own printer (see below) to those services, or run your own copies of them, and – &lt;strong&gt;most importantly&lt;/strong&gt; – write your &lt;a href="https://github.com/exciting-io/printer/wiki/Building-content-services"&gt;own content services for the stuff &lt;em&gt;you&lt;/em&gt; would like to print&lt;/a&gt;. If it isn’t clear, &lt;a href="http://groups.google.com/group/gfr-printer"&gt;please let me know&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/24-simple-drawings.JPG" alt="Simple pictures send using a distributed architecure" /&gt;&lt;/p&gt;
+
+&lt;h3 id="next-steps"&gt;Next steps&lt;/h3&gt;
+
+&lt;p&gt;The backend software is still evolving; I have some pretty clear ideas about &lt;a href="https://github.com/exciting-io/printer/issues"&gt;what needs to be improved and what I’d like to do next&lt;/a&gt;, but I think it’s ready for other people to play with too.&lt;/p&gt;
+
+&lt;h2 id="getting-a-printer"&gt;Getting a printer&lt;/h2&gt;
+
+&lt;p&gt;If you want to make a printer, I’ve written a reasonably detailed and picture-ful &lt;a href="https://github.com/exciting-io/printer/wiki/Making-your-own-printer"&gt;step by step guide to building one and setting it up&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We are going to make a &lt;a href="https://exciting.io/printer/#borrow"&gt;small number of printers available to loan&lt;/a&gt; to people who have an idea they’d like to explore. We’d love to help, and everyone will benefit from the services and content you make.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://exciting.io/images/printer/18-maps.JPG" alt="Maps" /&gt;&lt;/p&gt;
+
+&lt;h2 id="why"&gt;Why?&lt;/h2&gt;
+
+&lt;p&gt;As I said above, this is &lt;em&gt;all open source&lt;/em&gt;; we’re not selling this as a commercial venture because we’re more interested in how a distributed, federated network of producers and consumers might work and evolve. It’s an experiment.&lt;/p&gt;
+
+&lt;p&gt;This isn’t going to be interesting to most people, because they (quite rightly) value a polished and supported product, rather than a DIY exploratory tool.&lt;/p&gt;
+
+&lt;p&gt;But if you &lt;em&gt;are&lt;/em&gt; interested in collaboratively exploring what might be possible with “internet-of-things printing”, then I think this is a reasonable place for us to start together. I’m looking forward to what we might discover.&lt;/p&gt;
+
+&lt;h2 id="other-printers"&gt;Other printers&lt;/h2&gt;
+
+&lt;p&gt;The thermal printer that I’ve used is the exact same one that Adafruit provide as part of their “&lt;a href="http://wiki.ladyada.net/tutorials/products/iotp"&gt;IoT Printer Kit&lt;/a&gt;”, which prints out tweets matching a given keyword as they are encountered.&lt;/p&gt;
+
+&lt;p&gt;If you were willing to sacrifice the LEDs and print button, there’s no reason why you couldn’t use that kit with the printer backend software presented here.&lt;/p&gt;
+
+&lt;p&gt;News International’s research lab have produced some alternative software (unfortunately now removed) for the Adafruit kit called the &lt;a href="https://web.archive.org/web/20160617191333/http://newsinternational.github.io/iot-assistant/"&gt;IoT assistant&lt;/a&gt; (&lt;a href="https://github.com/jeanm4t/iot-assistant"&gt;extant fork here&lt;/a&gt;), which is slightly more advanced in that it can print information from your google calendar and gmail accounts too. I believe they have plans to expand their software to support more than one printer per instance, but their architecture is more centralised (the content is generated by a single server) than that presented here.&lt;/p&gt;
+
+&lt;p&gt;It’s also worth mentioning some “historical” printers of note. The printer that ran &lt;a href="http://gofreerange.com/timmy"&gt;Timmy Printface&lt;/a&gt; a year ago was used by &lt;a href="http://tomtaylor.co.uk"&gt;Tom Taylor&lt;/a&gt; in 2009 to &lt;a href="http://tomtaylor.co.uk/projects/microprinter"&gt;print out daily memos&lt;/a&gt;. His software is perhaps closer in architecture to what I’ve built (a printer polling from a queue). &lt;a href="http://flipbit.co.uk/"&gt;Chris Wood&lt;/a&gt; extended the software to &lt;a href="http://flipbit.co.uk/microprinting.html"&gt;print tube information&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There’s even a &lt;a href="http://microprinter.pbworks.com/"&gt;wiki&lt;/a&gt; that has sprung up around the CBM 231 printers that people commonly used.&lt;/p&gt;
+
+&lt;p&gt;What most clearly distinguishes this project from all of the printers above – &lt;a href="http://gofreerange.com/timmy"&gt;Timmy&lt;/a&gt; included – is the ease with which independent people can create &lt;em&gt;great-looking content&lt;/em&gt; for these printers, and &lt;em&gt;share&lt;/em&gt; that content with other interested people.&lt;/p&gt;
+
+&lt;p&gt;Rather than being limited to text-based output, far richer designs can be easily constructed using standard web tools like HTML, CSS and Javascript. &lt;em&gt;And&lt;/em&gt; you don’t need to care about the printing infrastructure – you can just focus on making the content as useful and interesting as possible.&lt;/p&gt;
+
+&lt;h3 id="little-printer"&gt;Little Printer&lt;/h3&gt;
+
+&lt;p&gt;And, of course, there is the upcoming &lt;a href="http://bergcloud.com/littleprinter"&gt;Little Printer&lt;/a&gt; from &lt;a href="http://berglondon.com"&gt;BERG&lt;/a&gt;, available later this year.&lt;/p&gt;
+
+&lt;p&gt;For what it’s worth, &lt;em&gt;I believe the two projects complement each other perfectly&lt;/em&gt;. Little Printer is a commercial, polished and supported product, with a huge amount of attention to detail going in to both the hardware and the content that it produces.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://exciting.io/printer/"&gt;This project&lt;/a&gt; is open source, and well suited to collaboratively explore what might be interesting to print in a more undirected and open-ended way.&lt;/p&gt;
+
+&lt;h2 id="lets-explore"&gt;Let’s explore&lt;/h2&gt;
+
+&lt;p&gt;If internet printing is an island, then Little Printer is like a lighthouse, signaling its presence.&lt;/p&gt;
+
+&lt;p&gt;With the open source software and hardware outlined above, we now have some tools to collaboratively explore the many other coastlines and inland jungles of this new territory.&lt;/p&gt;
+
+&lt;p&gt;I am &lt;em&gt;sure&lt;/em&gt; you have better ideas for how to use an internet-enabled small printer than I do. I’m looking forward to exploring together.&lt;/p&gt;
+
+&lt;h2 id="more-information"&gt;More information&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://exciting.io/printer/"&gt;More details&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://github.com/exciting-io/printer/wiki"&gt;The wiki&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://printer.exciting.io"&gt;Our backend server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://mail.printer.exciting.io/send/exciting"&gt;Send a message to our printer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://github.com/exciting-io/printer"&gt;Source code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description><pubDate>Thu, 12 Apr 2012 00:00:00 +0100</pubDate><link>https://exciting.io/2012/04/12/hello-printer/</link><guid isPermaLink="true">http://exciting.io/2012/04/12/hello-printer/</guid></item>
+</channel></rss>

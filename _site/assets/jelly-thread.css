@@ -1,0 +1,191 @@
+/* Jelly, told as a Jelly conversation. Every rule is scoped under .jt. */
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/fonts/figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.jt {
+  --jt-ink: #1f2023;
+  --jt-ink-2: #5f636b;
+  --jt-line: #e3e4e8;
+  --jt-rail: #c9ccd2;
+  --jt-card: #ffffff;
+  --jt-bubble: #e1edf9;
+  --jt-pink: #c8285c;
+  --jt-pink-hover: #ad1f4d;
+  --jt-pink-wash: #fbe3ea;
+  --jt-green-ink: #2f6b2c;
+  --jt-green-wash: #e4f3df;
+  --jt-chip: #f1f2f4;
+  --jt-fs: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+  font-family: "Figtree", system-ui, sans-serif;
+  font-size: var(--jt-fs);
+  line-height: 1.55;
+  color: var(--jt-ink);
+  font-variant-numeric: lining-nums;
+  padding-inline: clamp(0.75rem, 0.2rem + 2.4vw, 2rem);
+}
+.jt ::selection { background: var(--jt-pink); color: #fff; }
+.jt svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.jt a { color: inherit; text-decoration-color: color-mix(in oklab, currentColor 35%, transparent); text-underline-offset: 0.2em; }
+.jt a:hover { text-decoration-color: currentColor; }
+.jt :focus-visible { outline: 2px solid var(--jt-pink); outline-offset: 3px; border-radius: 6px; }
+
+.jt-col { max-width: 50rem; margin-inline: auto; }
+
+.jt-crumb { margin: clamp(1.75rem, 1rem + 2vw, 2.75rem) 0 0; font-size: 0.9375rem; }
+.jt-crumb a { display: inline-flex; align-items: center; gap: 0.35em; color: var(--jt-ink-2); text-decoration: none; }
+.jt-crumb a:hover { color: var(--jt-ink); }
+
+/* subject, chips and the action pill */
+.jt-head { text-align: center; margin-top: clamp(1.25rem, 0.8rem + 1.5vw, 2rem); }
+.jt-berry { display: block; width: clamp(56px, 44px + 3vw, 76px); height: auto; margin: 0 auto 0.9rem; border-radius: 22%; box-shadow: 0 1px 2px rgb(120 20 50 / 0.08), 0 10px 24px -12px rgb(120 20 50 / 0.35); }
+.jt-head h1 {
+  margin: 0 auto;
+  max-width: 18em;
+  font-size: clamp(1.875rem, 1.2rem + 2.8vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+.jt-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem; margin: 0.9rem 0 0; }
+.jt-chip { display: inline-flex; align-items: center; gap: 0.35em; padding: 0.15em 0.6em; border-radius: 6px; background: var(--jt-chip); font-size: 0.9375rem; color: var(--jt-ink); }
+.jt-chip svg { width: 1em; height: 1em; }
+.jt-chip-green { background: var(--jt-green-wash); color: var(--jt-green-ink); }
+
+.jt-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 1.25rem;
+  padding: 0.3rem;
+  border: 1px solid var(--jt-line);
+  border-radius: 999px;
+  background: var(--jt-card);
+  box-shadow: 0 1px 2px rgb(31 32 35 / 0.05);
+  font-size: 0.9375rem;
+  color: var(--jt-ink);
+  cursor: default;
+  user-select: none;
+}
+.jt-assign { display: inline-flex; align-items: center; gap: 0.4em; padding: 0.3em 0.7em 0.3em 0.55em; border-radius: 999px; background: var(--jt-pink-wash); color: var(--jt-pink-hover); font-weight: 500; }
+.jt-act { display: inline-flex; align-items: center; gap: 0.4em; padding: 0.3em 0.65em; }
+.jt-act kbd { font: inherit; font-size: 0.8em; padding: 0 0.4em; border: 1px solid var(--jt-line); border-radius: 4px; background: var(--jt-chip); color: var(--jt-ink-2); }
+.jt-sep { width: 1px; height: 1.4em; background: var(--jt-line); margin-inline: 0.2rem; }
+
+.jt-tools { display: flex; justify-content: flex-end; margin: 1.5rem 0 0.6rem; min-height: 1.5rem; }
+.jt-collapse { display: inline-flex; align-items: center; gap: 0.35em; padding: 0.2em 0.3em; border: 0; background: none; font: inherit; font-size: 0.9375rem; color: var(--jt-ink-2); cursor: pointer; border-radius: 6px; }
+.jt-collapse:hover { color: var(--jt-ink); }
+
+/* the thread: a grey rail down the left, avatars sitting on it */
+.jt-thread { position: relative; margin: 0; padding: 0; list-style: none; }
+.jt-thread::before { content: ""; position: absolute; left: calc(1.25rem - 1px); top: 1rem; bottom: 0; width: 2px; background: var(--jt-rail); border-radius: 2px; }
+.jt-item { position: relative; }
+.jt-item + .jt-item { margin-top: 0.9rem; }
+
+.jt-av {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.jt-av-ja { background: #9a6114; }
+.jt-av-ex { background: #16181c; font-family: "Brandon Grotesque", "Figtree", sans-serif; font-weight: 400; letter-spacing: 0.08em; font-size: 0.875rem; }
+.jt-av-s { width: 1.5rem; height: 1.5rem; font-size: 0.625rem; }
+
+/* email card */
+.jt-card {
+  position: relative;
+  background: var(--jt-card);
+  border: 1px solid var(--jt-line);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgb(31 32 35 / 0.04), 0 8px 24px -16px rgb(31 32 35 / 0.25);
+}
+.jt-card-h { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.25rem 0.85rem; align-items: start; padding: 1rem 1.1rem 0.9rem; }
+.jt-card-h .jt-av { width: 3rem; height: 3rem; }
+.jt-from p { margin: 0; line-height: 1.35; }
+.jt-from b { font-weight: 650; }
+.jt-addr, .jt-to { color: var(--jt-ink-2); }
+.jt-to { margin-top: 0.15rem !important; font-size: 0.9375rem; }
+.jt-meta { display: flex; align-items: center; gap: 0.7rem; margin: 0; color: var(--jt-ink-2); font-size: 0.9375rem; white-space: nowrap; }
+.jt-icons { display: inline-flex; gap: 0.6rem; }
+.jt-date { color: var(--jt-ink-2); text-decoration: none; }
+.jt-date:hover { color: var(--jt-ink); text-decoration: underline; }
+.jt-card-b { padding: 1.1rem clamp(1.1rem, 0.6rem + 2vw, 2rem) 1.4rem; border-top: 1px dashed var(--jt-line); }
+.jt-card-b p, .jt-text p { margin: 0; max-width: 38em; }
+.jt-card-b p + p { margin-top: 0.85em; }
+.jt code { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.86em; padding: 0.08em 0.35em; border-radius: 4px; background: var(--jt-chip); }
+
+.jt-attach { margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--jt-line); }
+.jt-attach-h { margin: 0 0 0.75rem !important; font-size: 0.875rem; font-weight: 600; color: var(--jt-ink-2); }
+.jt-files { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.jt-files a { display: block; text-decoration: none; color: var(--jt-ink-2); }
+.jt-files img { display: block; width: 100%; height: auto; border: 1px solid var(--jt-line); border-radius: 8px; background: #fff; }
+.jt-files a:hover img { border-color: var(--jt-rail); }
+.jt-cap { display: block; margin-top: 0.45rem; font-size: 0.875rem; line-height: 1.4; }
+
+/* system line between parts of the story */
+.jt-event { display: flex; align-items: center; gap: 0.6rem; padding: 0.9rem 0 0.2rem; }
+.jt-item.jt-event { margin-top: 1.4rem; }
+.jt-ev-i { display: inline-grid; place-items: center; width: 2.5rem; height: 2rem; background: var(--paper, #fcfdfe); color: var(--jt-ink-2); position: relative; }
+.jt-event h2 { margin: 0; font-size: 1rem; font-weight: 650; color: var(--jt-ink); letter-spacing: 0; }
+
+/* internal comments: pale blue, out of sight of customers */
+.jt-comment { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); gap: 0.75rem; align-items: start; }
+.jt-comment > .jt-av { position: relative; box-shadow: 0 0 0 3px var(--paper, #fcfdfe); }
+.jt-bubble { max-width: 38rem; padding: 0.7rem 1.1rem 0.9rem; border-radius: 14px; background: var(--jt-bubble); }
+.jt-bubble summary { display: flex; align-items: baseline; gap: 0.75rem; list-style: none; cursor: pointer; border-radius: 6px; }
+.jt-bubble summary::-webkit-details-marker { display: none; }
+.jt-who { font-weight: 650; }
+.jt-bubble .jt-date { margin-left: auto; font-size: 0.875rem; }
+.jt-peek { display: none; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: var(--jt-ink-2); }
+.jt-bubble:not([open]) { padding-bottom: 0.7rem; }
+.jt-bubble:not([open]) .jt-peek { display: block; flex: 1; }
+.jt-bubble:not([open]) .jt-date { margin-left: 0; }
+.jt-text { margin-top: 0.3rem; }
+.jt-mention { display: inline-block; padding: 0 0.4em; border-radius: 5px; background: var(--jt-pink-wash); color: var(--jt-pink-hover) !important; text-decoration: none !important; font-weight: 500; }
+.jt-mention:hover { background: #f8d2de; }
+
+/* the foot: Reply is the way in */
+.jt-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem 1.5rem; margin-top: 1.75rem; }
+.jt-reply {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.75em 1.4em 0.75em 1.15em;
+  border-radius: 999px;
+  background: var(--jt-pink);
+  color: #fff !important;
+  font-size: 1.125rem;
+  font-weight: 650;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease-out;
+}
+.jt-reply svg { width: 1.25em; height: 1.25em; stroke-width: 2; }
+.jt-reply:hover { background: var(--jt-pink-hover); }
+.jt-reply:active { transform: translateY(1px); }
+.jt-mail { color: var(--jt-ink-2) !important; font-size: 0.9375rem; }
+
+@media (max-width: 40rem) {
+  .jt-actions { display: none; }
+  .jt-card-h { grid-template-columns: auto minmax(0, 1fr); }
+  .jt-meta { grid-column: 2; }
+  .jt-card-h .jt-av { width: 2.5rem; height: 2.5rem; }
+  .jt-files { grid-template-columns: minmax(0, 1fr); }
+  .jt-thread::before { left: calc(1rem - 1px); }
+  .jt-comment { grid-template-columns: 2rem minmax(0, 1fr); gap: 0.6rem; }
+  .jt-comment > .jt-av { width: 2rem; height: 2rem; font-size: 0.75rem; }
+  .jt-ev-i { width: 2rem; }
+  .jt-bubble { padding-inline: 0.9rem; }
+}

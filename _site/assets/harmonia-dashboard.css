@@ -1,0 +1,185 @@
+/* Harmonia, as its own dashboard. Every rule is scoped under .hm. */
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("/fonts/public-sans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.hm {
+  --hm-ink: #2b2d31;
+  --hm-ink-2: #5d6168;
+  --hm-blue: #3a72b6;
+  --hm-blue-deep: #23598f;
+  --hm-green: #3b8540;
+  --hm-green-deep: #2f6d33;
+  --hm-strip: #eceef1;
+  --hm-line: #e4e6ea;
+  --hm-wash: #f4f6f8;
+  font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  line-height: 1.55;
+  color: var(--hm-ink);
+  font-variant-numeric: lining-nums;
+}
+.hm ::selection { background: var(--hm-blue); color: #fff; }
+.hm svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.hm a { color: var(--hm-blue); text-decoration-color: color-mix(in oklab, currentColor 35%, transparent); text-underline-offset: 0.2em; }
+.hm a:hover { color: var(--hm-blue-deep); text-decoration-color: currentColor; }
+.hm :focus-visible { outline: 2px solid var(--hm-blue); outline-offset: 3px; border-radius: 4px; }
+
+.hm-in { max-width: calc(var(--max, 75rem) + 2 * var(--pad, 1.25rem)); margin-inline: auto; padding-inline: var(--pad, 1.25rem); }
+
+.hm-crumb { margin: clamp(1.75rem, 1rem + 2vw, 2.75rem) 0 0; font-size: 0.9375rem; }
+.hm-crumb a { display: inline-flex; align-items: center; gap: 0.35em; color: var(--hm-ink-2); text-decoration: none; }
+.hm-crumb a:hover { color: var(--hm-ink); }
+
+/* the app's own header bar */
+.hm-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  margin-top: 1rem;
+  padding: 1rem 0 1.1rem;
+  border-bottom: 1px solid var(--hm-line);
+}
+.hm-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.hm-brand img { width: 1.05em; height: 1.05em; }
+.hm-nav { display: flex; gap: 1.5rem; font-size: 1rem; }
+.hm-nav a { text-decoration: none; }
+.hm-nav a:hover { text-decoration: underline; }
+
+.hm-live {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1.25rem 0 0;
+  color: var(--hm-ink-2);
+  font-size: 0.9375rem;
+}
+.hm-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--hm-green); box-shadow: 0 0 0 3px color-mix(in oklab, var(--hm-green) 18%, transparent); }
+
+/* sections and the task grid: equal-height rows of cards */
+.hm-sec { margin-top: clamp(2.25rem, 1.6rem + 2vw, 3.25rem); }
+.hm-sec h2 { margin: 0 0 1.1rem; font-size: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem); font-weight: 600; color: var(--hm-ink-2); letter-spacing: -0.01em; }
+.hm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  gap: clamp(1rem, 0.7rem + 1vw, 1.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hm-task { display: flex; min-width: 0; }
+@media (min-width: 40rem) {
+  .hm-grid { grid-auto-rows: 1fr; }
+}
+
+/* the card, after a current Harmonia task */
+.hm-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--hm-line);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: background-color 0.25s ease-out, border-color 0.25s ease-out;
+}
+.hm-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0.9rem;
+  background: var(--hm-strip);
+}
+.hm-who { display: flex; align-items: center; gap: 0.55rem; margin: 0; min-width: 0; }
+.hm-who b { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-av {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #fff;
+}
+.hm-av-you { background: var(--hm-blue); }
+.hm-av-ex { background: #16181c; font-family: "Brandon Grotesque", "Public Sans", sans-serif; font-weight: 400; letter-spacing: 0.08em; }
+.hm-due { margin: 0; text-align: right; color: var(--hm-ink); }
+.hm-due b { font-weight: 700; text-decoration: underline dotted; text-decoration-thickness: 2px; text-underline-offset: 0.28em; text-decoration-color: color-mix(in oklab, var(--hm-ink) 55%, transparent); }
+.hm-vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.hm-in-card { display: flex; flex-direction: column; flex: 1; padding: 0.85rem 0.9rem 0.9rem; }
+.hm-t {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin: 0;
+  font-size: clamp(1.625rem, 1.35rem + 0.9vw, 2rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--hm-blue);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.hm-tick { display: none; width: 0.8em; height: 0.8em; stroke-width: 2.6; color: var(--hm-green); align-self: center; }
+.hm-body { margin-top: 0.6rem; flex: 1; }
+.hm-quote, .hm-go a { transition: color 0.25s ease-out; }
+.hm-quote { margin: 0; max-width: 34em; color: var(--hm-ink-2); font-size: 1.0625rem; }
+.hm-go { margin: 0.6rem 0 0; font-weight: 500; }
+.hm-act { display: flex; align-items: center; justify-content: flex-end; gap: 0.75rem; margin: 1rem 0 0; min-height: 2.4rem; }
+.hm-done-note { display: none; color: var(--hm-green-deep); font-weight: 700; font-size: 0.9375rem; }
+
+.hm-btn {
+  padding: 0.4em 0.85em;
+  border: 1px solid color-mix(in oklab, var(--hm-green) 85%, black);
+  border-radius: 5px;
+  background: var(--hm-green);
+  color: #fff;
+  font: inherit;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease-out;
+}
+.hm-btn:hover { background: var(--hm-green-deep); }
+.hm-btn:active { transform: translateY(1px); }
+
+/* done, in place: struck title, a tick, a quieter card, and Undo */
+.hm-task.is-done .hm-card { background: #fafbfa; border-color: color-mix(in oklab, var(--hm-green) 30%, var(--hm-line)); }
+.hm-task.is-done .hm-tick { display: inline-block; animation: hm-tick 0.3s ease-out both; }
+.hm-task.is-done .hm-t { color: var(--hm-ink-2); }
+.hm-task.is-done .hm-t span { text-decoration: line-through; text-decoration-thickness: 1.5px; text-decoration-color: color-mix(in oklab, var(--hm-ink-2) 70%, transparent); }
+.hm-task.is-done .hm-quote, .hm-task.is-done .hm-go a { color: #6f747b; }
+.hm-task.is-done .hm-done-note { display: inline; }
+.hm-task.is-done .hm-btn { background: #fff; color: var(--hm-ink); border-color: var(--hm-line); }
+.hm-task.is-done .hm-btn:hover { background: var(--hm-wash); }
+@keyframes hm-tick { from { opacity: 0; transform: scale(0.6); } to { opacity: 1; transform: none; } }
+.hm-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hm-card, .hm-quote, .hm-go a { transition: none; }
+  .hm-task.is-done .hm-tick { animation: none; }
+}
+
+@media (max-width: 40rem) {
+  .hm-nav { gap: 1.1rem; }
+  .hm-grid { gap: 2rem; }
+}

@@ -1,0 +1,267 @@
+/* Exciting, hybrid: the shell every page shares. Fonts, tokens, browser surfaces, header, footer, the one moving part. */
+
+@font-face {
+  font-family: "Literata";
+  src: url("/fonts/literata-normal.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Literata";
+  src: url("/fonts/literata-italic.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("/fonts/BrandonGrotesque-Regular.woff2") format("woff2"),
+    url("/fonts/BrandonGrotesque-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --paper: #fcfdfe;
+  --ink: #16181c;
+  --ink-2: #545a63;
+  --ink-3: #8a9099;
+  --rule: #e2e5ea;
+  --wash: #f1f3f6;
+  --berry: #e2366a;
+  --berry-deep: #c8285c;
+  --berry-deeper: #ad1f4d;
+  --berry-wash: #fdf0f4;
+  --berry-ink-2: #5e3a46;
+
+  --serif: "Literata", "Iowan Old Style", Georgia, serif;
+  --logo: "Brandon Grotesque", "Avenir Next", sans-serif;
+
+  --pad: clamp(1.25rem, 0.4rem + 3.6vw, 4.5rem);
+  --max: 75rem;
+  --rail: clamp(9.5rem, 3.5rem + 9vw, 14rem);
+  --gap: clamp(1.5rem, 1rem + 1.4vw, 2.5rem);
+  --section: clamp(4rem, 2.4rem + 4.2vw, 6.75rem);
+  --fs-body: clamp(1.0625rem, 0.98rem + 0.3vw, 1.1875rem);
+  --fs-prose: clamp(1.0625rem, 0.93rem + 0.5vw, 1.25rem);
+  --fs-small: 0.9375rem;
+  --measure: 33em;
+
+  --spring: linear(0, 0.006, 0.025 2.8%, 0.101 6.1%, 0.539 18.9%, 0.721 25.3%, 0.849 31.5%, 0.937 38.1%, 0.968 41.8%, 0.991 45.7%, 1.006 50.1%, 1.015 55%, 1.017 63.9%, 1.001 85.9%, 1);
+
+  color-scheme: light;
+  accent-color: var(--ink);
+  scrollbar-color: #c3c8cf var(--paper);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: 1.5rem;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  font-variant-numeric: lining-nums proportional-nums;
+  text-rendering: optimizeLegibility;
+  caret-color: var(--ink);
+}
+
+::selection { background: var(--ink); color: var(--paper); }
+.jelly-band ::selection, .is-jelly ::selection { background: var(--berry-deep); color: #fff; }
+
+img { max-width: 100%; height: auto; }
+
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+
+/* links: quiet at rest, certain on hover */
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-thickness: max(1px, 0.06em);
+  text-underline-offset: 0.22em;
+  text-decoration-color: color-mix(in oklab, currentColor 30%, transparent);
+  transition: text-decoration-color 0.15s ease-out, color 0.15s ease-out;
+}
+a:hover { text-decoration-color: currentColor; }
+.jelly-band a:not(.btn), .is-jelly .prose a { text-decoration-color: color-mix(in oklab, var(--berry) 60%, transparent); }
+.jelly-band a:not(.btn):hover, .is-jelly .prose a:hover { text-decoration-color: var(--berry-deep); }
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.i {
+  width: 0.9em;
+  height: 0.9em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: -0.1em;
+  flex: none;
+}
+.i-r { margin-left: 0.35em; }
+.i-l { margin-right: 0.35em; }
+
+.skip {
+  position: absolute;
+  left: var(--pad);
+  top: 0.75rem;
+  z-index: 10;
+  padding: 0.5rem 0.9rem;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 3px;
+  transform: translateY(-200%);
+}
+.skip:focus { transform: none; }
+
+/* ------------------------------------------------------------ frame */
+.wrap {
+  max-width: calc(var(--max) + 2 * var(--pad));
+  margin-inline: auto;
+  padding-inline: var(--pad);
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  column-gap: var(--gap);
+}
+.cols > .rail { grid-column: 1; }
+.cols > .main { grid-column: 2; }
+
+.section { margin-top: var(--section); }
+.section-h {
+  margin: 0;
+  font-size: var(--fs-body);
+  font-weight: 600;
+  line-height: 1.35;
+}
+.section-h a { text-decoration: none; }
+.section-h a:hover { text-decoration: underline; }
+
+/* ------------------------------------------------------------ header */
+.site-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: clamp(1.5rem, 1rem + 1.4vw, 2.5rem);
+}
+
+/* The studio's own logo, as on exciting.io/logos: a black block three times
+   as wide as it is tall, tilted -4deg, with the uppercase word set level
+   inside it (the text is counter-rotated), and the E-X pair kerned in. */
+.mark {
+  display: block;
+  width: 3em;
+  height: 1em;
+  font-size: clamp(2.25rem, 1.9rem + 1.1vw, 2.75rem);
+  background: var(--ink);
+  text-align: center;
+  text-decoration: none;
+  transform: rotate(-4deg);
+  view-transition-name: mark;
+}
+.mark > span {
+  display: block;
+  color: #fff;
+  font-family: var(--logo);
+  font-weight: 400;
+  font-synthesis: none;
+  font-size: 58%;
+  line-height: 1.724em;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(4deg);
+}
+.mark .kx { margin-right: -0.05em; }
+.mark:hover, .mark:focus-visible { transform: rotate(0deg); }
+.mark:hover > span, .mark:focus-visible > span { transform: rotate(0deg); }
+.mark:focus-visible { outline-offset: 4px; }
+
+.site-head ul {
+  display: flex;
+  gap: clamp(1.1rem, 0.6rem + 1.6vw, 2.25rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-head nav a {
+  color: var(--ink-2);
+  text-decoration-color: transparent;
+}
+.site-head nav a:hover { color: var(--ink); text-decoration-color: currentColor; }
+.site-head nav a[aria-current] { color: var(--ink); text-decoration-color: currentColor; }
+
+/* ------------------------------------------------------------ footer */
+.site-foot {
+  margin-top: var(--section);
+  padding-top: clamp(2rem, 1.4rem + 2vw, 3rem);
+  padding-bottom: clamp(2.5rem, 1.6rem + 3vw, 4.5rem);
+  background-image: linear-gradient(var(--rule), var(--rule));
+  background-size: calc(100% - 2 * var(--pad)) 1px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.foot-place { margin: 0.45rem 0 0; color: var(--ink-2); font-size: var(--fs-small); }
+.foot-hello {
+  margin: 0;
+  font-size: clamp(1.375rem, 1.1rem + 1vw, 1.875rem);
+  line-height: 1.3;
+}
+.foot-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--fs-small);
+}
+.foot-links a { color: var(--ink-2); }
+.foot-links a:hover { color: var(--ink); }
+
+/* ------------------------------------------------------------ narrower (shell) */
+@media (max-width: 56rem) {
+  .cols { grid-template-columns: minmax(0, 1fr); }
+  .cols > .rail, .cols > .main { grid-column: 1; }
+  .section-h { margin-bottom: 1.1rem; }
+  .foot-place { order: 2; margin-top: 1.5rem; }
+  .site-foot .main { order: 1; }
+}
+@media (max-width: 40rem) {
+  .site-head { align-items: center; }
+  .site-head nav { font-size: 1rem; }
+}
+
+/* ------------------------------------------------------------ the one moving part */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  .mark, .mark > span { transition: transform 0.9s var(--spring); }
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.22s; }
+  ::view-transition-group(mark) { animation-duration: 0.4s; }
+}
+
+@media print {
+  .site-head nav, .pager, .site-foot .foot-links, .skip { display: none; }
+  .cols { display: block; }
+}
