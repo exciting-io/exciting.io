@@ -87,7 +87,7 @@ body.home {
 .lp-lede { margin-top: var(--s-75); font-size: 1.125rem; }
 
 /* links: the shell's underline, eased */
-.home a { transition: text-decoration-color 300ms var(--ease), color 300ms var(--ease); }
+.home a:not(.mark) { transition: text-decoration-color 300ms var(--ease), color 300ms var(--ease); }
 
 /* ------------------------------------------------------------ buttons and links */
 .lp-actions {
