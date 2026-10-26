@@ -16,6 +16,63 @@
       "harmonia": "Stronger teams through shared responsibility.",
       "printer": "Open source toolkit for small connected printers.",
       "heylist": "Tracking the pulse of conferences and events."
+    },
+    "description": "Exciting is a small London studio that builds software and tinkers in hardware. Its main focus right now is Jelly, a simpler shared inbox for small teams.",
+    "hero": {
+      "lines": [
+        "Things we make,",
+        "mostly for small teams"
+      ],
+      "standfirst": "Exciting is a small studio in London. We build software, tinker in hardware and explore the potential of simple systems. Right now most of the work goes into Jelly."
+    },
+    "features": {
+      "heading": "What we’re making now",
+      "items": [
+        {
+          "project": "jelly",
+          "label": "Main focus",
+          "theme": "berry",
+          "line": "A simpler shared inbox for small teams, for addresses like <code>support@your-team.com</code>.",
+          "points": [
+            "Claim a new email with “I got this”, so nobody replies twice",
+            "Talk it over in comments your customer never sees",
+            "Free for 14 days, then one flat price for the whole team"
+          ],
+          "cta": {
+            "label": "Try Jelly for free",
+            "href": "https://letsjelly.com/?utm_source=exciting.io&utm_medium=referral&utm_content=home+hero"
+          },
+          "more": {
+            "label": "More about Jelly",
+            "href": "/jelly/"
+          },
+          "quote": {
+            "text": "Really enjoying Jelly. Great UX with a lot of personality. I freaking love hitting the ‘I got this’ button to claim an email.",
+            "name": "Brad Frost",
+            "org": "Design Tokens Course",
+            "team": "team of 2"
+          }
+        }
+      ]
+    },
+    "tagline": {
+      "lines": [
+        "We like simple systems,",
+        "made with care",
+        "and finished properly."
+      ],
+      "link": {
+        "label": "Why the polish matters",
+        "href": "/2013/11/14/making-things-is-all-about-the-polish/"
+      }
+    },
+    "work": {
+      "heading": "Other things we’ve made",
+      "standfirst": "Software for teams, kits for small printers, and a few experiments along the way."
+    },
+    "writing": {
+      "heading": "Writing",
+      "more": "All the writing"
     }
   },
   "projects": [

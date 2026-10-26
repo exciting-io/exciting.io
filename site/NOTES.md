@@ -23,7 +23,10 @@
 
 ## Page designs
 
-- **The default is calm:** `assets/shell.css` sets fonts, tokens, browser surfaces, the header with the tilted EXCITING block, the footer and the one moving part. `assets/calm.css` styles the pages themselves.
+- **The home page** is built by `renderers/landing.mjs` from the `home` block in `content.json`, styled by `assets/home.css` (scoped under `body.home`) and moved by `assets/home.js` (the phone menu, sections that rise in once, the tagline’s words lighting up). It follows the `landing-page-design` skill’s visual rules: Geist only, Tailwind type steps, a fixed spacing scale.
+  - **“What we’re making now”** is `home.features.items`, in order of prominence: the first leads as a broad panel, any others sit side by side underneath at equal weight. A feature can name a project by `slug` in `project` (it then borrows the name, page, first screenshot and logo) or stand alone with its own `name`, `image` and links. Optional fields: `label` (e.g. “Main focus”), `theme` (`berry` tints it pink; otherwise neutral), `points`, `cta`, `more`, `quote`. Featured projects drop out of “Other things we’ve made” on their own.
+  - Jelly’s price and trial terms and Brad Frost’s quote come from letsjelly.com; check them there when they change.
+- **The default is calm:** `assets/shell.css` sets fonts, tokens, browser surfaces, the floating header bar with the tilted EXCITING block, the footer and the one moving part. `assets/nav.js` runs the bar’s phone menu on every page. `assets/calm.css` styles the pages themselves: headings in Geist, reading text in Literata.
 - **`projectRenderers` in `build.mjs`** gives a project its own page design. Anything not listed gets the calm project page. Each bespoke renderer returns its main markup, stylesheets and scripts, and always sits inside the shared header and footer. Its CSS is scoped under its own root class:
   - **Printer:** `renderers/manual-printer.mjs`, scoped under `.manual`. It is the workshop-manual register: the exploded drawing comes apart as you scroll. The drawing geometry lives in `renderers/printer-drawing.mjs`, and the scroll and highlight script is `assets/printer.js`.
   - **Jelly:** `renderers/jelly-thread.mjs`, scoped under `.jt`. The story is told as a Jelly conversation, and `assets/jelly-thread.js` adds “Collapse all”.
@@ -34,6 +37,7 @@
 All fonts are in `site/fonts/`:
 
 - **Literata:** SIL OFL 1.1, `OFL-literata.txt`. The site’s reading face.
+- **Geist:** SIL OFL 1.1, `OFL-geist.txt`. The header bar and footer everywhere, headings on the calm pages, and all of the home page.
 - **Brandon Grotesque Regular:** licensed. The EXCITING logotype only.
 - **Archivo:** SIL OFL 1.1, `OFL-archivo.txt`. The Printer page only.
 - **Figtree:** SIL OFL 1.1, `OFL-figtree.txt`. The Jelly page only.

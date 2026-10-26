@@ -1139,6 +1139,10 @@ html.js-scrub .manual .stage-in { position: static; height: auto; padding-top: 0
 .manual .home { max-width: calc(var(--max) + 2 * var(--pad)); margin-inline: auto; padding-inline: var(--pad); }
 .manual .chap { padding-inline: var(--pad); }
 .manual .see-i { width: 1em; height: 1em; vertical-align: -0.15em; }
+/* sticky parts sit below the floating bar; the pinned drawing starts below it too */
+.manual .toc, .manual .legend, .manual .front-side { top: var(--bar-clear); }
+html.js-scrub .manual .stage-in { padding-top: calc(var(--bar-clear) - 16px); }
+.manual .toc { max-height: calc(100vh - var(--bar-clear) - 24px); }
 /* the parts list sits under the drawing, beside the caption, so no balloon or leader can meet it at any p */
 @media (min-width: 1001px) {
   .manual .stage .dwg-fig {
@@ -1146,7 +1150,7 @@ html.js-scrub .manual .stage-in { position: static; height: auto; padding-top: 0
     grid-template-columns: minmax(0, 1fr) minmax(15rem, 17rem);
     column-gap: 28px;
     align-items: start;
-    width: min(100%, calc((100vh - 360px) * var(--ar)));
+    width: min(100%, calc((100vh - 360px - var(--bar-clear) + 16px) * var(--ar)));
     min-width: min(100%, 44rem);
   }
   .manual .stage .dwg-fig > .dwg { grid-column: 1 / -1; }

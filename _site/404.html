@@ -5,8 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found · Exciting</title>
 <meta name="description" content="There’s nothing at this address on exciting.io.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Exciting">
+<meta property="og:title" content="Page not found">
+<meta property="og:description" content="There’s nothing at this address on exciting.io.">
+<meta property="og:url" content="https://exciting.io/404.html">
+<meta property="og:image" content="https://exciting.io/images/simple-logo.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#fcfdfe">
+<link rel="preload" href="/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/literata-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/BrandonGrotesque-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/shell.css">
@@ -17,9 +25,19 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head wrap">
+<header class="nav-head">
+<div class="nav-bar">
 <a class="mark" href="/" aria-label="Exciting, home"><span aria-hidden="true">E<span class="kx">x</span>citing</span></a>
-<nav aria-label="Site"><ul><li><a href="/projects/">Work</a></li><li><a href="/blog/">Writing</a></li><li><a href="/about/">About</a></li></ul></nav>
+<nav class="nav-links" aria-label="Site"><ul><li><a href="/projects/">Work</a></li><li><a href="/blog/">Writing</a></li><li><a href="/about/">About</a></li></ul></nav>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"><span class="nav-toggle-t">Menu</span><span class="nav-bars" aria-hidden="true"><span></span><span></span></span></button>
+</div>
+<div class="nav-menu" id="nav-menu" hidden>
+<nav aria-label="Site menu"><ul>
+<li style="--i:0"><a href="/projects/">Work</a></li>
+<li style="--i:1"><a href="/blog/">Writing</a></li>
+<li style="--i:2"><a href="/about/">About</a></li>
+</ul></nav>
+</div>
 </header>
 <main id="main">
 <div class="wrap">
@@ -53,6 +71,6 @@
 </ul>
 </div>
 </footer>
-
+<script src="/assets/nav.js" defer></script>
 </body>
 </html>

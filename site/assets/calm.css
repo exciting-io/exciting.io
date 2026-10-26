@@ -1,5 +1,8 @@
 /* Exciting, hybrid: the calm world, for every page that has no bespoke design. Loaded after shell.css. */
 
+/* headings are set in Geist, like the header and the home page; reading text stays in Literata */
+h1, h2, h3, h4, .yr-big { font-family: var(--sans); }
+
 /* ------------------------------------------------------------ home */
 .studio {
   margin: clamp(2.75rem, 1.2rem + 4.6vw, 5.25rem) 0 clamp(2rem, 1.2rem + 2.6vw, 3.5rem);
@@ -512,7 +515,7 @@ code {
 .yr-section:first-of-type { margin-top: clamp(2.5rem, 1.6rem + 2.6vw, 4rem); }
 .yr-big {
   position: sticky;
-  top: 1.5rem;
+  top: var(--bar-clear);
   align-self: start;
   margin: 0;
   font-size: clamp(1.5rem, 1.15rem + 1.1vw, 2.25rem);
@@ -578,8 +581,6 @@ code {
 }
 
 @media (max-width: 40rem) {
-  .site-head { align-items: center; }
-  .site-head nav { font-size: 1rem; }
   .proj-lead, .proj-pair, .work-row-inner { grid-template-columns: minmax(0, 1fr); }
   .proj-lead .proj-text { margin-top: -0.25rem; }
   .proj-pair { margin-top: 2.5rem; row-gap: 2.5rem; }

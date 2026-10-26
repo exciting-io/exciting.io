@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { renderManualPrinter } from './renderers/manual-printer.mjs';
 import { renderJellyThread } from './renderers/jelly-thread.mjs';
 import { renderHarmoniaDashboard } from './renderers/harmonia-dashboard.mjs';
+import { renderLanding } from './renderers/landing.mjs';
 import { scopeCss } from './scope-css.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -238,8 +239,9 @@ const NAV = [
   { key: 'about', label: 'About', href: u('/about/') }
 ];
 
-function page({ title, desc, active = '', main, cls = '', styles = [u('/assets/calm.css')], scripts = [] }) {
-  const nav = NAV.map(n => `<li><a href="${n.href}"${n.key === active ? ' aria-current="page"' : ''}>${n.label}</a></li>`).join('');
+function page({ title, desc, active = '', main, cls = '', styles = [u('/assets/calm.css')], scripts = [], head = '', preloads = [u('/fonts/literata-normal.woff2')] }) {
+  const cur = n => n.key === active ? ' aria-current="page"' : '';
+  const home = active === 'home';
   const fullTitle = title ? `${title} · Exciting` : 'Exciting';
   return `<!doctype html>
 <html lang="en-GB">
@@ -248,22 +250,37 @@ function page({ title, desc, active = '', main, cls = '', styles = [u('/assets/c
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${fullTitle}</title>
 <meta name="description" content="${attrEsc(desc)}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Exciting">
+<meta property="og:title" content="${attrEsc(title || 'Exciting')}">
+<meta property="og:description" content="${attrEsc(desc)}">
+<meta property="og:url" content="__CANONICAL__">
+<meta property="og:image" content="${ORIGIN}/images/simple-logo.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#fcfdfe">
-<link rel="preload" href="${u('/fonts/literata-normal.woff2')}" as="font" type="font/woff2" crossorigin>
+${[u('/fonts/geist-variable.woff2'), ...preloads].map(h => `<link rel="preload" href="${h}" as="font" type="font/woff2" crossorigin>`).join('\n')}
 <link rel="preload" href="/fonts/BrandonGrotesque-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${u('/assets/shell.css')}">
 ${styles.map(h => `<link rel="stylesheet" href="${h}">`).join('\n')}
 <link rel="alternate" type="application/rss+xml" title="Exciting" href="/feed.xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="${u('/assets/mark.svg')}" type="image/svg+xml">
-<link rel="canonical" href="__CANONICAL__">
+<link rel="canonical" href="__CANONICAL__">${head ? '\n' + head : ''}
 </head>
 <body${cls ? ` class="${cls}"` : ''}>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head wrap">
-<a class="mark" href="${u('/')}" aria-label="Exciting, home"><span aria-hidden="true">E<span class="kx">x</span>citing</span></a>
-<nav aria-label="Site"><ul>${nav}</ul></nav>
+<header class="nav-head">
+<div class="nav-bar">
+<a class="mark" href="${u('/')}" aria-label="Exciting, home"${home ? ' aria-current="page"' : ''}><span aria-hidden="true">E<span class="kx">x</span>citing</span></a>
+<nav class="nav-links" aria-label="Site"><ul>${NAV.map(n => `<li><a href="${n.href}"${cur(n)}>${n.label}</a></li>`).join('')}</ul></nav>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"><span class="nav-toggle-t">Menu</span><span class="nav-bars" aria-hidden="true"><span></span><span></span></span></button>
+</div>
+<div class="nav-menu" id="nav-menu" hidden>
+<nav aria-label="Site menu"><ul>
+${NAV.map((n, i) => `<li style="--i:${i}"><a href="${n.href}"${cur(n)}>${n.label}</a></li>`).join('\n')}
+</ul></nav>
+</div>
 </header>
 <main id="main">
 ${main}
@@ -280,7 +297,7 @@ ${main}
 </ul>
 </div>
 </footer>
-${scripts.map(h => `<script src="${h}" defer></script>`).join('\n')}
+${[u('/assets/nav.js'), ...scripts].map(h => `<script src="${h}" defer></script>`).join('\n')}
 </body>
 </html>
 `;
@@ -290,7 +307,7 @@ function write(rel, html) {
   const file = join(OUT, rel);
   mkdirSync(dirname(file), { recursive: true });
   const path = '/' + rel.replace(/index\.html$/, '');
-  const out = html.replace('__CANONICAL__', ORIGIN + path).replace(/[ \t]+$/gm, '').replace(/\n{3,}/g, '\n\n');
+  const out = html.replaceAll('__CANONICAL__', ORIGIN + path).replace(/[ \t]+$/gm, '').replace(/\n{3,}/g, '\n\n');
   writeFileSync(file, out);
 }
 
@@ -368,36 +385,10 @@ const byYear = () => {
   return groups;
 };
 
-function writingList() {
-  return `<div class="yearlist">
-${byYear().map(g => `<div class="yr-group">
-<h3 class="yr">${g.y}</h3>
-<ul>
-${g.items.map(p => `<li><a href="${u(p.url)}">${p.title}</a><span class="rt">${minutes(p.wordCount)} min</span></li>`).join('\n')}
-</ul>
-</div>`).join('\n')}
-</div>`;
-}
-
 // ------------------------------------------------------------ pages
 function home() {
-  const main = `<div class="wrap">
-<h1 class="studio">${C.site.strapline}</h1>
-${jellyFeature('h2')}
-<section class="cols section work-home" aria-labelledby="work-h">
-<h2 class="rail section-h" id="work-h">Other projects</h2>
-<div class="main">
-${earlierWork()}
-</div>
-</section>
-<section class="cols section" aria-labelledby="writing-h">
-<h2 class="rail section-h" id="writing-h"><a href="${u('/blog/')}">Writing</a></h2>
-<div class="main">
-${writingList()}
-</div>
-</section>
-</div>`;
-  write('index.html', page({ title: '', desc: C.site.strapline, main, cls: 'home' }));
+  const r = renderLanding({ C, projects, posts, u, liveNote, laterNote, nameHtml, projImg, minutes, dims: DIMS });
+  write('index.html', page({ title: '', desc: C.home.description, active: 'home', ...r }));
 }
 
 function about() {
@@ -658,6 +649,10 @@ const MANUAL_OVERRIDES = `
 .manual .home { max-width: calc(var(--max) + 2 * var(--pad)); margin-inline: auto; padding-inline: var(--pad); }
 .manual .chap { padding-inline: var(--pad); }
 .manual .see-i { width: 1em; height: 1em; vertical-align: -0.15em; }
+/* sticky parts sit below the floating bar; the pinned drawing starts below it too */
+.manual .toc, .manual .legend, .manual .front-side { top: var(--bar-clear); }
+html.js-scrub .manual .stage-in { padding-top: calc(var(--bar-clear) - 16px); }
+.manual .toc { max-height: calc(100vh - var(--bar-clear) - 24px); }
 /* the parts list sits under the drawing, beside the caption, so no balloon or leader can meet it at any p */
 @media (min-width: 1001px) {
   .manual .stage .dwg-fig {
@@ -665,7 +660,7 @@ const MANUAL_OVERRIDES = `
     grid-template-columns: minmax(0, 1fr) minmax(15rem, 17rem);
     column-gap: 28px;
     align-items: start;
-    width: min(100%, calc((100vh - 360px) * var(--ar)));
+    width: min(100%, calc((100vh - 360px - var(--bar-clear) + 16px) * var(--ar)));
     min-width: min(100%, 44rem);
   }
   .manual .stage .dwg-fig > .dwg { grid-column: 1 / -1; }

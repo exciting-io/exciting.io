@@ -1,4 +1,4 @@
-/* Exciting, hybrid: the shell every page shares. Fonts, tokens, browser surfaces, header, footer, the one moving part. */
+/* Exciting, hybrid: the shell every page shares. Fonts, tokens, browser surfaces, the floating header, footer, the one moving part. */
 
 @font-face {
   font-family: "Literata";
@@ -22,6 +22,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/geist-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --paper: #fcfdfe;
@@ -37,6 +44,7 @@
   --berry-ink-2: #5e3a46;
 
   --serif: "Literata", "Iowan Old Style", Georgia, serif;
+  --sans: "Geist", ui-sans-serif, system-ui, sans-serif;
   --logo: "Brandon Grotesque", "Avenir Next", sans-serif;
 
   --pad: clamp(1.25rem, 0.4rem + 3.6vw, 4.5rem);
@@ -48,6 +56,13 @@
   --fs-prose: clamp(1.0625rem, 0.93rem + 0.5vw, 1.25rem);
   --fs-small: 0.9375rem;
   --measure: 33em;
+
+  /* spacing (the floating bar and the home page): 2 4 8 12 16 24 32 40 48 64 80 96 */
+  --s-25: 2px; --s-50: 4px; --s-75: 8px; --s-100: 12px; --s-200: 16px; --s-300: 24px;
+  --s-400: 32px; --s-500: 40px; --s-600: 48px; --s-700: 64px; --s-800: 80px; --s-900: 96px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  /* how far sticky things sit below the floating bar */
+  --bar-clear: var(--s-900);
 
   --spring: linear(0, 0.006, 0.025 2.8%, 0.101 6.1%, 0.539 18.9%, 0.721 25.3%, 0.849 31.5%, 0.937 38.1%, 0.968 41.8%, 0.991 45.7%, 1.006 50.1%, 1.015 55%, 1.017 63.9%, 1.001 85.9%, 1);
 
@@ -61,7 +76,7 @@
 html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  scroll-padding-top: 1.5rem;
+  scroll-padding-top: var(--bar-clear);
 }
 
 body {
@@ -84,6 +99,8 @@ body {
 img { max-width: 100%; height: auto; }
 
 h1, h2, h3 { text-wrap: balance; }
+/* the frame (header, footer) is set in Geist, like the headings on the calm pages */
+.nav-head, .site-foot { font-family: var(--sans); }
 p { text-wrap: pretty; }
 
 /* links: quiet at rest, certain on hover */
@@ -157,14 +174,112 @@ a:hover { text-decoration-color: currentColor; }
 .section-h a { text-decoration: none; }
 .section-h a:hover { text-decoration: underline; }
 
-/* ------------------------------------------------------------ header */
-.site-head {
+/* ------------------------------------------------------------ header: the floating bar */
+.nav-head {
+  position: sticky;
+  top: var(--s-200);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  padding-inline: var(--s-200);
+  margin-top: var(--s-200);
+}
+.nav-bar {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  padding-top: clamp(1.5rem, 1rem + 1.4vw, 2.5rem);
+  gap: var(--s-400);
+  padding: var(--s-100) var(--s-300);
+  background: color-mix(in oklab, var(--paper) 72%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  backdrop-filter: blur(16px) saturate(1.4);
+  border: 1px solid color-mix(in oklab, var(--ink) 9%, transparent);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px -16px rgb(22 24 28 / 0.25);
 }
+.nav-bar .mark { font-size: 1.75rem; flex: none; }
+.nav-links ul { display: flex; gap: var(--s-300); margin: 0; padding: 0; list-style: none; }
+.nav-links a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  text-decoration-color: transparent;
+}
+.nav-links a:hover { color: var(--ink); text-decoration-color: currentColor; }
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  gap: var(--s-75);
+  margin: 0;
+  padding: var(--s-75) var(--s-100);
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: var(--ink);
+  font: 500 0.875rem/1.25rem var(--sans);
+  cursor: pointer;
+  transition: background-color 300ms var(--ease);
+}
+.nav-toggle:hover { background: var(--wash); }
+.nav-toggle:active { transform: scale(0.98); }
+.nav-bars { position: relative; display: block; width: 16px; height: 16px; }
+.nav-bars span {
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 7px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 500ms var(--ease);
+}
+.nav-bars span:first-child { transform: translateY(-4px); }
+.nav-bars span:last-child { transform: translateY(4px); }
+.nav-toggle[aria-expanded="true"] .nav-bars span:first-child { transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-bars span:last-child { transform: rotate(-45deg); }
+
+.nav-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  padding: var(--s-900) var(--s-400) var(--s-400);
+  background: color-mix(in oklab, var(--paper) 94%, transparent);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  opacity: 0;
+  transition: opacity 300ms var(--ease);
+}
+.nav-menu.is-open { opacity: 1; }
+.nav-menu ul { margin: 0; padding: 0; list-style: none; }
+.nav-menu li {
+  opacity: 0;
+  transform: translateY(var(--s-300));
+  transition: opacity 500ms var(--ease), transform 500ms var(--ease);
+  transition-delay: min(calc(var(--i) * 60ms), 340ms);
+}
+.nav-menu.is-open li { opacity: 1; transform: none; }
+.nav-menu li + li { border-top: 1px solid var(--rule); }
+.nav-menu a {
+  display: block;
+  padding: var(--s-200) 0;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 47.99rem) {
+  .nav-links { display: none; }
+  .nav-toggle { display: inline-flex; }
+  .nav-head { justify-content: stretch; }
+  .nav-bar { flex: 1; justify-content: space-between; padding: var(--s-75) var(--s-75) var(--s-75) var(--s-200); }
+}
+.nav-links a[aria-current] { color: var(--ink); text-decoration-color: currentColor; }
+.nav-menu a[aria-current] { text-decoration-line: underline; text-decoration-color: currentColor; }
+@media (min-width: 48rem) { .nav-menu { display: none; } }
 
 /* The studio's own logo, as on exciting.io/logos: a black block three times
    as wide as it is tall, tilted -4deg, with the uppercase word set level
@@ -197,20 +312,6 @@ a:hover { text-decoration-color: currentColor; }
 .mark:hover, .mark:focus-visible { transform: rotate(0deg); }
 .mark:hover > span, .mark:focus-visible > span { transform: rotate(0deg); }
 .mark:focus-visible { outline-offset: 4px; }
-
-.site-head ul {
-  display: flex;
-  gap: clamp(1.1rem, 0.6rem + 1.6vw, 2.25rem);
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.site-head nav a {
-  color: var(--ink-2);
-  text-decoration-color: transparent;
-}
-.site-head nav a:hover { color: var(--ink); text-decoration-color: currentColor; }
-.site-head nav a[aria-current] { color: var(--ink); text-decoration-color: currentColor; }
 
 /* ------------------------------------------------------------ footer */
 .site-foot {
@@ -248,10 +349,6 @@ a:hover { text-decoration-color: currentColor; }
   .foot-place { order: 2; margin-top: 1.5rem; }
   .site-foot .main { order: 1; }
 }
-@media (max-width: 40rem) {
-  .site-head { align-items: center; }
-  .site-head nav { font-size: 1rem; }
-}
 
 /* ------------------------------------------------------------ the one moving part */
 @media (prefers-reduced-motion: no-preference) {
@@ -261,7 +358,12 @@ a:hover { text-decoration-color: currentColor; }
   ::view-transition-group(mark) { animation-duration: 0.4s; }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .nav-menu li { transform: none; transition: opacity 300ms var(--ease); }
+  .nav-bars span { transition: none; }
+}
+
 @media print {
-  .site-head nav, .pager, .site-foot .foot-links, .skip { display: none; }
+  .nav-head, .pager, .site-foot .foot-links, .skip { display: none; }
   .cols { display: block; }
 }

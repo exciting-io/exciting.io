@@ -4,13 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Exciting</title>
-<meta name="description" content="Exciting is a digital product development and prototyping studio. We build software and tinker in hardware. We explore the potential of simple systems.">
+<meta name="description" content="Exciting is a small London studio that builds software and tinkers in hardware. Its main focus right now is Jelly, a simpler shared inbox for small teams.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Exciting">
+<meta property="og:title" content="Exciting">
+<meta property="og:description" content="Exciting is a small London studio that builds software and tinkers in hardware. Its main focus right now is Jelly, a simpler shared inbox for small teams.">
+<meta property="og:url" content="https://exciting.io/">
+<meta property="og:image" content="https://exciting.io/images/simple-logo.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#fcfdfe">
-<link rel="preload" href="/fonts/literata-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/BrandonGrotesque-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/shell.css">
-<link rel="stylesheet" href="/assets/calm.css">
+<link rel="stylesheet" href="/assets/home.css">
 <link rel="alternate" type="application/rss+xml" title="Exciting" href="/feed.xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
@@ -18,93 +25,97 @@
 </head>
 <body class="home">
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head wrap">
-<a class="mark" href="/" aria-label="Exciting, home"><span aria-hidden="true">E<span class="kx">x</span>citing</span></a>
-<nav aria-label="Site"><ul><li><a href="/projects/">Work</a></li><li><a href="/blog/">Writing</a></li><li><a href="/about/">About</a></li></ul></nav>
+<header class="nav-head">
+<div class="nav-bar">
+<a class="mark" href="/" aria-label="Exciting, home" aria-current="page"><span aria-hidden="true">E<span class="kx">x</span>citing</span></a>
+<nav class="nav-links" aria-label="Site"><ul><li><a href="/projects/">Work</a></li><li><a href="/blog/">Writing</a></li><li><a href="/about/">About</a></li></ul></nav>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"><span class="nav-toggle-t">Menu</span><span class="nav-bars" aria-hidden="true"><span></span><span></span></span></button>
+</div>
+<div class="nav-menu" id="nav-menu" hidden>
+<nav aria-label="Site menu"><ul>
+<li style="--i:0"><a href="/projects/">Work</a></li>
+<li style="--i:1"><a href="/blog/">Writing</a></li>
+<li style="--i:2"><a href="/about/">About</a></li>
+</ul></nav>
+</div>
 </header>
 <main id="main">
-<div class="wrap">
-<h1 class="studio">Exciting is a digital product development and prototyping studio. We build software and tinker in hardware. We explore the potential of simple systems.</h1>
-<section class="jelly-band has-shot" aria-labelledby="jelly-h">
-<div class="cols">
-<div class="rail jb-mark"><a href="/jelly/" tabindex="-1" aria-hidden="true"><img class="berry" src="/images/jelly/logo.png" alt="Jelly’s mascot, a hand-drawn strawberry" width="180" height="180" decoding="async" style="--size:180px"></a></div>
-<div class="main jb-text">
-<h2 class="jb-name" id="jelly-h"><a href="/jelly/">Jelly</a></h2>
-<p class="jb-tag">A simpler shared inbox for small teams.</p>
-<p class="jb-desc">Jelly is a shared inbox for team email addresses like <code>support@your-team.com</code>.</p>
-<p class="actions"><a class="btn" href="https://letsjelly.com/?utm_source=exciting.io&amp;utm_medium=referral&amp;utm_content=jelly+page+button">Try Jelly for free<svg class="i i-r" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8h10.5M9 4l4 4-4 4"/></svg></a><a class="quiet" href="/jelly/">More about Jelly</a></p>
+<section class="lp-hero lp-wrap" aria-labelledby="lp-hero-h">
+<h1 class="lp-h1" id="lp-hero-h"><span class="lp-line">Things we make,</span> <span class="lp-line">mostly for small teams</span></h1>
+<p class="lp-standfirst">Exciting is a small studio in London. We build software, tinker in hardware and explore the potential of simple systems. Right now most of the work goes into Jelly.</p>
+</section>
+<section class="lp-section lp-wrap lp-now" aria-labelledby="lp-now-h">
+<h2 class="lp-h2 lp-quiet-h" id="lp-now-h">What we’re making now</h2>
+<article class="lp-lead lp-theme-berry has-image" aria-labelledby="lp-f-jelly">
+<div class="lp-lead-text">
+<p class="lp-label">Main focus</p>
+<h3 class="lp-lead-name" id="lp-f-jelly"><img class="lp-logo" src="/images/jelly/logo.png" alt="" width="180" height="180" fetchpriority="high" decoding="async">Jelly</h3>
+<p class="lp-lead-line">A simpler shared inbox for small teams, for addresses like <code>support@your-team.com</code>.</p>
+<ul class="lp-points">
+<li><svg class="lp-i" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Claim a new email with “I got this”, so nobody replies twice</li>
+<li><svg class="lp-i" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Talk it over in comments your customer never sees</li>
+<li><svg class="lp-i" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg>Free for 14 days, then one flat price for the whole team</li>
+</ul>
+<p class="lp-actions"><a class="lp-btn" href="https://letsjelly.com/?utm_source=exciting.io&amp;utm_medium=referral&amp;utm_content=home+hero">Try Jelly for free<svg class="lp-i" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a><a class="lp-more" href="/jelly/">More about Jelly<svg class="lp-i" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></p>
+<figure class="lp-quote">
+<blockquote><p>Really enjoying Jelly. Great UX with a lot of personality. I freaking love hitting the ‘I got this’ button to claim an email.</p></blockquote>
+<figcaption><span class="lp-q-name">Brad Frost</span>, Design Tokens Course</figcaption>
+</figure>
 </div>
-<figure class="jb-shot"><a href="/jelly/" tabindex="-1" aria-hidden="true"><img src="/images/jelly/home-feature-inbox.png" alt="" width="1364" height="1022" decoding="async"></a></figure>
+<div class="lp-lead-shot"><div class="lp-frame"><img src="/images/jelly/home-feature-inbox.png" alt="Jelly’s inbox: conversations grouped into Brand new, Mine and Assigned to someone else, with a “Who’s got this?” button on a new message" width="1364" height="1022" fetchpriority="high" decoding="async"></div></div>
+</article>
+
+</section>
+<section class="lp-section lp-wrap lp-tagline" aria-label="What we care about">
+<p class="lp-big" data-reveal-words><span class="lp-line"><span class="lp-word">We</span> <span class="lp-word">like</span> <span class="lp-word">simple</span> <span class="lp-word">systems,</span></span> <span class="lp-line"><span class="lp-word">made</span> <span class="lp-word">with</span> <span class="lp-word">care</span></span> <span class="lp-line"><span class="lp-word">and</span> <span class="lp-word">finished</span> <span class="lp-word">properly.</span></span></p>
+<p class="lp-tag-more"><a href="/2013/11/14/making-things-is-all-about-the-polish/">Why the polish matters<svg class="lp-i" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></p>
+</section>
+<section class="lp-section lp-wrap" aria-labelledby="lp-work-h">
+<div class="lp-row-head lp-reveal">
+<div>
+<h2 class="lp-h2" id="lp-work-h">Other things we’ve made</h2>
+<p class="lp-lede">Software for teams, kits for small printers, and a few experiments along the way.</p>
+</div>
+<a class="lp-more" href="/projects/">All the work<svg class="lp-i" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+</div>
+<div class="lp-work">
+<article class="lp-proj lp-reveal">
+<a class="lp-proj-shot" href="/harmonia/" tabindex="-1" aria-hidden="true"><img src="/images/harmonia/screenshot.jpg" alt="" width="1170" height="878" loading="lazy" decoding="async"></a>
+<h3 class="lp-h3"><a href="/harmonia/">Harmonia</a></h3>
+<p>Stronger teams through shared responsibility.</p>
+<p class="lp-proj-note">Harmonia is still running at <a href="https://harmonia.io/">harmonia.io</a>.</p>
+</article>
+<article class="lp-proj lp-reveal">
+<a class="lp-proj-shot" href="/printer/" tabindex="-1" aria-hidden="true"><img src="/images/printer/printer-and-board.jpg" alt="" width="1170" height="878" loading="lazy" decoding="async"></a>
+<h3 class="lp-h3"><a href="/printer/">Printer</a></h3>
+<p>Open source toolkit for small connected printers.</p>
+<p class="lp-proj-note">Later, <a href="/printer/#guestbook">the engine of Good Enough’s guestbook</a>.</p>
+</article>
+<article class="lp-proj lp-reveal">
+<a class="lp-proj-shot" href="/heylist/" tabindex="-1" aria-hidden="true"><img src="/images/heylist/screenshot.jpg" alt="" width="1170" height="878" loading="lazy" decoding="async"></a>
+<h3 class="lp-h3"><a href="/heylist/">HeyLi.st <span class="status">(retired)</span></a></h3>
+<p>Tracking the pulse of conferences and events.</p>
+
+</article>
 </div>
 </section>
-<section class="cols section work-home" aria-labelledby="work-h">
-<h2 class="rail section-h" id="work-h">Other projects</h2>
-<div class="main">
-<article class="proj proj-lead">
-<a class="proj-img" href="/harmonia/" tabindex="-1" aria-hidden="true"><img src="/images/harmonia/screenshot.jpg" alt="" width="1170" height="878" decoding="async"></a>
-<div class="proj-text">
-<h3 class="proj-name"><a href="/harmonia/">Harmonia</a></h3>
-<p class="proj-line">Stronger teams through shared responsibility.</p>
-<p class="proj-status">Still running at <a href="https://harmonia.io/">harmonia.io</a></p><p class="proj-more"><a href="/harmonia/">Read about Harmonia<svg class="i i-r" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8h10.5M9 4l4 4-4 4"/></svg></a></p>
+<section class="lp-section lp-wrap lp-reveal" aria-labelledby="lp-writing-h">
+<div class="lp-row-head">
+<h2 class="lp-h2" id="lp-writing-h">Writing</h2>
+<a class="lp-more" href="/blog/">All the writing<svg class="lp-i" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
 </div>
-</article>
-<div class="proj-pair">
-<article class="proj proj-small">
-<a class="proj-img" href="/printer/" tabindex="-1" aria-hidden="true"><img src="/images/printer/printer-and-board.jpg" alt="" width="1170" height="878" loading="lazy" decoding="async"></a>
-<div class="proj-text">
-<h3 class="proj-name"><a href="/printer/">Printer</a></h3>
-<p class="proj-line">Open source toolkit for small connected printers.</p>
-<p class="proj-later">Later, <a href="/printer/#guestbook">the engine of Good Enough’s guestbook</a>.</p><p class="proj-more"><a href="/printer/">Read about Printer<svg class="i i-r" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8h10.5M9 4l4 4-4 4"/></svg></a></p>
-</div>
-</article>
-<article class="proj proj-small">
-<a class="proj-img" href="/heylist/" tabindex="-1" aria-hidden="true"><img src="/images/heylist/screenshot.jpg" alt="" width="1170" height="878" loading="lazy" decoding="async"></a>
-<div class="proj-text">
-<h3 class="proj-name"><a href="/heylist/">HeyLi.st <span class="status">(retired)</span></a></h3>
-<p class="proj-line">Tracking the pulse of conferences and events.</p>
-<p class="proj-more"><a href="/heylist/">Read about HeyLi.st<svg class="i i-r" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2.5 8h10.5M9 4l4 4-4 4"/></svg></a></p>
-</div>
-</article>
-</div>
-</div>
+<ul class="lp-posts">
+<li><a href="/2017/03/15/joto/">The Internet of Things needs to move beyond context-shifting old technology</a><span>5 min</span></li>
+<li><a href="/2014/09/09/a-little-printer-mystery/">A Little Printer Mystery</a><span>3 min</span></li>
+<li><a href="/2013/11/18/little-advent-calendar-publication/">Little Advent Calendar Publication</a><span>1 min</span></li>
+<li><a href="/2013/11/14/making-things-is-all-about-the-polish/">Making things &mdash; it's all about the polish</a><span>2 min</span></li>
+<li><a href="/2013/11/11/hello-world/">Hello, World</a><span>2 min</span></li>
+<li><a href="/2013/11/06/crimer-show-printer-publication/">Crimer Show Printer Publication</a><span>3 min</span></li>
+<li><a href="/2013/03/25/introducing-heylist/">Introducing HeyList!</a><span>3 min</span></li>
+<li><a href="/2012/05/01/printer-questions/">Printer Questions</a><span>6 min</span></li>
+<li><a href="/2012/04/12/hello-printer/">Hello, Printer</a><span>17 min</span></li>
+</ul>
 </section>
-<section class="cols section" aria-labelledby="writing-h">
-<h2 class="rail section-h" id="writing-h"><a href="/blog/">Writing</a></h2>
-<div class="main">
-<div class="yearlist">
-<div class="yr-group">
-<h3 class="yr">2017</h3>
-<ul>
-<li><a href="/2017/03/15/joto/">The Internet of Things needs to move beyond context-shifting old technology</a><span class="rt">5 min</span></li>
-</ul>
-</div>
-<div class="yr-group">
-<h3 class="yr">2014</h3>
-<ul>
-<li><a href="/2014/09/09/a-little-printer-mystery/">A Little Printer Mystery</a><span class="rt">3 min</span></li>
-</ul>
-</div>
-<div class="yr-group">
-<h3 class="yr">2013</h3>
-<ul>
-<li><a href="/2013/11/18/little-advent-calendar-publication/">Little Advent Calendar Publication</a><span class="rt">1 min</span></li>
-<li><a href="/2013/11/14/making-things-is-all-about-the-polish/">Making things &mdash; it's all about the polish</a><span class="rt">2 min</span></li>
-<li><a href="/2013/11/11/hello-world/">Hello, World</a><span class="rt">2 min</span></li>
-<li><a href="/2013/11/06/crimer-show-printer-publication/">Crimer Show Printer Publication</a><span class="rt">3 min</span></li>
-<li><a href="/2013/03/25/introducing-heylist/">Introducing HeyList!</a><span class="rt">3 min</span></li>
-</ul>
-</div>
-<div class="yr-group">
-<h3 class="yr">2012</h3>
-<ul>
-<li><a href="/2012/05/01/printer-questions/">Printer Questions</a><span class="rt">6 min</span></li>
-<li><a href="/2012/04/12/hello-printer/">Hello, Printer</a><span class="rt">17 min</span></li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-</div>
 </main>
 <footer class="site-foot wrap cols">
 <p class="rail foot-place">Exciting, London</p>
@@ -118,6 +129,7 @@
 </ul>
 </div>
 </footer>
-
+<script src="/assets/nav.js" defer></script>
+<script src="/assets/home.js" defer></script>
 </body>
 </html>
