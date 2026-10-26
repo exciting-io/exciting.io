@@ -1,6 +1,9 @@
 // Jelly's page told as a Jelly conversation: the opening email, the backstory as
 // internal comments out of sight of customers, and a Reply that is the call to action.
 // Every word is Jelly's own copy from content.json; the only dates are sourced ones.
+// The conversation sits in a browser window at letsjelly.com, so it reads as Jelly itself.
+
+import { browserWindow } from './browser-window.mjs';
 
 const SOURCED = {
   launch: { iso: '2024-07-10', label: 'Jul 10, 2024', title: 'Say hello to Jelly', href: 'https://goodenough.us/posts/say-hello-to-jelly-the-simplest-way-to-jam-on-email-as-a-team' },
@@ -78,8 +81,9 @@ ${attachments}
   }
 
   const main = `<div class="jt">
-<div class="jt-col">
+<div class="jt-frame">
 <p class="jt-crumb"><a href="${u('/projects/')}">${I.back}Work</a></p>
+${browserWindow('letsjelly.com', `<div class="jt-col">
 <header class="jt-head">
 <img class="jt-berry" src="${p.logo.src}" alt="Jelly’s mascot, a hand-drawn strawberry" width="${p.logo.width}" height="${p.logo.height}">
 <h1>${p.tagline}</h1>
@@ -94,6 +98,7 @@ ${thread.join('\n')}
 <a class="jt-reply" href="${esc(p.primaryLink.href)}">${I.reply}${p.primaryLink.label}</a>
 <a class="jt-mail" href="mailto:hello@exciting.io">Reply to hello@exciting.io</a>
 </div>
+</div>`)}
 </div>
 </div>`;
   return { main, styles: [u('/assets/jelly-thread.css')], scripts: [u('/assets/jelly-thread.js')], cls: 'is-bespoke jelly' };

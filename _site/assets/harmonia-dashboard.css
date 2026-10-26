@@ -36,6 +36,10 @@
 .hm-crumb a { display: inline-flex; align-items: center; gap: 0.35em; color: var(--hm-ink-2); text-decoration: none; }
 .hm-crumb a:hover { color: var(--hm-ink); }
 
+/* the window the dashboard sits in */
+.hm .bw { margin-top: var(--s-200); }
+.hm .bw-view { padding: 0 var(--s-500) var(--s-600); }
+
 /* the app's own header bar */
 .hm-bar {
   display: flex;
@@ -43,7 +47,6 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem 2rem;
-  margin-top: 1rem;
   padding: 1rem 0 1.1rem;
   border-bottom: 1px solid var(--hm-line);
 }
@@ -180,6 +183,7 @@
 }
 
 @media (max-width: 40rem) {
+  .hm .bw-view { padding: 0 var(--s-200) var(--s-500); }
   .hm-nav { gap: 1.1rem; }
   .hm-grid { gap: 2rem; }
 }

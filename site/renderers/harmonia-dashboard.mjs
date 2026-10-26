@@ -1,5 +1,8 @@
 // Harmonia's page as a Harmonia dashboard. The tasks are this page's own sections,
 // framed as tasks for the reader; nothing here is invented team data.
+// The dashboard sits in a browser window at harmonia.io, so it reads as Harmonia itself.
+
+import { browserWindow } from './browser-window.mjs';
 
 const esc = s => String(s).replace(/&(?![a-z]+;|#\d+;)/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const BACK = '<svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M16 10H4.5M9 5.5 4.5 10 9 14.5"/></svg>';
@@ -42,7 +45,7 @@ export function renderHarmoniaDashboard(p, { u }) {
   const main = `<div class="hm">
 <div class="hm-in">
 <p class="hm-crumb"><a href="${u('/projects/')}">${BACK}Work</a></p>
-<header class="hm-bar">
+${browserWindow('harmonia.io', `<header class="hm-bar">
 <h1 class="hm-brand"><img src="/images/harmonia/logo.png" alt="" width="100" height="100">Harmonia</h1>
 <nav class="hm-nav" aria-label="Harmonia"><a href="${visit.href}">harmonia.io</a>${blog ? `<a href="${blog.href}">Blog</a>` : ''}</nav>
 </header>
@@ -59,7 +62,7 @@ ${tasks.map(card).join('\n')}
 ${theirs.map(card).join('\n')}
 </ul>
 </section>
-<p class="hm-status" role="status" aria-live="polite"></p>
+<p class="hm-status" role="status" aria-live="polite"></p>`)}
 </div>
 </div>`;
   return { main, styles: [u('/assets/harmonia-dashboard.css')], scripts: [u('/assets/harmonia-dashboard.js')], cls: 'is-bespoke harmonia' };

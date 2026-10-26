@@ -35,6 +35,9 @@
 .jt a:hover { text-decoration-color: currentColor; }
 .jt :focus-visible { outline: 2px solid var(--jt-pink); outline-offset: 3px; border-radius: 6px; }
 
+.jt-frame { max-width: 60rem; margin-inline: auto; }
+.jt .bw { margin-top: var(--s-200); }
+.jt .bw-view { padding: var(--s-600) var(--s-500) var(--s-700); }
 .jt-col { max-width: 50rem; margin-inline: auto; }
 
 .jt-crumb { margin: clamp(1.75rem, 1rem + 2vw, 2.75rem) 0 0; font-size: 0.9375rem; }
@@ -42,7 +45,7 @@
 .jt-crumb a:hover { color: var(--jt-ink); }
 
 /* subject, chips and the action pill */
-.jt-head { text-align: center; margin-top: clamp(1.25rem, 0.8rem + 1.5vw, 2rem); }
+.jt-head { text-align: center; }
 .jt-berry { display: block; width: clamp(56px, 44px + 3vw, 76px); height: auto; margin: 0 auto 0.9rem; border-radius: 22%; box-shadow: 0 1px 2px rgb(120 20 50 / 0.08), 0 10px 24px -12px rgb(120 20 50 / 0.35); }
 .jt-head h1 {
   margin: 0 auto;
@@ -178,6 +181,7 @@
 .jt-mail { color: var(--jt-ink-2) !important; font-size: 0.9375rem; }
 
 @media (max-width: 40rem) {
+  .jt .bw-view { padding: var(--s-400) var(--s-200) var(--s-500); }
   .jt-actions { display: none; }
   .jt-card-h { grid-template-columns: auto minmax(0, 1fr); }
   .jt-meta { grid-column: 2; }

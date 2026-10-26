@@ -31,6 +31,7 @@
   - **Printer:** `renderers/manual-printer.mjs`, scoped under `.manual`. It is the workshop-manual register: the exploded drawing comes apart as you scroll. The drawing geometry lives in `renderers/printer-drawing.mjs`, and the scroll and highlight script is `assets/printer.js`.
   - **Jelly:** `renderers/jelly-thread.mjs`, scoped under `.jt`. The story is told as a Jelly conversation, and `assets/jelly-thread.js` adds “Collapse all”.
   - **Harmonia:** `renderers/harmonia-dashboard.mjs`, scoped under `.hm`. The page is a Harmonia dashboard; `assets/harmonia-dashboard.js` marks tasks done in place.
+  - **Jelly and Harmonia sit in a browser window** (`renderers/browser-window.mjs`, styled as `.bw` in `assets/shell.css`), with the app’s real address in the bar, so the page reads as the app itself. The “Work” link stays outside the window. Inside, `--paper` is the window’s white, so anything knocked out of the page’s background still matches.
 
 ## Fonts
 
