@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Exciting</title><description>Exciting is a digital product development and prototyping studio. We build software and tinker in hardware. We explore the potential of simple systems.</description><link>https://exciting.io/</link><atom:link href="https://exciting.io/feed.xml" rel="self" type="application/rss+xml" />
+<item><title>A year of Jelly at Exciting</title><description>&lt;p&gt;It’s been a while since there was anything new here, and I’m a little overdue in mentioning that &lt;a href="https://letsjelly.com/?utm_source=exciting.io&amp;utm_medium=referral&amp;utm_content=jelly+blog+post+intro"&gt;Jelly&lt;/a&gt;, the shared inbox for small teams, has been living here at Exciting for about a year now.&lt;/p&gt;
+
+&lt;h2 id="ten-years-in-the-making"&gt;Ten years in the making&lt;/h2&gt;
+
+&lt;p&gt;I’d wanted to build a shared inbox like Jelly for more than ten years. Every team I’d been part of had at least one address like &lt;code&gt;hello@&lt;/code&gt; or &lt;code&gt;support@&lt;/code&gt;, and every one of them handled it badly: forwarding rules, a single login passed around, or a help desk built for call centres and priced per seat.&lt;/p&gt;
+
+&lt;p&gt;When I joined &lt;a href="https://goodenough.us"&gt;Good Enough&lt;/a&gt;, I brought the idea with me, and we built it there together. The team needed a better way to handle their own shared addresses, and Jelly was the result: everyone can see what’s come in, assign conversations to each other, leave notes that customers never see, and follow along without being cc’d on everything. It’s one flat price for the whole team, because teams work best when everyone is included.&lt;/p&gt;
+
+&lt;h2 id="how-it-ended-up-here"&gt;How it ended up here&lt;/h2&gt;
+
+&lt;p&gt;When &lt;a href="https://goodenough.us/posts/good-enough-is-reorganizing"&gt;Good Enough restructured&lt;/a&gt; last year, we agreed that, since I had the expertise, the best thing for Jelly was for me to keep running it. So it came home to Exciting, alongside &lt;a href="https://exciting.io/harmonia/"&gt;Harmonia&lt;/a&gt; and &lt;a href="https://exciting.io/projects/"&gt;the rest&lt;/a&gt;. I’m still very grateful to everyone at Good Enough for helping to bring it into the world.&lt;/p&gt;
+
+&lt;h2 id="what-im-working-on-now"&gt;What I’m working on now&lt;/h2&gt;
+
+&lt;p&gt;A year in, there are a couple of things I’m excited about:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Keeping each customer’s data isolated.&lt;/strong&gt; I’m exploring new ways of running Jelly so that every team’s data is kept apart from everyone else’s.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;A native app.&lt;/strong&gt; Finally.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can see everything that’s shipped over the past year on &lt;a href="https://letsjelly.com/changelog?utm_source=exciting.io&amp;utm_medium=referral&amp;utm_content=jelly+blog+post+changelog"&gt;the Jelly changelog&lt;/a&gt;, or read a bit more about it on &lt;a href="https://exciting.io/jelly/"&gt;the Jelly page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And if your team is still sharing an inbox the hard way, &lt;a href="https://letsjelly.com/?utm_source=exciting.io&amp;utm_medium=referral&amp;utm_content=jelly+blog+post+cta"&gt;give Jelly a try&lt;/a&gt;. It’s free for 14 days.&lt;/p&gt;</description><pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate><link>https://exciting.io/2026/10/26/a-year-of-jelly-at-exciting/</link><guid isPermaLink="true">http://exciting.io/2026/10/26/a-year-of-jelly-at-exciting/</guid></item>
 <item><title>The Internet of Things needs to move beyond context-shifting old technology</title><description>&lt;p&gt;&lt;a href="https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a"&gt;Joto&lt;/a&gt; is an “internet connected drawing board”; it’s whimsical, and it’s fun. &lt;strong&gt;But I just can’t shake my doubts about it&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;iframe width="640" height="360" src="https://www.kickstarter.com/projects/joto/joto-the-first-connected-display-that-draws-with-a/widget/video.html" frameborder="0" scrolling="no"&gt; &lt;/iframe&gt;

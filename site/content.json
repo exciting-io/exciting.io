@@ -237,6 +237,23 @@
   ],
   "posts": [
     {
+      "slug": "a-year-of-jelly-at-exciting",
+      "url": "/2026/10/26/a-year-of-jelly-at-exciting/",
+      "date": "2026-10-26",
+      "published": "2026-10-26T12:00:00+00:00",
+      "dateLong": "26 October 2026",
+      "title": "A year of Jelly at Exciting",
+      "tags": [
+        "company",
+        "jelly"
+      ],
+      "bannerImage": null,
+      "excerptHtml": "<p>It’s been a while since there was anything new here, and I’m a little overdue in mentioning that <a href=\"https://letsjelly.com/?utm_source=exciting.io&utm_medium=referral&utm_content=jelly+blog+post+intro\">Jelly</a>, the shared inbox for small teams, has been living here at Exciting for about a year now.</p>",
+      "bodyHtml": "<p>It’s been a while since there was anything new here, and I’m a little overdue in mentioning that <a href=\"https://letsjelly.com/?utm_source=exciting.io&utm_medium=referral&utm_content=jelly+blog+post+intro\">Jelly</a>, the shared inbox for small teams, has been living here at Exciting for about a year now.</p>\n\n<h2 id=\"ten-years-in-the-making\">Ten years in the making</h2>\n\n<p>I’d wanted to build a shared inbox like Jelly for more than ten years. Every team I’d been part of had at least one address like <code>hello@</code> or <code>support@</code>, and every one of them handled it badly: forwarding rules, a single login passed around, or a help desk built for call centres and priced per seat.</p>\n\n<p>When I joined <a href=\"https://goodenough.us\">Good Enough</a>, I brought the idea with me, and we built it there together. The team needed a better way to handle their own shared addresses, and Jelly was the result: everyone can see what’s come in, assign conversations to each other, leave notes that customers never see, and follow along without being cc’d on everything. It’s one flat price for the whole team, because teams work best when everyone is included.</p>\n\n<h2 id=\"how-it-ended-up-here\">How it ended up here</h2>\n\n<p>When <a href=\"https://goodenough.us/posts/good-enough-is-reorganizing\">Good Enough restructured</a> last year, we agreed that, since I had the expertise, the best thing for Jelly was for me to keep running it. So it came home to Exciting, alongside <a href=\"/harmonia/\">Harmonia</a> and <a href=\"/projects/\">the rest</a>. I’m still very grateful to everyone at Good Enough for helping to bring it into the world.</p>\n\n<h2 id=\"what-im-working-on-now\">What I’m working on now</h2>\n\n<p>A year in, there are a couple of things I’m excited about:</p>\n\n<ul>\n  <li><strong>Keeping each customer’s data isolated.</strong> I’m exploring new ways of running Jelly so that every team’s data is kept apart from everyone else’s.</li>\n  <li><strong>A native app.</strong> Finally.</li>\n</ul>\n\n<p>You can see everything that’s shipped over the past year on <a href=\"https://letsjelly.com/changelog?utm_source=exciting.io&utm_medium=referral&utm_content=jelly+blog+post+changelog\">the Jelly changelog</a>, or read a bit more about it on <a href=\"/jelly/\">the Jelly page</a>.</p>\n\n<p>And if your team is still sharing an inbox the hard way, <a href=\"https://letsjelly.com/?utm_source=exciting.io&utm_medium=referral&utm_content=jelly+blog+post+cta\">give Jelly a try</a>. It’s free for 14 days.</p>",
+      "images": [],
+      "wordCount": 328
+    },
+    {
       "slug": "joto",
       "url": "/2017/03/15/joto/",
       "date": "2017-03-15",
