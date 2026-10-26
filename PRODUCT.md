@@ -40,5 +40,5 @@ The studio's interest is the potential of simple systems: simple behaviours, act
 
 ## Constraints
 
-- A static site built by a dependency-free Node generator (`site/build.mjs`) into `_site/`, deployed with `rake deploy`.
+- A static site built by a dependency-free Node generator (`site/build.mjs`) into `_site/`, deployed by pushing to Dokku.
 - Do not invent clients, testimonials, metrics or services the studio has not claimed.
